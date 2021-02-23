@@ -1,0 +1,12 @@
+name = "The Paradox of Open"
+license = "MIT"
+licenselink = "https://bitbucket.org/pangenerator/open-future-www/src/master/LICENSE"
+description = "Open Future The Paradox of Open visual essay"
+homepage = "http://openfuture.eu"
+tags = []
+features = []
+min_version = "0.41.1"
+
+[author]
+    name = "panGenerator"
+    homepage = "http://www.pangenerator.com"

@@ -1,0 +1,6 @@
+<meta charset="utf-8">
+<title>{{ .Site.Title }}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+{{ $options := (dict "targetPath" "css/style.css" "outputStyle" "compressed" "includePaths" (slice "node_modules")) }}
+{{ $style := resources.Get "scss/style.scss" | toCSS $options | minify  }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">

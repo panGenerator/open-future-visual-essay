@@ -1,0 +1,5 @@
+<div class="footer row">
+
+</div>
+{{- $script := resources.Get "/js/script.js" | js.Build (dict "minify" true "target" "es2015") | fingerprint -}}
+<script src="{{ $script.Permalink }}"></script>

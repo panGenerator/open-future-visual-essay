@@ -1,0 +1,10 @@
+baseURL = ""
+languageCode = "en-us"
+title = "The Paradox of Open_"
+theme = "essay"
+disableKinds = ["RSS", "sitemap", "section", "taxonomy", "term", "robotsTXT"]
+
+[params]
+  email = "hello@openfuture.eu"
+  logo_image = "/images/logo.svg"
+  footer = "All content is published in the Public Domain  \nRead our statues."

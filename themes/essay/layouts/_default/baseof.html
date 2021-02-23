@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{- partial "head.html" . -}}
+  <body>
+    <main class="main container-fluid container-xl">
+      {{- partial "logo.html" . -}}
+      {{- block "main" . }}{{- end }}
+      {{- partial "footer.html" . -}}
+    </main>
+  </body>
+</html>
