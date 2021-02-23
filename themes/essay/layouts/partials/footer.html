@@ -1,8 +1,6 @@
 <div class="footer row">
 
 </div>
-<script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
-<script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
-
+<script src="js/lottie-player.js"></script>
 {{- $script := resources.Get "/js/script.js" | js.Build (dict "minify" true "target" "es2015") | fingerprint -}}
 <script src="{{ $script.Permalink }}"></script>
