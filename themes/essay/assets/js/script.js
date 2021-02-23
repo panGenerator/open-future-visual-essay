@@ -17,9 +17,9 @@ create({
   player:'#firstLottie',
   actions: [
     {
-      visibility: [0,1],
+      visibility: [0.3,1],
       type: "seek",
-      frames: [0, 300]
+      frames: [0, 66]
     }
   ]
 });
