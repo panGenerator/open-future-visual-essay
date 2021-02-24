@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@lottiefiles/lottie-interactivity": "^0.1.3",
+    "aos": "^2.3.4",
     "bootstrap": "^5.0.0-beta1"
   }
 }

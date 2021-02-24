@@ -1,6 +1,11 @@
 import { create } from '@lottiefiles/lottie-interactivity'
+import AOS from 'aos'
 
+console.log(AOS)
+document.addEventListener("DOMContentLoaded",function(){
+  AOS.init();
 console.log('🤡')
+// init controller
 
 document.addEventListener("scroll", () => {
     let y = document.documentElement["scrollTop"] || document.body["scrollTop"];
@@ -34,4 +39,8 @@ create({
       frames: [0, 179]
     }
   ]
+});
+
+
+  //here code
 });

@@ -6,6 +6,8 @@ $enable-rounded: false;
 $enable-negative-margins: true;
 $font-family-sans-serif: 'Argesta', 'Helvetica', sans-serif;
 
+@import 'aos/dist/aos';
+@import 'animations';
 @import 'fonts';
 @import 'bootstrap/scss/bootstrap';
 
@@ -62,6 +64,7 @@ h3 {
 .main {
   background: #fff;
   max-width:1200px;
+  overflow-x: hidden;
 }
 
 @include media-breakpoint-up(md) {
