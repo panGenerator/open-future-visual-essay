@@ -2,8 +2,25 @@
   {{- partial "progress.html" . -}}
   <div class="content row">
     <h1>{{ .Site.Title }}</h1>
-    {{ with .Site.GetPage "01_where" }}{{ .Title }}{{ end }}
-    {{ with .Site.GetPage "02_who" }}{{ .Content }}{{ end }}
+    {{ with .Site.GetPage "01_intro" }}<h2>{{ .Title }}</h2>{{.Content}}{{ end }}
+    {{ with .Site.GetPage "02_revolution" }}<h2>{{ .Title }}</h2>{{.Content}}{{ end }}
+    {{ with .Site.GetPage "03_platforms" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
+    {{ with .Site.GetPage "04_models" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
+    {{ with .Site.GetPage "05_pockets" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
+    {{ with .Site.GetPage "06_openness" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
+    {{ with .Site.GetPage "07_power" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
+    {{ with .Site.GetPage "08_zeitgeist" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
+    {{ with .Site.GetPage "09_limits" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
+    {{ with .Site.GetPage "10_paradox" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
+    {{ with .Site.GetPage "11_movement" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
+    {{ with .Site.GetPage "12_new" }}<h2>{{ .Title }}</h2> <h3>{{.Params.subtitle}}</h3>{{.Content}}{{ end }}
+    {{ with .Site.GetPage "13_understanding" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
+    {{ with .Site.GetPage "14_open" }}<h2>{{ .Title }}</h2> <h3>{{.Params.subtitle}}</h3>{{.Content}}{{ end }}
+    {{ with .Site.GetPage "15_where1" }}<h2>{{ .Title }}</h2> <h3>{{.Params.subtitle}}</h3>{{.Content}}{{ end }}
+    {{ with .Site.GetPage "16_where2" }} <h3>{{.Params.subtitle}}</h3>{{.Content}}{{ end }}
+    {{ with .Site.GetPage "17_where3" }} <h3>{{.Params.subtitle}}</h3>{{.Content}}{{ end }}
+    <hr>
+    {{ with .Site.GetPage "18_conclusion" }}{{.Content}}{{ end }}
   </div>
   <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
   <h1 data-aos="fade-right">Test test test</h1>
