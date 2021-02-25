@@ -64,7 +64,7 @@ h3 {
 .main {
   background: #fff;
   max-width:1200px;
-  overflow-x: hidden;
+  //overflow-x: hidden; // - ?
 }
 
 @include media-breakpoint-up(md) {
