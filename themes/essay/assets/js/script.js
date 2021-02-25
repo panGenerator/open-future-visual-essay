@@ -1,11 +1,11 @@
 import { create } from '@lottiefiles/lottie-interactivity'
 import AOS from 'aos'
 
-console.log(AOS)
+AOS.init();
+
 document.addEventListener("DOMContentLoaded",function(){
-  AOS.init();
+
 console.log('🤡')
-// init controller
 
 document.addEventListener("scroll", () => {
     let y = document.documentElement["scrollTop"] || document.body["scrollTop"];
@@ -19,24 +19,24 @@ document.addEventListener("scroll", () => {
 
 create({
   mode:"scroll",
-  player:'#firstLottie',
+  player:'#boxAnim',
   actions: [
     {
       visibility: [0.3,1],
       type: "seek",
-      frames: [0, 66]
+      frames: [0, 60]
     }
   ]
 });
 
 create({
   mode:"scroll",
-  player:'#secondLottie',
+  player:'#yochai',
   actions: [
     {
-      visibility: [0,1],
+      visibility: [0.4,0.6],
       type: "seek",
-      frames: [0, 179]
+      frames: [0, 64]
     }
   ]
 });

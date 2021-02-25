@@ -2,7 +2,9 @@
   {{- partial "progress.html" . -}}
   <div class="content row">
     <h1>{{ .Site.Title }}</h1>
+    <lottie-player id="boxAnim" src="/animation/boxAnim2.json" style="width:400px;" class="mx-auto"></lottie-player>
     {{ with .Site.GetPage "01_intro" }}<h2>{{ .Title }}</h2>{{.Content}}{{ end }}
+    <lottie-player id="yochai" src="/animation/yochai1.json" style="width:400px;" class="mx-auto"></lottie-player>
     {{ with .Site.GetPage "02_revolution" }}<h2>{{ .Title }}</h2>{{.Content}}{{ end }}
     {{ with .Site.GetPage "03_platforms" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
     {{ with .Site.GetPage "04_models" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
@@ -29,7 +31,7 @@
   <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
   <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
-  <lottie-player id="firstLottie" src="/animation/boxAnim2.json" style="width:400px;" class="mx-auto"></lottie-player>
+
 
   <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
   <h2 data-aos="fade-up">Test2 test2 test2</h2>
