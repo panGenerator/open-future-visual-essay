@@ -1,0 +1,5 @@
+---
+title: ""
+subtitle: "3. Building a Shared Digital Europe"
+---
+Digital policies cannot be limited to controlling the dominant platforms and fighting unfair power distribution. A European vision for the digital space needs to include a commitment to creating public alternatives. Ultimately, we need a shared mission to create digital public spaces. Our vision of a Shared Digital Europe defines principles for successfully launching such a mission.
