@@ -17,7 +17,10 @@ body {
   color: $primary;
   overscroll-behavior: none;
 }
-
+.logo {
+  position: relative;
+  z-index:100;
+}
 .btn {
   font-family: 'Chaney', 'Helvetica', sans-serif;
   text-transform: uppercase;
