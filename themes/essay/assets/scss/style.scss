@@ -1,4 +1,4 @@
-$font-size-root: 19px;
+$font-size-root: 17px;
 $yellow: #FFF100;
 $primary: #000;
 $secondary: #6D6E70;
@@ -13,6 +13,7 @@ $font-family-sans-serif: 'Argesta', 'Helvetica', sans-serif;
 
 body {
   background: #eee;
+  font-size: $font-size-root;
   margin: 0;
   color: $primary;
   overscroll-behavior: none;
@@ -67,7 +68,7 @@ h3 {
 .main {
   background: #fff;
   max-width:1200px;
-  //overflow-x: hidden; // - ?
+  overflow-x: hidden;
 }
 
 #header {
@@ -113,15 +114,14 @@ h3 {
 
 }
 
-
 // TMP:
 #progress_bar {
   --scroll: 0%;
   background: linear-gradient(to right, $yellow var(--scroll),#ccc 0);
   position: fixed;
   width: 100%;
-  height: 2px;
+  height: 4px;
   top: 0;
-  left:0;
+  left: 0;
   z-index: 100;
 }
