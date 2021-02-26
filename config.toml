@@ -1,6 +1,6 @@
 baseURL = ""
 languageCode = "en-us"
-title = "An Open Movement to Leverage the Promise of the Internet"
+title = "the paradox _of open"
 theme = "essay"
 disableKinds = ["RSS", "sitemap", "section", "taxonomy", "term", "robotsTXT"]
 

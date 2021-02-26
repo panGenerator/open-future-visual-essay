@@ -1,5 +1,6 @@
 ---
-title: "At the beginning of the XXI century, the internet gave birth to the open movement."
+title: "An Open Movement to Leverage the Promise of the Internet"
+subtitle: "At the beginning of the XXI century, the internet gave birth to the open movement."
 ---
 Organisations and initiatives, launching year by year, all believed in openness and free knowledge. They placed their bets on combined power of networked information services and new governance models for the production and sharing of content and data.
 We - as members of this broad movement - were among those who believed that we could leverage this combination of power and opportunity to build a more democratic society. To unleash the power of the internet to create universal access to knowledge and culture. For us, openness meant not only freedom, but also presented a path to justice and equality.
