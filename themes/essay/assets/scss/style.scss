@@ -81,6 +81,16 @@ h3 {
     z-index: 1;
   }
 }
+.quote {
+  p {
+    font-family: 'ArgestaItalic', 'Helvetica', sans-serif;
+    font-size: 2.4em;
+    line-height: 1.2em;
+  }
+  .author {
+    font-family: 'Chaney', 'Helvetica', sans-serif;
+  }
+}
 @include media-breakpoint-up(md) {
   body {
     font-size: 21px;

@@ -20,13 +20,25 @@
       {{.Content}}
     </div>
   </div>
+  {{ end }}
+
+  {{ with .Site.GetPage "02_revolution" }}
+  <div class="row">
+    <div class="col-10 quote mx-auto">
+      <p>
+        {{ .Params.quote }}
+      </p>
+      <div class="author text-end">{{.Params.quote_author }}</div>
+    </div>
+  </div>
   <div class="row justify-content-end">
     <div class="col-8 align-self-end gx-0">
       <lottie-player id="yochai" src="/animation/yochai1.json"></lottie-player>
     </div>
-    {{ end }}
 
-    {{ with .Site.GetPage "02_revolution" }}<h2>{{ .Title }}</h2>{{.Content}}{{ end }}
+
+    <h2>{{ .Title }}</h2>{{.Content}}
+    {{ end }}
     {{ with .Site.GetPage "03_platforms" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
     {{ with .Site.GetPage "04_models" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
     {{ with .Site.GetPage "05_pockets" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}

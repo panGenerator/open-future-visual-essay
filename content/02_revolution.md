@@ -1,5 +1,7 @@
 ---
 title: "The open revolution did not happen"
+quote: "commons based peer production"
+quote_author: "Jochai Benkler"
 ---
 The open revolution that we had imagined did not happen, at least at the scale that we and many other proponents of free culture expected.
 At the same time the growing open movement demonstrated the viability of our ideas. We have as proof Wikipedia, open government data initiatives, the ascent of open access publishing, the role of free software in powering the infrastructure of the internet and in the gradual opening of the collections of many cultural heritage institutions.
