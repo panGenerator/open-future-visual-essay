@@ -1,10 +1,30 @@
 {{ define "main" }}
   {{- partial "progress.html" . -}}
-  <div class="content row">
-    <h1>{{ .Site.Title }}</h1>
-    <lottie-player id="boxAnim" src="/animation/boxAnim2.json" style="width:400px;" class="mx-auto"></lottie-player>
-    {{ with .Site.GetPage "01_intro" }}<h2>{{ .Title }}</h2>{{.Content}}{{ end }}
-    <lottie-player id="yochai" src="/animation/yochai1.json" style="width:400px;" class="mx-auto"></lottie-player>
+  <div class="row">
+    <header id="header" class="col-12">
+      <div class="row">
+        <h1 class="col-10 mx-auto">{{ .Site.Title }}</h1>
+        <div class="col-8 align-self-center mx-auto">
+          <lottie-player id="boxAnim" src="/animation/boxAnim2.json"></lottie-player>
+        </div>
+      </div>
+    </header>
+    {{ with .Site.GetPage "01_intro" }}
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-8 align-self-center mx-auto">
+      <h2 data-aos="fade-right">{{ .Title }}</h2>
+    </div>
+    <div class="col-10 mx-auto">
+      {{.Content}}
+    </div>
+  </div>
+  <div class="row justify-content-end">
+    <div class="col-8 align-self-end gx-0">
+      <lottie-player id="yochai" src="/animation/yochai1.json"></lottie-player>
+    </div>
+    {{ end }}
+
     {{ with .Site.GetPage "02_revolution" }}<h2>{{ .Title }}</h2>{{.Content}}{{ end }}
     {{ with .Site.GetPage "03_platforms" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
     {{ with .Site.GetPage "04_models" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
@@ -24,25 +44,4 @@
     <hr>
     {{ with .Site.GetPage "18_conclusion" }}{{.Content}}{{ end }}
   </div>
-  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-  <h1 data-aos="fade-right">Test test test</h1>
-  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-
-
-
-  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-  <h2 data-aos="fade-up">Test2 test2 test2</h2>
-  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-
-  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-
-  <lottie-player id="secondLottie" src="/animation/data2.json" style="width:400px;" class="mx-auto"></lottie-player>
-
-  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 {{ end }}
