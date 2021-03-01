@@ -1,60 +1,188 @@
 {{ define "main" }}
-  {{- partial "progress.html" . -}}
-  <div class="row">
-    <header id="header" class="col-12">
-      <div class="row">
-        <h1 class="col-10 mx-auto">{{ .Site.Title }}</h1>
-        <div class="col-12 align-self-center mx-auto gx-0">
-          <lottie-player id="boxAnim" src="/animation/boxAnim2.json"></lottie-player>
-        </div>
+{{- partial "progress.html" . -}}
+<div class="row">
+  <header id="header" class="col-12">
+    <div class="row">
+      <h1 class="col-10 mx-auto">{{ .Site.Title }}</h1>
+      <div class="col-12 align-self-center mx-auto gx-0">
+        <lottie-player id="boxAnim" src="/animation/intro_box.json"></lottie-player>
       </div>
-    </header>
-    {{ with .Site.GetPage "01_intro" }}
-  </div>
-  <div class="row justify-content-center">
-    <div class="col-11 align-self-center mx-auto my-5">
-      <h2 data-aos="fade-right">{{ .Title }}</h2>
-      <!-- <h3 data-aos="fade-left">{{ .Params.subtitle }}</h3> -->
     </div>
-    <div class="col-10 mx-auto">
-      {{.Content}}
-    </div>
+  </header>
+  {{ with .Site.GetPage "01_intro" }}
+</div>
+<div class="row justify-content-center">
+  <div class="col-11 align-self-center mx-auto my-5">
+    <h2 data-aos="fade-right">{{ .Title }}</h2>
+    <h3 data-aos="fade-right">{{ .Params.subtitle | markdownify }}</h3>
+    <h3 data-aos="fade-right" class="mt-5">{{ .Params.subsubtitle | markdownify }}</h3>
   </div>
-  {{ end }}
+  <div class="col-10 mx-auto">
+    {{.Summary}}
+  </div>
+</div>
 
-  {{ with .Site.GetPage "02_revolution" }}
-  <div class="row">
-    <div class="col-10 quote mx-auto">
-      <p>
-        {{ .Params.quote }}
-      </p>
-      <div class="author text-end">{{.Params.quote_author }}</div>
+<div class="row justify-content-end">
+  <div class="col-12 align-self-end gx-0">
+    <lottie-player id="yochai" src="/animation/yochai1.json"></lottie-player>
+  </div>
+</div>
+<div class="row justify-content-center">
+  <div class="col-8 quote mx-auto">
+    <div class="content mx-auto align-self-center">
+      {{ .Params.quote }}
+    </div>
+    <div class="author text-center mt-2 mb-5">{{.Params.quote_author }}</div>
+  </div>
+</div>
+<div class="row justify-content-center">
+  <div class="col-10 mx-auto">
+    {{ $both := split .RawContent "<!--more-->" }}
+    {{ index $both 1 | markdownify }}
+  </div>
+</div>
+{{ end }}
+
+{{ with .Site.GetPage "02_revolution" }}
+{{ $both := split .RawContent "<!--more-->" }}
+<div class="row justify-content-center">
+  <div class="col-8 align-self-center mx-auto my-5">
+    <h3>{{ .Title | markdownify}}</h3>
+  </div>
+  <div class="col-10 mx-auto">
+    {{ index $both 0 | markdownify }}
+  </div>
+  <div class="quote quote-small col-8 quote mx-auto mt-3 mb-5">
+    <div class="content">{{ .Params.conditionsHeader | markdownify }}</div>
+  </div>
+  <div class="col-12 condition condition-one">
+    <h3 class="text-center">1</h3>
+    <div class="content mt-4">
+      {{ .Params.condition1 | markdownify}}
     </div>
   </div>
-  <div class="row justify-content-end">
-    <div class="col-8 align-self-end gx-0">
-      <lottie-player id="yochai" src="/animation/yochai1.json"></lottie-player>
+  <div class="col-12 condition condition-two">
+    <h3 class="text-center">2</h3>
+    <div class="content mt-4">
+      {{ .Params.condition2 | markdownify}}
     </div>
-
-
-    <h2>{{ .Title }}</h2>{{.Content}}
-    {{ end }}
-    {{ with .Site.GetPage "03_platforms" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
-    {{ with .Site.GetPage "04_models" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
-    {{ with .Site.GetPage "05_pockets" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
-    {{ with .Site.GetPage "06_openness" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
-    {{ with .Site.GetPage "07_power" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
-    {{ with .Site.GetPage "08_zeitgeist" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
-    {{ with .Site.GetPage "09_limits" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
-    {{ with .Site.GetPage "10_paradox" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
-    {{ with .Site.GetPage "11_movement" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
-    {{ with .Site.GetPage "12_new" }}<h2>{{ .Title }}</h2> <h3>{{.Params.subtitle}}</h3>{{.Content}}{{ end }}
-    {{ with .Site.GetPage "13_understanding" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
-    {{ with .Site.GetPage "14_open" }}<h2>{{ .Title }}</h2> <h3>{{.Params.subtitle}}</h3>{{.Content}}{{ end }}
-    {{ with .Site.GetPage "15_where1" }}<h2>{{ .Title }}</h2> <h3>{{.Params.subtitle}}</h3>{{.Content}}{{ end }}
-    {{ with .Site.GetPage "16_where2" }} <h3>{{.Params.subtitle}}</h3>{{.Content}}{{ end }}
-    {{ with .Site.GetPage "17_where3" }} <h3>{{.Params.subtitle}}</h3>{{.Content}}{{ end }}
-    <hr>
-    {{ with .Site.GetPage "18_conclusion" }}{{.Content}}{{ end }}
   </div>
+  <div class="col-10 mt-5">
+    {{ index $both 1 | markdownify }}
+  </div>
+  <div class="quote quote-small col-10 quote mx-auto mt-5 mb-5 text-center">
+    <div class="content">{{ .Params.summary | markdownify }}</div>
+  </div>
+</div>
+{{ end }}
+
+{{ with .Site.GetPage "03_platforms" }}
+<div class="row">
+  <div class="col-11 align-self-center mx-auto my-5">
+    <h2 id="platformsTitle">{{ .Title | markdownify}}</h2>
+  </div>
+  <div class="col-12 align-self-end gx-0">
+    <lottie-player id="sharingPlatforms" src="/animation/sharingPlatforms.json" loop autoplay></lottie-player>
+  </div>
+  <div class="col-10 mx-auto">
+    {{ .Content }}
+  </div>
+</div>
+{{ end }}
+
+{{ with .Site.GetPage "04_models" }}
+{{ $both := split .RawContent "<!--more-->" }}
+<div class="row">
+  <div class="col-11 align-self-center mx-auto my-5">
+    <h3>{{ .Title }}</h3>
+  </div>
+  <div class="col-12 align-self-end gx-0">
+    <lottie-player id="closedSharing" src="/animation/closed_sharing.json" loop autoplay></lottie-player>
+  </div>
+  <div class="col-10 mx-auto">
+    {{ index $both 0 | markdownify }}
+  </div>
+  <div class="col-12 align-self-end gx-0">
+    <lottie-player id="lessing" src="/animation/lessing.json"></lottie-player>
+  </div>
+  <div class="col-8 quote mx-auto">
+    <div class="content mx-auto align-self-center">
+      "{{ .Params.quote }}"
+    </div>
+    <div class="author text-center mt-2 mb-5">{{.Params.quote_author }}</div>
+  </div>
+  <div class="col-10 mx-auto">
+    {{ index $both 1 | markdownify }}
+  </div>
+</div>
+{{ end }}
+
+{{ with .Site.GetPage "05_pockets" }}
+<div class="row">
+  <div class="col-11 align-self-center mx-auto my-5">
+    <h3>{{ .Title }}</h3>
+  </div>
+  <div class="col-10 mx-auto">
+    {{.Content}}
+  </div>
+  <div class="quote col-8 mx-auto mt-5 mb-5 text-left">
+    <div class="content">{{ .Params.quote | markdownify }}</div>
+  </div>
+</div>
+{{ end }}
+
+<div>
+  {{ with .Site.GetPage "06_openness" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
+</div>
+
+<div>
+  {{ with .Site.GetPage "07_power" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
+</div>
+
+<div>
+  {{ with .Site.GetPage "08_zeitgeist" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
+</div>
+
+<div>
+  {{ with .Site.GetPage "09_limits" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
+</div>
+
+<div>
+  {{ with .Site.GetPage "10_paradox" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
+</div>
+
+<div>
+  {{ with .Site.GetPage "11_movement" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
+</div>
+<div>
+  {{ with .Site.GetPage "12_new" }}<h2>{{ .Title }}</h2>
+  <h3>{{.Params.subtitle}}</h3>{{.Content}}{{ end }}
+</div>
+
+<div>
+  {{ with .Site.GetPage "13_understanding" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
+</div>
+
+<div>
+  {{ with .Site.GetPage "14_open" }}<h2>{{ .Title }}</h2>
+  <h3>{{.Params.subtitle}}</h3>{{.Content}}{{ end }}
+</div>
+
+<div>
+  {{ with .Site.GetPage "15_where1" }}<h2>{{ .Title }}</h2>
+  <h3>{{.Params.subtitle}}</h3>{{.Content}}{{ end }}
+</div>
+
+<div>
+  {{ with .Site.GetPage "16_where2" }} <h3>{{.Params.subtitle}}</h3>{{.Content}}{{ end }}
+</div>
+
+<div>
+  {{ with .Site.GetPage "17_where3" }} <h3>{{.Params.subtitle}}</h3>{{.Content}}{{ end }}
+</div>
+
+  <hr>
+<div>
+  {{ with .Site.GetPage "18_conclusion" }}{{.Content}}{{ end }}
+</div>
 {{ end }}
