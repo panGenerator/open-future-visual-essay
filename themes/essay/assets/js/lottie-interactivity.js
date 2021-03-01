@@ -213,12 +213,15 @@ export class LottieInteractivity {
       }
     } else if (action.type === 'play') {
       // Play: Reset segments and continue playing full animation from current position
-      console.log(this.played)
       if (this.player.isPaused === true && !this.played) {
-
         this.played = true
         this.player.resetSegments();
-        this.player.playSegments(action.frames, true);
+        if(this.mode==='scrollOnce'){
+          this.player.playSegments(action.frames, true);
+        }
+        else {
+          this.player.play();
+        }
       }
     } else if (action.type === 'stop') {
       // Stop: Stop playback

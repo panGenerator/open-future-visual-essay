@@ -146,6 +146,12 @@ h3 {
   background: #000;
   color: #fff;
 }
+.bg-yellow{
+  background: $yellow;
+}
+.bg-gray {
+  background: #B2B2B2;
+}
 .yellow-box{
   background: $yellow;
   font-family: 'ArgestaItalic', 'Helvetica', sans-serif;
@@ -154,7 +160,7 @@ h3 {
   padding: 3em 2em;
 }
 .box-small {
-  padding: 1em 2.5em;
+  padding: 1em 2.7em;
 }
 .gray-box {
   background: #F1F1F1;
@@ -167,6 +173,26 @@ h3 {
 }
 .big-box {
   font-size: 1.4em;
+}
+.huge-text{
+  font-size: 20em;
+  font-family: 'Chaney', 'Helvetica', sans-serif;
+}
+.newsletter-cta {
+  background: #666666;
+  font-family: 'ArgestaItalic', 'Helvetica', sans-serif;
+  color: #fff;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+.newsletter-button {
+  font-size: 1.8em;
+}
+.newsletter-input {
+  font-size: 1.5em;
+}
+.inner-shadow {
+  box-shadow: inset 0 0 7px rgba(0,0,0,0.2);
 }
 @include media-breakpoint-up(md) {
   body {
