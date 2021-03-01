@@ -95,5 +95,16 @@ create({
     }
   ]
 });
+create({
+  mode:"scroll",
+  player:'#euFlag',
+  actions: [
+    {
+      visibility: [0.0,0.5],
+      type: "seek",
+      frames: [0, 55]
+    }
+  ]
+});
 
 });
