@@ -1,4 +1,4 @@
-$font-size-root: 17px;
+$font-size-root: 13px;
 $yellow: #FFF100;
 $primary: #000;
 $secondary: #6D6E70;
@@ -52,17 +52,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size:2.6em;
+  font-size: 4em;
   line-height: 0.9em;
+
 }
 
 h2 {
   line-height: 0.9em;
-  font-size: 1.5em;
+  font-size: 4.3em;
+  // z-index: 2;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 2.4em;
   line-height: 0.9em
 }
 .main {
@@ -86,14 +88,60 @@ h3 {
   }
 }
 .quote {
-  p {
+  .content {
+    display:block;
     font-family: 'ArgestaItalic', 'Helvetica', sans-serif;
-    font-size: 2.4em;
-    line-height: 1.2em;
+    font-size: 2.9em;
+    line-height: 1em;
   }
   .author {
     font-family: 'Chaney', 'Helvetica', sans-serif;
+    font-size: 1.5em;
   }
+}
+.quote-small {
+  .content {
+    font-family: 'Argesta', 'Helvetica', sans-serif;
+    font-size: 2em;
+    line-height: 1em;
+  }
+}
+
+.condition {
+  padding: 4em 6em 6em 6em;
+  h3 {
+    font-size: 7em;
+  }
+  .content {
+    text-align: justify;
+  }
+}
+.condition-one {
+  background: #E5E5E5;
+}
+.condition-two {
+  background: #CBCBCB;
+}
+
+#yochai {
+  margin-top: -40vw;
+  margin-bottom: -40vw;
+}
+
+#platformsTitle {
+  position: relative;
+  z-index: 2;
+}
+#sharingPlatforms {
+  z-index:1;
+  margin-top: -25vw;
+  margin-bottom: 10vw;
+  //transform: scale(1.5);
+}
+
+#lessing {
+  margin-top: -40vw;
+  margin-bottom: -40vw;
 }
 @include media-breakpoint-up(md) {
   body {
