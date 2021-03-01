@@ -78,7 +78,7 @@ create({
   player:'#lessing',
   actions: [
     {
-      visibility: [0.2,0.8],
+      visibility: [0.0,0.5],
       type: "seek",
       frames: [0, 64]
     }

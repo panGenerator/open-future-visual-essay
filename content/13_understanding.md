@@ -1,5 +1,5 @@
 ---
-title: "Towards a new understanding  \n_of openness"
+title: "Towards  \na new understanding  \n_of openness"
 ---
 In order to preserve Open as a strategic concept that contributes to building a more just and egalitarian digital society, the open movement will need to think about how it can harden its core concepts against abuse and unintended externalities.  
 

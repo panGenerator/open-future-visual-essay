@@ -1,5 +1,5 @@
 ---
-title: "The zeitgeist  \nis bleak,  \nand does not believe  \n_in openness"
+title: "The zeitgeist  \nis bleak, and does not \nbelieve in  \n_openness"
 ---
 Today, the copyright wars are almost over. Conflicts about access to and control over informational resources have been superseded by conflicts about privacy, economic value extraction, the emergence of artificial intelligence and the destabilising effects of dominant platforms on (democratic) societies. Instead of access to information, the control of personal data emerged as the crucial line of conflict in the age of the platforms.  
 

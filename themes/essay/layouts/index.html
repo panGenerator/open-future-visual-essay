@@ -28,8 +28,8 @@
   </div>
 </div>
 <div class="row justify-content-center">
-  <div class="col-8 quote mx-auto">
-    <div class="content mx-auto align-self-center">
+  <div class="col-9 quote mx-auto align-self-center">
+    <div class="content mx-auto text-center">
       {{ .Params.quote }}
     </div>
     <div class="author text-center mt-2 mb-5">{{.Params.quote_author }}</div>
@@ -46,14 +46,14 @@
 {{ with .Site.GetPage "02_revolution" }}
 {{ $both := split .RawContent "<!--more-->" }}
 <div class="row justify-content-center">
-  <div class="col-8 align-self-center mx-auto my-5">
+  <div class="col-9 align-self-center mx-auto my-5">
     <h3>{{ .Title | markdownify}}</h3>
   </div>
   <div class="col-10 mx-auto">
     {{ index $both 0 | markdownify }}
   </div>
   <div class="quote quote-small col-8 quote mx-auto mt-3 mb-5">
-    <div class="content">{{ .Params.conditionsHeader | markdownify }}</div>
+    <div class="content text-center">{{ .Params.conditionsHeader | markdownify }}</div>
   </div>
   <div class="col-12 condition condition-one">
     <h3 class="text-center">1</h3>
@@ -94,7 +94,7 @@
 {{ $both := split .RawContent "<!--more-->" }}
 <div class="row">
   <div class="col-11 align-self-center mx-auto my-5">
-    <h3>{{ .Title }}</h3>
+    <h3 id="modelsTitle">{{ .Title }}</h3>
   </div>
   <div class="col-12 align-self-end gx-0">
     <lottie-player id="closedSharing" src="/animation/closed_sharing.json" loop="false"></lottie-player>
@@ -106,7 +106,7 @@
     <lottie-player id="lessing" src="/animation/lessing.json"></lottie-player>
   </div>
   <div class="col-8 quote mx-auto">
-    <div class="content mx-auto align-self-center">
+    <div class="content mx-auto align-self-center text-center">
       "{{ .Params.quote }}"
     </div>
     <div class="author text-center mt-2 mb-5">{{.Params.quote_author }}</div>
@@ -215,7 +215,7 @@
 {{ with .Site.GetPage "12_new" }}
 <div class="row justify-content-center">
   <div class="col-8 align-self-center my-5">
-    <h3 class="mx-auto">{{ .Title }}</h3>
+    <h3 class="mx-auto">{{ .Title | markdownify }}</h3>
   </div>
   <div class="col-10 mx-auto">
     {{.Content}}
@@ -269,7 +269,7 @@
     1
   </div>
   <div class="col-10 align-self-center my-5">
-    <h3>{{.Params.subtitle}}</h3>
+    <h3>{{.Params.subtitle | markdownify }}</h3>
   </div>
   <div class="col-10 mx-auto ">
   {{.Content}}
@@ -283,7 +283,7 @@
     2
   </div>
   <div class="col-10 align-self-center my-5">
-   <h3>{{.Params.subtitle}}</h3>
+   <h3>{{.Params.subtitle | markdownify }}</h3>
   </div>
   <div class="col-10 mx-auto">
    {{.Content}}

@@ -1,4 +1,4 @@
-$font-size-root: 13px;
+$font-size-root: 16px;
 $yellow: #FFF100;
 $primary: #000;
 $secondary: #6D6E70;
@@ -52,18 +52,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 3.2em;
   line-height: 0.9em;
 }
 
 h2 {
   line-height: 0.9em;
-  font-size: 4.3em;
+  font-size: 3em;
   // z-index: 2;
 }
 
 h3 {
-  font-size: 2.4em;
+  font-size: 2em;
   line-height: 0.9em
 }
 .main {
@@ -90,24 +90,24 @@ h3 {
   .content {
     display:block;
     font-family: 'ArgestaItalic', 'Helvetica', sans-serif;
-    font-size: 2.9em;
+    font-size: 2em;
     line-height: 1em;
   }
   .author {
     font-family: 'Chaney', 'Helvetica', sans-serif;
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
 .quote-small {
   .content {
     font-family: 'Argesta', 'Helvetica', sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 1em;
   }
 }
 
 .condition {
-  padding: 4em 6em 6em 6em;
+  padding: 2em 3em 4em 3em;
   h3 {
     font-size: 7em;
   }
@@ -136,6 +136,14 @@ h3 {
   margin-top: -25vw;
   margin-bottom: 10vw;
   transform: scale(1.5);
+}
+// #modelsTitle{
+//   position: relative;
+//   z-index:2;
+// }
+#closedSharing {
+ // z-index:1;
+  margin-top: -25vw;
 }
 
 #lessing {
@@ -172,10 +180,10 @@ h3 {
   font-family: 'Chaney', 'Helvetica', sans-serif;
 }
 .big-box {
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 .huge-text{
-  font-size: 20em;
+  font-size: 15em;
   font-family: 'Chaney', 'Helvetica', sans-serif;
 }
 .newsletter-cta {

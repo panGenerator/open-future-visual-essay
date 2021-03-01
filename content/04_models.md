@@ -1,5 +1,5 @@
 ---
-title: "Platforms develop own models of  \n_closed sharing"
+title: "Platforms develop own models of closed  \n_sharing"
 quote: "code not law"
 quote_author: "Lawrence Lessig"
 ---
