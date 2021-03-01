@@ -84,5 +84,16 @@ create({
     }
   ]
 });
+create({
+  mode:"scroll",
+  player:'#newOpen',
+  actions: [
+    {
+      visibility: [0.0,0.5],
+      type: "seek",
+      frames: [0, 64]
+    }
+  ]
+});
 
 });
