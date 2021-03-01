@@ -54,7 +54,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 4em;
   line-height: 0.9em;
-
 }
 
 h2 {
@@ -143,6 +142,29 @@ h3 {
   margin-top: -40vw;
   margin-bottom: -40vw;
 }
+.invert {
+  background: #000;
+  color: #fff;
+}
+.yellow-box{
+  background: $yellow;
+  font-family: 'ArgestaItalic', 'Helvetica', sans-serif;
+  font-size: 2em;
+  line-height: 1em;
+  padding: 3em 2em;
+}
+.gray-box {
+  background: #F1F1F1;
+}
+.bolder {
+  font-size: 1.4em;
+  line-height: 1.4em;
+  padding: 4em 3em;
+  font-family: 'Chaney', 'Helvetica', sans-serif;
+}
+.big-box {
+  font-size: 1.4em;
+}
 @include media-breakpoint-up(md) {
   body {
     font-size: 21px;
@@ -162,7 +184,6 @@ h3 {
 
 }
 
-// TMP:
 #progress_bar {
   --scroll: 0%;
   background: linear-gradient(to right, $yellow var(--scroll),#ccc 0);

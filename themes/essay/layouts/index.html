@@ -130,59 +130,134 @@
   </div>
 </div>
 {{ end }}
+//lottie - duzy box + male boxy
+{{ with .Site.GetPage "06_openness" }}
+<div class="row">
+  <div class="col-11 align-self-center mx-auto my-5">
+    <h3>{{ .Title }}</h3>
+  </div>
+  <div class="col-10 mx-auto">
+    {{.Content}}
+  </div>
+</div>
+{{ end }}
 
-<div>
-  {{ with .Site.GetPage "06_openness" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
+{{ with .Site.GetPage "07_power" }}
+<div class="row">
+  <div class="col-11 align-self-center mx-auto my-5">
+    <h3>{{ .Title }}</h3>
+  </div>
+  <div class="col-10 mx-auto">
+    {{.Content}}
+  </div>
 </div>
+{{ end }}
+//lottie - box z €
 
-<div>
-  {{ with .Site.GetPage "07_power" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
+{{ with .Site.GetPage "08_zeitgeist" }}
+<div class="row invert py-4">
+  <div class="col-9 align-self-center mx-auto py-5">
+    <h3>{{ .Title | markdownify}}</h3>
+  </div>
+  <div class="col-10 mx-auto pb-5">
+    {{.Content}}
+  </div>
 </div>
+{{ end }}
 
-<div>
-  {{ with .Site.GetPage "08_zeitgeist" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
+{{ with .Site.GetPage "09_limits" }}
+<div class="row">
+  <div class="col-9 align-self-center mx-auto py-5">
+    <h3>{{ .Title | markdownify}}</h3>
+  </div>
+  <div class="col-10 mx-auto">
+    {{.Content}}
+  </div>
+  <div class="quote col-10 mx-auto mt-5 mb-5 text-left">
+    <div class="content">{{ .Params.quote | markdownify }}</div>
+  </div>
 </div>
+{{ end }}
 
-<div>
-  {{ with .Site.GetPage "09_limits" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
+{{ with .Site.GetPage "10_paradox" }}
+{{ $both := split .RawContent "<!--more-->" }}
+<div class="row">
+  <div class="col-10 align-self-center mx-auto py-5">
+    <h2>{{ .Title | markdownify}}</h2>
+  </div>
+  <div class="col-12 mx-auto yellow-box">
+    {{.Params.intro | markdownify}}
+  </div>
+  <div class="col-12 mx-auto gray-box bolder">
+    {{ index $both 0 | markdownify }}
+  </div>
+  <div class="col-12 mx-auto invert bolder">
+    {{ index $both 1 | markdownify }}
+  </div>
+  <div class="col-11 mx-auto big-box py-4">
+    {{.Params.outro | markdownify}}
+  </div>
 </div>
+{{ end }}
+{{ with .Site.GetPage "11_movement" }}
+<div class="row">
+  <div class="col-11 align-self-center mx-auto py-5">
+    <h3>{{ .Title | markdownify}}</h3>
+  </div>
+  <div class="col-10 mx-auto">
+    {{.Content}}
+  </div>
+</div>
+{{ end }}
 
-<div>
-  {{ with .Site.GetPage "10_paradox" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
+//lottie - logo centralnie
+{{ with .Site.GetPage "12_new" }}
+<div class="row justify-content-center">
+  <div class="col-8 align-self-center my-5">
+    <h3 class="mx-auto">{{ .Title }}</h3>
+  </div>
+  <div class="col-10 mx-auto">
+    {{.Content}}
+  </div>
 </div>
+{{ end }}
 
+{{ with .Site.GetPage "13_understanding" }}
 <div>
-  {{ with .Site.GetPage "11_movement" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
+  <h2>{{ .Title }}</h2> {{.Content}}
 </div>
-<div>
-  {{ with .Site.GetPage "12_new" }}<h2>{{ .Title }}</h2>
-  <h3>{{.Params.subtitle}}</h3>{{.Content}}{{ end }}
-</div>
+{{ end }}
 
+{{ with .Site.GetPage "14_open" }}
 <div>
-  {{ with .Site.GetPage "13_understanding" }}<h2>{{ .Title }}</h2> {{.Content}}{{ end }}
+  <h2>{{ .Title }}</h2>
+  <h3>{{.Params.subtitle}}</h3>{{.Content}}
 </div>
+{{ end }}
 
+{{ with .Site.GetPage "15_where1" }}
 <div>
-  {{ with .Site.GetPage "14_open" }}<h2>{{ .Title }}</h2>
-  <h3>{{.Params.subtitle}}</h3>{{.Content}}{{ end }}
+  <h2>{{ .Title }}</h2>
+  <h3>{{.Params.subtitle}}</h3>{{.Content}}
 </div>
+{{ end }}
 
+{{ with .Site.GetPage "16_where2" }}
 <div>
-  {{ with .Site.GetPage "15_where1" }}<h2>{{ .Title }}</h2>
-  <h3>{{.Params.subtitle}}</h3>{{.Content}}{{ end }}
+   <h3>{{.Params.subtitle}}</h3>{{.Content}}
 </div>
+{{ end }}
 
+{{ with .Site.GetPage "17_where3" }}
 <div>
-  {{ with .Site.GetPage "16_where2" }} <h3>{{.Params.subtitle}}</h3>{{.Content}}{{ end }}
+  <h3>{{.Params.subtitle}}</h3>{{.Content}}
 </div>
+{{ end }}
+<hr>
 
+{{ with .Site.GetPage "18_conclusion" }}
 <div>
-  {{ with .Site.GetPage "17_where3" }} <h3>{{.Params.subtitle}}</h3>{{.Content}}{{ end }}
+  {{.Content}}
 </div>
-
-  <hr>
-<div>
-  {{ with .Site.GetPage "18_conclusion" }}{{.Content}}{{ end }}
-</div>
+{{ end }}
 {{ end }}
