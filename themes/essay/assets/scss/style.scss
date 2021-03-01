@@ -135,7 +135,7 @@ h3 {
   z-index:1;
   margin-top: -25vw;
   margin-bottom: 10vw;
-  //transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 #lessing {
@@ -152,6 +152,9 @@ h3 {
   font-size: 2em;
   line-height: 1em;
   padding: 3em 2em;
+}
+.box-small {
+  padding: 1em 2.5em;
 }
 .gray-box {
   background: #F1F1F1;

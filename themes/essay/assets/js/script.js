@@ -1,4 +1,4 @@
-import { create } from '@lottiefiles/lottie-interactivity'
+import { create } from './lottie-interactivity'
 import AOS from 'aos'
 
 AOS.init();
@@ -49,29 +49,29 @@ create({
   ]
 });
 
-// create({
-//   mode:"scroll",
-//   player:'#sharingPlatforms',
-//   actions: [
-//     {
-//       visibility: [0.35,0.5],
-//       type: "loop",
-//       frames: [0, 28]
-//     }
-//   ]
-// });
+create({
+  mode:"scroll",
+  player:'#sharingPlatforms',
+  actions: [
+    {
+      visibility: [0.35,0.5],
+      type: "seek",
+      frames: [0, 28]
+    }
+  ]
+});
 
-// create({
-//   mode:"scroll",
-//   player:'#closedSharing',
-//   actions: [
-//     {
-//       visibility: [0.2,0.8],
-//       type: "loop",
-//       frames: [0, 83]
-//     }
-//   ]
-// });
+create({
+  mode:"scrollOnce",
+  player:'#closedSharing',
+  actions: [
+    {
+      visibility: [0.2,0.8],
+      type: "play",
+      frames: [0, 83]
+    }
+  ]
+});
 
 create({
   mode:"scroll",
