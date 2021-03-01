@@ -125,15 +125,15 @@
   <div class="col-10 mx-auto">
     {{.Content}}
   </div>
-  <div class="quote col-8 mx-auto mt-5 mb-5 text-left">
+  <div class="quote col-8 mx-auto mt-5 mb-1 text-left">
     <div class="content">{{ .Params.quote | markdownify }}</div>
   </div>
 </div>
 {{ end }}
-// lottie - duzy box + male boxy
+<lottie-player id="platformFree" src="/animation/platform_free.json" loop autoplay></lottie-player>
 {{ with .Site.GetPage "06_openness" }}
 <div class="row">
-  <div class="col-11 align-self-center mx-auto my-5">
+  <div class="col-11 align-self-center mx-auto mt-1 mb-5">
     <h3>{{ .Title }}</h3>
   </div>
   <div class="col-10 mx-auto">
@@ -152,7 +152,7 @@
   </div>
 </div>
 {{ end }}
-// lottie - box z €
+<lottie-player id="powerStructures" src="/animation/structures_of_power.json" loop autoplay></lottie-player>
 
 {{ with .Site.GetPage "08_zeitgeist" }}
 <div class="row invert py-4">
