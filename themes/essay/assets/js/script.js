@@ -107,5 +107,6 @@ document.addEventListener("DOMContentLoaded",function(){
       }
     ]
   });
-  AOS.init();
+  setTimeout(()=>{AOS.init();}, 500)
+
 });
