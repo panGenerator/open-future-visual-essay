@@ -1,8 +1,6 @@
 import { create } from './lottie-interactivity'
 import AOS from 'aos'
 
-AOS.init();
-
 document.addEventListener("DOMContentLoaded",function(){
 
   console.log('🤡')
@@ -109,5 +107,5 @@ document.addEventListener("DOMContentLoaded",function(){
       }
     ]
   });
-
+  AOS.init();
 });

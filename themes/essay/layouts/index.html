@@ -91,7 +91,7 @@
     <h2 id="platformsTitle" data-aos="fade-right">{{ .Title | markdownify}}</h2>
   </div>
   <div class="col-12 align-self-end gx-0">
-    <lottie-player id="sharingPlatforms" src="/animation/sharingPlatforms2.json" data-aos="fade-up" data-aos-anchor-placement="top-center"></lottie-player>
+    <lottie-player id="sharingPlatforms" src="/animation/sharing_platforms.json" data-aos="fade-up" data-aos-anchor-placement="top-center"></lottie-player>
   </div>
   <div class="col-10 col-xl-5 mx-auto offset-xl-1 me-xl-0">
     {{ index $both 0 | markdownify }}
@@ -344,43 +344,50 @@
     <h3 class="mx-auto d-none d-xl-block" data-aos="fade-up">{{ .Params.title_xl | markdownify }}</h3>
   </div>
   <div class="w-100"></div>
-  <div class="col-12 col-xl-6 bg-yellow huge-text text-center box">
-    <div data-aos="fade-down">1</div>
+
+  <div class="col-12 col-xl-6 bg-yellow huge-text box d-flex justify-content-center">
+    <div data-aos="fade-down" class="align-self-center text-center">1</div>
   </div>
-  <div class="col-12 col-xl-6 align-self-center">
-  <div class="col-10  my-5">
-    <h3 data-aos="fade-right">{{.Params.subtitle | markdownify }}</h3>
+  <div class="col-10 col-xl-6 align-self-top p-xl-5">
+    <div class="mt-5 mt-xl-0">
+      <h3 data-aos="fade-right" class="pb-5 d-xl-none">{{.Params.subtitle | markdownify }}</h3>
+      <h3 data-aos="fade-right" class="pb-5 d-none d-xl-block">{{.Params.subtitle_xl | markdownify }}</h3>
+      {{.Content}}
+    </div>
   </div>
-  <div class="col-10 mx-auto ">
-  {{.Content}}
-</div>
-</div>
 </div>
 {{ end }}
 
 {{ with .Site.GetPage "16_where2" }}
 <div class="row justify-content-center">
-  <div class="col-12 huge-text text-center invert mt-3 box">
-    <div data-aos="fade-down">2</div>
+
+  <div class="col-12 col-xl-6 invert box huge-text d-flex justify-content-center">
+    <div data-aos="fade-down" class="align-self-center text-center">2</div>
   </div>
-  <div class="col-10 align-self-center my-5">
-   <h3 data-aos="fade-right">{{.Params.subtitle | markdownify }}</h3>
+  <div class="col-10 col-xl-6 align-self-top p-xl-5">
+    <div class="mt-5 mt-xl-0">
+      <h3 data-aos="fade-right" class="pb-5 d-xl-none">{{.Params.subtitle | markdownify }}</h3>
+      <h3 data-aos="fade-right" class="pb-5 d-none d-xl-block">{{.Params.subtitle_xl | markdownify }}</h3>
+      {{.Content}}
+    </div>
   </div>
-  <div class="col-10 mx-auto">
-   {{.Content}}
-  </div>
+
 </div>
 {{ end }}
 
 {{ with .Site.GetPage "17_where3" }}
 <div class="row justify-content-center">
-  <div class="col-12 huge-text text-center bg-gray mt-3 box"><div data-aos="fade-down">3</div></div>
-  <div class="col-10 align-self-center my-5">
-  <h3 data-aos="fade-right">{{.Params.subtitle}}</h3>
+
+  <div class="col-12 col-xl-6 bg-gray box huge-text box d-flex justify-content-center">
+    <div data-aos="fade-down" class="align-self-center text-center">3</div>
   </div>
-  <div class="col-10 mx-auto">
-  {{.Content}}
-</div>
+  <div class="col-10 col-xl-6 align-self-top p-xl-5">
+    <div class="mt-5 mt-xl-0">
+      <h3 data-aos="fade-right" class="pb-5 d-xl-none">{{.Params.subtitle | markdownify }}</h3>
+      <h3 data-aos="fade-right" class="pb-5 d-none d-xl-block">{{.Params.subtitle_xl | markdownify }}</h3>
+      {{.Content}}
+    </div>
+  </div>
 </div>
 {{ end }}
 
@@ -400,12 +407,12 @@
   <div class="col-12 gx-0">
     <img src="/images/newsletter-sm-top.svg" class="w-100 img-fluid"/>
   </div>
-  <div class="col-12 gx-0 newsletter-cta p-5 text-center box">
+  <div class="col-12 col-xl-6 gx-0 newsletter-cta p-5 text-center box">
     <div data-aos="fade-up">
       keep up to date and<br/>subscribe to our newsletter
     </div>
   </div>
-  <div id="mc_embed_signup" class="col-12 gx-0">
+  <div id="mc_embed_signup" class="col-12 col-xl-6 gx-0">
     <form action="https://openfuture.us1.list-manage.com/subscribe/post?u=d7c6d2a743011f3253613888f&amp;id=ca8ac23ac4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
       <div id="mc_embed_signup_scroll">
         <div class="mc-field-group">
