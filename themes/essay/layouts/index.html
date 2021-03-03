@@ -4,7 +4,7 @@
   <header id="header" class="col-12">
     <div class="row">
       <h1 class="col-10 mx-auto">{{ .Site.Title }}</h1>
-      <div class="col-12 align-self-center mx-auto gx-0">
+      <div class="col-12 col-xl-8 align-self-center mx-auto gx-0">
         <lottie-player id="boxAnim" src="/animation/intro_box.json"></lottie-player>
       </div>
     </div>
@@ -12,66 +12,68 @@
   {{ with .Site.GetPage "01_intro" }}
 </div>
 <div class="row justify-content-center">
-  <div class="col-11 align-self-center mx-auto my-5">
-    <h2 data-aos="fade-right">{{ .Title }}</h2>
-    <h3 data-aos="fade-right">{{ .Params.subtitle | markdownify }}</h3>
-    <h3 data-aos="fade-right" class="mt-5">{{ .Params.subsubtitle | markdownify }}</h3>
-  </div>
-  <div class="col-10 mx-auto">
-    {{.Summary}}
+  <div class="col-11 col-xl-8 align-self-center mx-auto my-5">
+    <h2 data-aos="fade-right">{{ .Title | markdownify }}</h2>
+    <h3 data-aos="fade-right" class="mb-5">{{ .Params.subtitle | markdownify }}</h3>
+    <h3 class="d-xl-none" data-aos="fade-right" class="mt-5">{{ .Params.subsubtitle | markdownify }}</h3>
+    <h3 class="d-none d-xl-block" data-aos="fade-right" class="mt-5">{{ .Params.subsubtitle_xl | markdownify }}</h3>
   </div>
 </div>
 
-<div class="row justify-content-end">
-  <div class="col-12 align-self-end gx-0">
+<div class="row">
+  <div class="col-10 col-xl-5 offset-1">
+    {{.Summary}}
+  </div>
+  <div class="w-xl-100"></div>
+  <div class="col-12 col-md-10 col-xl-5 offset-md-1 order-xl-3 offset-xl-1 align-self-start gx-0">
     <lottie-player id="yochai" src="/animation/yochai1.json"></lottie-player>
   </div>
-</div>
-<div class="row justify-content-center">
-  <div class="col-9 quote mx-auto align-self-center">
-    <div class="content mx-auto text-center">
-      {{ .Params.quote }}
+  <div class="col-9 col-xl-5 offset-xl-6 order-xl-2 mx-auto align-self-center quote">
+    <div class="content mx-auto text-center text-xl-left" data-aos="fade-down">
+      {{ .Params.quote | markdownify }}
     </div>
-    <div class="author text-center mt-2 mb-5">{{.Params.quote_author }}</div>
+    <div class="author text-center mt-2 mb-5 text-xl-right" data-aos="fade-up">{{.Params.quote_author }}</div>
   </div>
-</div>
-<div class="row justify-content-center">
-  <div class="col-10 mx-auto">
+  <div class="col-10 col-xl-5 offset-1 order-last"> <!-- col-10 col-xl-6 mx-auto mx-xl-0 offset-xl-1 align-self-start order-last-->
     {{ $both := split .RawContent "<!--more-->" }}
     {{ index $both 1 | markdownify }}
   </div>
 </div>
 {{ end }}
-
+<div class="w-100"></div>
 {{ with .Site.GetPage "02_revolution" }}
 {{ $both := split .RawContent "<!--more-->" }}
 <div class="row justify-content-center">
   <div class="col-9 align-self-center mx-auto my-5">
-    <h3>{{ .Title | markdownify}}</h3>
+    <h3 data-aos="fade-right">{{ .Title | markdownify}}</h3>
   </div>
   <div class="col-10 mx-auto">
     {{ index $both 0 | markdownify }}
   </div>
   <div class="quote quote-small col-8 quote mx-auto mt-3 mb-5">
-    <div class="content text-center">{{ .Params.conditionsHeader | markdownify }}</div>
+    <div class="content text-center" data-aos="fade-up">{{ .Params.conditionsHeader | markdownify }}</div>
   </div>
   <div class="col-12 condition condition-one">
-    <h3 class="text-center">1</h3>
-    <div class="content mt-4">
-      {{ .Params.condition1 | markdownify}}
+    <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+      <h3 class="text-center">1</h3>
+      <div class="content mt-4 w-80 mx-auto">
+        {{ .Params.condition1 | markdownify}}
+      </div>
     </div>
   </div>
   <div class="col-12 condition condition-two">
-    <h3 class="text-center">2</h3>
-    <div class="content mt-4">
-      {{ .Params.condition2 | markdownify}}
+    <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+      <h3 class="text-center">2</h3>
+      <div class="content mt-4 w-80 mx-auto">
+        {{ .Params.condition2 | markdownify}}
+      </div>
     </div>
   </div>
   <div class="col-10 mt-5">
     {{ index $both 1 | markdownify }}
   </div>
   <div class="quote quote-small col-10 quote mx-auto mt-5 mb-5 text-center">
-    <div class="content">{{ .Params.summary | markdownify }}</div>
+    <div class="content" data-aos="fade-up">{{ .Params.summary | markdownify }}</div>
   </div>
 </div>
 {{ end }}
@@ -79,10 +81,10 @@
 {{ with .Site.GetPage "03_platforms" }}
 <div class="row">
   <div class="col-11 align-self-center mx-auto my-5">
-    <h2 id="platformsTitle">{{ .Title | markdownify}}</h2>
+    <h2 id="platformsTitle" data-aos="fade-right">{{ .Title | markdownify}}</h2>
   </div>
   <div class="col-12 align-self-end gx-0">
-    <lottie-player id="sharingPlatforms" src="/animation/sharingPlatforms2.json"></lottie-player>
+    <lottie-player id="sharingPlatforms" src="/animation/sharingPlatforms2.json" data-aos="fade-up" data-aos-anchor-placement="top-center"></lottie-player>
   </div>
   <div class="col-10 mx-auto">
     {{ .Content }}
@@ -94,7 +96,7 @@
 {{ $both := split .RawContent "<!--more-->" }}
 <div class="row">
   <div class="col-11 align-self-center mx-auto my-5">
-    <h3 id="modelsTitle">{{ .Title }}</h3>
+    <h3 id="modelsTitle" data-aos="fade-right">{{ .Title | markdownify }}</h3>
   </div>
   <div class="col-12 align-self-end gx-0">
     <lottie-player id="closedSharing" src="/animation/closed_sharing.json" loop="false"></lottie-player>
@@ -102,14 +104,14 @@
   <div class="col-10 mx-auto">
     {{ index $both 0 | markdownify }}
   </div>
-  <div class="col-12 align-self-end gx-0">
-    <lottie-player id="lessing" src="/animation/lessing.json"></lottie-player>
+  <div class="col-12 col-md-10 offset-md-1 align-self-end gx-0">
+    <lottie-player id="lessig" src="/animation/lessig.json"></lottie-player>
   </div>
   <div class="col-8 quote mx-auto">
-    <div class="content mx-auto align-self-center text-center">
+    <div class="content mx-auto align-self-center text-center" data-aos="fade-down">
       "{{ .Params.quote }}"
     </div>
-    <div class="author text-center mt-2 mb-5">{{.Params.quote_author }}</div>
+    <div class="author text-center mt-2 mb-5" data-aos="fade-up">{{.Params.quote_author }}</div>
   </div>
   <div class="col-10 mx-auto">
     {{ index $both 1 | markdownify }}
@@ -120,21 +122,23 @@
 {{ with .Site.GetPage "05_pockets" }}
 <div class="row">
   <div class="col-11 align-self-center mx-auto my-5">
-    <h3>{{ .Title }}</h3>
+    <h3 data-aos="fade-right">{{ .Title | markdownify }}</h3>
   </div>
   <div class="col-10 mx-auto">
     {{.Content}}
   </div>
   <div class="quote col-8 mx-auto mt-5 mb-1 text-left">
-    <div class="content">{{ .Params.quote | markdownify }}</div>
+    <div class="content" data-aos="fade-down">{{ .Params.quote | markdownify }}</div>
   </div>
 </div>
 {{ end }}
-<lottie-player id="platformFree" src="/animation/platform_free.json" loop autoplay></lottie-player>
+<div class="row">
+  <div class="col-12 col-md-10 offset-md-1 gx-0"><lottie-player id="platformFree" src="/animation/platform_free.json" loop autoplay data-aos="fade-up"></lottie-player></div>
+</div>
 {{ with .Site.GetPage "06_openness" }}
 <div class="row">
   <div class="col-11 align-self-center mx-auto mt-1 mb-5">
-    <h3>{{ .Title }}</h3>
+    <h3 data-aos="fade-right">{{ .Title | markdownify }}</h3>
   </div>
   <div class="col-10 mx-auto">
     {{.Content}}
@@ -145,19 +149,19 @@
 {{ with .Site.GetPage "07_power" }}
 <div class="row">
   <div class="col-11 align-self-center mx-auto my-5">
-    <h3>{{ .Title }}</h3>
+    <h3 data-aos="fade-right">{{ .Title | markdownify}}</h3>
   </div>
   <div class="col-10 mx-auto">
     {{.Content}}
   </div>
 </div>
 {{ end }}
-<lottie-player id="powerStructures" src="/animation/structures_of_power.json" loop autoplay></lottie-player>
+<lottie-player id="powerStructures" src="/animation/structures_of_power.json" loop autoplay data-aos="fade-up"></lottie-player>
 
 {{ with .Site.GetPage "08_zeitgeist" }}
-<div class="row invert py-4">
+<div class="row invert py-4" data-aos="fade" data-aos-anchor-placement="top-center">
   <div class="col-9 align-self-center mx-auto py-5">
-    <h3>{{ .Title | markdownify}}</h3>
+    <h3 >{{ .Title | markdownify}}</h3>
   </div>
   <div class="col-10 mx-auto pb-5">
     {{.Content}}
@@ -168,13 +172,13 @@
 {{ with .Site.GetPage "09_limits" }}
 <div class="row">
   <div class="col-9 align-self-center mx-auto py-5">
-    <h3>{{ .Title | markdownify}}</h3>
+    <h3 data-aos="fade-right">{{ .Title | markdownify }}</h3>
   </div>
   <div class="col-10 mx-auto">
     {{.Content}}
   </div>
   <div class="quote col-10 mx-auto mt-5 mb-5 text-left">
-    <div class="content">{{ .Params.quote | markdownify }}</div>
+    <div class="content" data-aos="fade-down">{{ .Params.quote | markdownify }}</div>
   </div>
 </div>
 {{ end }}
@@ -183,16 +187,22 @@
 {{ $both := split .RawContent "<!--more-->" }}
 <div class="row">
   <div class="col-10 align-self-center mx-auto py-5">
-    <h2>{{ .Title | markdownify}}</h2>
+    <h2 data-aos="fade-right">{{ .Title | markdownify}}</h2>
   </div>
   <div class="col-12 mx-auto yellow-box">
-    {{.Params.intro | markdownify}}
+    <div data-aos="fade-down" data-aos-anchor-placement="top-center">
+      {{.Params.intro | markdownify}}
+    </div>
   </div>
   <div class="col-12 mx-auto gray-box bolder">
-    {{ index $both 0 | markdownify }}
+    <div data-aos="fade-down" data-aos-anchor-placement="top-center">
+      {{ index $both 0 | markdownify }}
+    </div>
   </div>
-  <div class="col-12 mx-auto invert bolder">
-    {{ index $both 1 | markdownify }}
+  <div class="col-12 mx-auto invert bolder box">
+    <div data-aos="fade-down" data-aos-anchor-placement="top-center">
+      {{ index $both 1 | markdownify }}
+    </div>
   </div>
   <div class="col-11 mx-auto big-box py-4">
     {{.Params.outro | markdownify}}
@@ -203,7 +213,7 @@
 {{ with .Site.GetPage "11_movement" }}
 <div class="row">
   <div class="col-11 align-self-center mx-auto py-5">
-    <h3>{{ .Title | markdownify}}</h3>
+    <h3 data-aos="fade-right">{{ .Title | markdownify }}</h3>
   </div>
   <div class="col-10 mx-auto">
     {{.Content}}
@@ -211,11 +221,11 @@
 </div>
 {{ end }}
 
-<lottie-player id="newOpen" src="/animation/new_open.json" class="mx-auto" ></lottie-player>
+<lottie-player id="newOpen" src="/animation/new_open.json" class="mx-auto" data-aos="fade-up"></lottie-player>
 {{ with .Site.GetPage "12_new" }}
 <div class="row justify-content-center">
   <div class="col-8 align-self-center my-5">
-    <h3 class="mx-auto">{{ .Title | markdownify }}</h3>
+    <h3 class="mx-auto" data-aos="fade-right">{{ .Title | markdownify }}</h3>
   </div>
   <div class="col-10 mx-auto">
     {{.Content}}
@@ -227,7 +237,7 @@
 {{ with .Site.GetPage "13_understanding" }}
 <div class="row justify-content-center">
   <div class="col-10 align-self-center my-5">
-    <h3 class="mx-auto">{{ .Title | markdownify }}</h3>
+    <h3 class="mx-auto" data-aos="fade-right">{{ .Title | markdownify }}</h3>
   </div>
   <div class="col-10 mx-auto">
     {{.Content}}
@@ -235,7 +245,7 @@
 </div>
 {{ end }}
 
-<div class="row justify-content-center">
+<div class="row justify-content-center" data-aos="fade-up">
   <div class="col-2 align-self-center my-5 yellow-box box-small">
   </div>
 </div>
@@ -244,18 +254,18 @@
 {{ $both := split .RawContent "<!--more-->" }}
 <div class="row justify-content-center">
   <div class="col-10 align-self-center my-5">
-    <h2 class="mx-auto">{{ .Title | markdownify }}</h2>
+    <h2 class="mx-auto" data-aos="fade-right">{{ .Title | markdownify }}</h2>
   </div>
   <div class="col-10 align-self-center my-5">
-    <h3 class="mx-auto">{{ .Params.subtitle | markdownify }}</h3>
+    <h3 class="mx-auto" data-aos="fade-right">{{ .Params.subtitle | markdownify }}</h3>
   </div>
   <div class="col-10 mx-auto">
-    {{.Content}}
+    {{ index $both 0 | markdownify }}
   </div>
   <div class="col-12 gx-0">
-    <lottie-player id="euFlag" src="/animation/eu_flag.json"></lottie-player>
+    <lottie-player id="euFlag" src="/animation/eu_flag.json"  data-aos="fade"></lottie-player>
   </div>
-  <div class="quote col-8 mx-auto mt-5 mb-5 text-left">
+  <div class="quote col-8 mx-auto mt-5 mb-5 text-left" data-aos="fade-down">
     <div class="content">{{ index $both 1 | markdownify }}</div>
   </div>
 </div>
@@ -265,13 +275,13 @@
 {{ with .Site.GetPage "15_where1" }}
 <div class="row justify-content-center">
   <div class="col-10 align-self-center my-5">
-    <h3 class="mx-auto">{{ .Title | markdownify }}</h3>
+    <h3 class="mx-auto" data-aos="fade-up">{{ .Title | markdownify }}</h3>
   </div>
-  <div class="col-12 bg-yellow huge-text text-center">
-    1
+  <div class="col-12 bg-yellow huge-text text-center box">
+    <div data-aos="fade-down">1</div>
   </div>
   <div class="col-10 align-self-center my-5">
-    <h3>{{.Params.subtitle | markdownify }}</h3>
+    <h3 data-aos="fade-right">{{.Params.subtitle | markdownify }}</h3>
   </div>
   <div class="col-10 mx-auto ">
   {{.Content}}
@@ -281,11 +291,11 @@
 
 {{ with .Site.GetPage "16_where2" }}
 <div class="row justify-content-center">
-  <div class="col-12 huge-text text-center invert mt-3">
-    2
+  <div class="col-12 huge-text text-center invert mt-3 box">
+    <div data-aos="fade-down">2</div>
   </div>
   <div class="col-10 align-self-center my-5">
-   <h3>{{.Params.subtitle | markdownify }}</h3>
+   <h3 data-aos="fade-right">{{.Params.subtitle | markdownify }}</h3>
   </div>
   <div class="col-10 mx-auto">
    {{.Content}}
@@ -295,9 +305,9 @@
 
 {{ with .Site.GetPage "17_where3" }}
 <div class="row justify-content-center">
-  <div class="col-12 huge-text text-center bg-gray mt-3">3</div>
+  <div class="col-12 huge-text text-center bg-gray mt-3 box"><div data-aos="fade-down">3</div></div>
   <div class="col-10 align-self-center my-5">
-  <h3>{{.Params.subtitle}}</h3>
+  <h3 data-aos="fade-right">{{.Params.subtitle}}</h3>
   </div>
   <div class="col-10 mx-auto">
   {{.Content}}
@@ -305,14 +315,14 @@
 </div>
 {{ end }}
 
-<div class="row justify-content-center">
+<div class="row justify-content-center" data-aos="fade-up">
   <div class="col-2 align-self-center my-5 yellow-box box-small">
   </div>
 </div>
 
 {{ with .Site.GetPage "18_conclusion" }}
 <div class="row">
-  <div class="col-11 mx-auto big-box py-4">
+  <div class="col-11 mx-auto big-box py-4" data-aos="fade-down">
     {{ .Content }}
   </div>
 </div>
@@ -321,8 +331,10 @@
   <div class="col-12 gx-0">
     <img src="/images/newsletter-sm-top.svg" class="w-100 img-fluid"/>
   </div>
-  <div class="col-12 gx-0 newsletter-cta p-5 text-center">
-    keep up to date and<br/>subscribe to our newsletter
+  <div class="col-12 gx-0 newsletter-cta p-5 text-center box">
+    <div data-aos="fade-up">
+      keep up to date and<br/>subscribe to our newsletter
+    </div>
   </div>
   <div id="mc_embed_signup" class="col-12 gx-0">
     <form action="https://openfuture.us1.list-manage.com/subscribe/post?u=d7c6d2a743011f3253613888f&amp;id=ca8ac23ac4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>

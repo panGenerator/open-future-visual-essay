@@ -6,20 +6,12 @@ AOS.init();
 document.addEventListener("DOMContentLoaded",function(){
 
 console.log('🤡')
-//let closedSharing = document.getElementById("closedSharing").getLottie()
-
-//const { top, height } = document.getElementById("closedSharing").getBoundingClientRect();
-//console.log(closedSharing, top, height)
-//closedSharing.posY = top+800
 
 document.addEventListener("scroll", () => {
     let y = document.documentElement["scrollTop"] || document.body["scrollTop"];
     let height = (document.documentElement["scrollHeight"] || document.body["scrollHeight"]) - document.documentElement.clientHeight;
     let pos = y / height * 100 + "%";
-    //console.log(y)
-    // if(y > closedSharing.posY){
-    //   closedSharing.playSegments(28, true);
-    // }
+
     document.getElementById("progress_bar").style.setProperty("--scroll", pos);
   },
   { passive: true }
@@ -42,7 +34,7 @@ create({
   player:'#yochai',
   actions: [
     {
-      visibility: [0.0,0.5],
+      visibility: [0.3,0.5],
       type: "seek",
       frames: [0, 64]
     }
@@ -75,10 +67,10 @@ create({
 
 create({
   mode:"scroll",
-  player:'#lessing',
+  player:'#lessig',
   actions: [
     {
-      visibility: [0.0,0.5],
+      visibility: [0.3,0.5],
       type: "seek",
       frames: [0, 64]
     }
@@ -89,7 +81,7 @@ create({
   player:'#newOpen',
   actions: [
     {
-      visibility: [0.0,0.5],
+      visibility: [0.2,0.7],
       type: "seek",
       frames: [0, 64]
     }
@@ -100,7 +92,7 @@ create({
   player:'#euFlag',
   actions: [
     {
-      visibility: [0.0,0.5],
+      visibility: [0.3,0.5],
       type: "seek",
       frames: [0, 55]
     }

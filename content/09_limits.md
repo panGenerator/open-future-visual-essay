@@ -1,5 +1,5 @@
 ---
-title: "Limits of open as a principle fuelling social \n_action"
+title: "Limits of open as a principle fuelling social  \n_action"
 quote: "While Open works as a strategic (and narrative) approach in specific fields of application, it no longer provides a more general vision of a more just and egalitarian digital society."
 ---
 All of this points to the current limits of Open as a normative basis for a movement that aims to achieve social progress. While Open works as a strategic (and narrative) approach in specific fields of application, it no longer provides a more general vision of a more just and egalitarian digital society.  

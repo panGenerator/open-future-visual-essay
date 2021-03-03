@@ -1,5 +1,5 @@
 ---
-title: "Open does not account for structures of power"
+title: "Open does not account for structures of  \n_power"
 ---
 Put differently, under the conditions created by an information ecosystem dominated by a small number of platforms, open resources are most likely to contribute to the power of those with the best means to make use of them.  
 
