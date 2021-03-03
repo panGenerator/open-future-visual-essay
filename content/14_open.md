@@ -1,6 +1,7 @@
 ---
 title: "An Open  \n_Future"
-subtitle: "The paradox  \nof open \ncan be solved here,  \n_in Europe"
+subtitle: "The paradox  \nof open  \ncan be solved here,  \n_in Europe"
+subtitle_xl: "The paradox  \nof open can  \nbe solved here,  \n_in Europe"
 ---
 That is our core belief at Open Future: that Europe has a unique opportunity to restore some of the original promise of the internet. It is here that policymakers and key stakeholders have the ambition to build an internet for the people. One that can provide the basis for a more just and democratic society.  
 
