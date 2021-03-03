@@ -15,8 +15,11 @@
   <div class="col-11 col-xl-8 align-self-center mx-auto my-5">
     <h2 data-aos="fade-right">{{ .Title | markdownify }}</h2>
     <h3 data-aos="fade-right" class="mb-5">{{ .Params.subtitle | markdownify }}</h3>
-    <h3 class="d-xl-none" data-aos="fade-right" class="mt-5">{{ .Params.subsubtitle | markdownify }}</h3>
-    <h3 class="d-none d-xl-block" data-aos="fade-right" class="mt-5">{{ .Params.subsubtitle_xl | markdownify }}</h3>
+    <div class="quote col-10 mx-auto mt-5 text-left">
+      <div  class="content" data-aos="fade-down">
+        {{ .Params.subsubtitle | markdownify }}
+      </div>
+    </div>
   </div>
 </div>
 
@@ -43,17 +46,20 @@
 <div class="w-100"></div>
 {{ with .Site.GetPage "02_revolution" }}
 {{ $both := split .RawContent "<!--more-->" }}
-<div class="row justify-content-center">
-  <div class="col-9 align-self-center mx-auto my-5">
+<div class="row">
+  <div class="col-9 d-xl-none align-self-center mx-auto my-5">
     <h3 data-aos="fade-right">{{ .Title | markdownify}}</h3>
   </div>
-  <div class="col-10 mx-auto">
+  <div class="col-8 d-none d-xl-block align-self-center mx-auto my-5">
+    <h3 data-aos="fade-right" class="py-5">{{ .Params.title_xl | markdownify}}</h3>
+  </div>
+  <div class="col-10 col-xl-5 offset-1">
     {{ index $both 0 | markdownify }}
   </div>
-  <div class="quote quote-small col-8 quote mx-auto mt-3 mb-5">
-    <div class="content text-center" data-aos="fade-up">{{ .Params.conditionsHeader | markdownify }}</div>
+  <div class="quote quote-small col-8 col-xl-10 quote mx-auto mt-3 mb-5 mt-xl-5">
+    <div class="content text-center pb-xl-5" data-aos="fade-up">{{ .Params.conditionsHeader | markdownify }}</div>
   </div>
-  <div class="col-12 condition condition-one">
+  <div class="col-12 col-xl-6 condition condition-one">
     <div data-aos="fade-up" data-aos-anchor-placement="top-center">
       <h3 class="text-center">1</h3>
       <div class="content mt-4 w-80 mx-auto">
@@ -61,7 +67,7 @@
       </div>
     </div>
   </div>
-  <div class="col-12 condition condition-two">
+  <div class="col-12 col-xl-6 condition condition-two">
     <div data-aos="fade-up" data-aos-anchor-placement="top-center">
       <h3 class="text-center">2</h3>
       <div class="content mt-4 w-80 mx-auto">
@@ -69,7 +75,7 @@
       </div>
     </div>
   </div>
-  <div class="col-10 mt-5">
+  <div class="col-10 col-xl-5 offset-1 mt-5">
     {{ index $both 1 | markdownify }}
   </div>
   <div class="quote quote-small col-10 quote mx-auto mt-5 mb-5 text-center">
@@ -79,42 +85,62 @@
 {{ end }}
 
 {{ with .Site.GetPage "03_platforms" }}
+{{ $both := split .RawContent "<!--more-->" }}
 <div class="row">
-  <div class="col-11 align-self-center mx-auto my-5">
+  <div class="col-11 col-xl-7 align-self-center mx-auto my-5">
     <h2 id="platformsTitle" data-aos="fade-right">{{ .Title | markdownify}}</h2>
   </div>
   <div class="col-12 align-self-end gx-0">
     <lottie-player id="sharingPlatforms" src="/animation/sharingPlatforms2.json" data-aos="fade-up" data-aos-anchor-placement="top-center"></lottie-player>
   </div>
-  <div class="col-10 mx-auto">
-    {{ .Content }}
+  <div class="col-10 col-xl-5 mx-auto offset-xl-1 me-xl-0">
+    {{ index $both 0 | markdownify }}
+  </div>
+  <div class="col-10 col-xl-5 mx-auto">
+    {{ index $both 1 | markdownify }}
   </div>
 </div>
 {{ end }}
 
 {{ with .Site.GetPage "04_models" }}
 {{ $both := split .RawContent "<!--more-->" }}
-<div class="row">
-  <div class="col-11 align-self-center mx-auto my-5">
-    <h3 id="modelsTitle" data-aos="fade-right">{{ .Title | markdownify }}</h3>
+<div class="row mt-xl-3">
+  <div class="col-11 col-xl-8 align-self-center mx-auto my-5">
+    <h3 id="modelsTitle" data-aos="fade-right" class="d-xl-none">{{ .Title | markdownify }}</h3>
+    <h3 id="modelsTitle" data-aos="fade-right" class="d-none d-xl-block">{{ .Params.title_xl | markdownify }}</h3>
   </div>
   <div class="col-12 align-self-end gx-0">
     <lottie-player id="closedSharing" src="/animation/closed_sharing.json" loop="false"></lottie-player>
   </div>
-  <div class="col-10 mx-auto">
+</div>
+
+<div class="row">
+  <div class="col-10 col-xl-5 mx-auto offset-1 me-xl-0 ">
     {{ index $both 0 | markdownify }}
   </div>
-  <div class="col-12 col-md-10 offset-md-1 align-self-end gx-0">
+  <div class="col-10 col-xl-5 mx-auto pt-4 pt-xl-0">
+    {{ index $both 1 | markdownify }}
+  </div>
+</div>
+
+<div class="row justify-content-center">
+  <div class="col-12 col-md-10 col-xl-5 offset-md-1 align-self-end gx-0 order-xl-last">
     <lottie-player id="lessig" src="/animation/lessig.json"></lottie-player>
   </div>
-  <div class="col-8 quote mx-auto">
+  <div class="col-8 col-xl-5 quote mx-auto order-xl-first">
     <div class="content mx-auto align-self-center text-center" data-aos="fade-down">
       "{{ .Params.quote }}"
     </div>
     <div class="author text-center mt-2 mb-5" data-aos="fade-up">{{.Params.quote_author }}</div>
   </div>
-  <div class="col-10 mx-auto">
-    {{ index $both 1 | markdownify }}
+</div>
+  <div class="row">
+  <div class="col-10 col-xl-5 mx-auto">
+    {{ index $both 2 | markdownify }}
+  </div>
+
+  <div class="col-10 col-xl-5 mx-auto pt-4 pt-xl-0">
+    {{ index $both 3 | markdownify }}
   </div>
 </div>
 {{ end }}

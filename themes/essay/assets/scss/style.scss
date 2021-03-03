@@ -104,7 +104,7 @@ h3 {
 .quote-small {
   .content {
     font-family: 'Argesta', 'Helvetica', sans-serif;
-    font-size: 5vw; //1.5em;
+    font-size: calc(min(5vw, 1.6em)); //1.5em;
     line-height: 1em;
   }
 }
@@ -250,7 +250,7 @@ h3 {
 @include media-breakpoint-up(xl) {
   #header {
     #boxAnim {
-      margin-top: -20vw;
+      margin-top: -25em;
       display: block;
       top: 0;
       z-index: 1;
@@ -268,5 +268,21 @@ h3 {
   }
   .quote {
     font-size: 1.5em;
+  }
+  #sharingPlatforms {
+    z-index:1;
+    margin-top: -20em;
+    margin-bottom: -5em;
+    transform: scale(0.9);
+  }
+  #closedSharing {
+    // z-index:1;
+     margin-top: -12em;
+     //
+     transform: scale(0.9);
+   }
+   #lessig {
+    margin-top: -7em;
+    margin-bottom: -7em;
   }
 }
