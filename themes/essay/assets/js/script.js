@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded",function(){
     player:'#sharingPlatforms',
     actions: [
       {
-        visibility: [0.35,0.5],
+        visibility: [0.2,0.5],
         type: "seek",
         frames: [0, 28]
       }
