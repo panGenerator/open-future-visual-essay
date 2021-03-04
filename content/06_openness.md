@@ -1,6 +1,6 @@
 ---
-title: "Openness and  \n(platform)  \n_power"
-title_xl: "Openness and  \n_(platform) power"
+title: "Open and  \n(platform)  \n_power"
+title_xl: "Open and (platform)  \n_power"
 ---
 The concentration of power in the hands of a small number of information intermediaries negates one of the core assumptions of the open movement.  
 <!--more-->

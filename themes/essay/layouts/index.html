@@ -14,7 +14,6 @@
 <div class="row justify-content-center">
   <div class="col-11 col-xl-8 align-self-center mx-auto my-5">
     <h2 data-aos="fade-right">{{ .Title | markdownify }}</h2>
-    <h3 data-aos="fade-right" class="mb-5">{{ .Params.subtitle | markdownify }}</h3>
     <div class="quote col-10 mx-auto mt-5 text-left">
       <div  class="content" data-aos="fade-down">
         {{ .Params.subsubtitle | markdownify }}
@@ -167,8 +166,8 @@
 {{ $both := split .RawContent "<!--more-->" }}
 <div class="row">
   <div class="col-11 col-xl-8 align-self-center mx-auto mt-1 mb-5">
-    <h3 data-aos="fade-right" class="d-xl-none">{{ .Title | markdownify }}</h3>
-    <h3 data-aos="fade-right" class="d-none d-xl-block pb-3">{{ .Params.title_xl | markdownify }}</h3>
+    <h2 data-aos="fade-right" class="d-xl-none">{{ .Title | markdownify }}</h2>
+    <h2 data-aos="fade-right" class="d-none d-xl-block pb-3">{{ .Params.title_xl | markdownify }}</h2>
   </div>
   <div class="col-10 col-xl-5 offset-xl-1 me-xl-0 mx-auto">
     {{ index $both 0 | markdownify }}
@@ -214,14 +213,11 @@
 
 {{ with .Site.GetPage "09_limits" }}
 <div class="row">
-  <div class="col-9 align-self-center mx-auto py-5 mb-xl-4">
-    <h3 data-aos="fade-right">{{ .Title | markdownify }}</h3>
-  </div>
-  <div class="col-10 col-xl-5 offset-xl-1 me-xl-0 mx-auto">
-    {{.Content}}
-  </div>
-  <div class="quote col-10 mx-auto mt-5 mt-xl-0 mb-5 text-left col-xl-5 mb-xl-5 pb-xl-5">
+  <div class="quote col-10 mx-auto mt-5 me-xl-0 offset-xl-1 mt-xl-0 mb-5 text-left col-xl-5 mb-xl-5 pb-xl-5">
     <div class="content" data-aos="fade-down">{{ .Params.quote | markdownify }}</div>
+  </div>
+  <div class="col-10 col-xl-5 mx-auto">
+    {{.Content}}
   </div>
 </div>
 {{ end }}
@@ -232,7 +228,7 @@
   <div class="col-10 align-self-center mx-auto py-5">
     <h2 data-aos="fade-right">{{ .Title | markdownify}}</h2>
   </div>
-  <div class="col-12 mx-auto yellow-box">
+  <div class="col-12 mx-auto yellow-box"> <!--TODO: margins on mobile -->
     <div class="w-80 mx-auto" data-aos="fade-down" data-aos-anchor-placement="top-center">
       {{.Params.intro | markdownify}}
     </div>
@@ -391,11 +387,6 @@
 </div>
 {{ end }}
 
-<div class="row justify-content-center mt-xl-5" data-aos="fade-up">
-  <div class="col-2 align-self-center my-5 yellow-box box-small">
-  </div>
-</div>
-
 {{ with .Site.GetPage "18_conclusion" }}
 <div class="row">
   <div class="col-11 mx-auto big-box py-4" data-aos="fade-down">
@@ -403,6 +394,12 @@
   </div>
 </div>
 {{ end }}
+
+<div class="row justify-content-center mt-xl-5" data-aos="fade-up">
+  <div class="col-2 align-self-center my-5 yellow-box box-small">
+  </div>
+</div>
+
 <div class="row mt-xl-5">
   <div class="col-12 gx-0">
     <img src="/images/newsletter-sm-top.svg" class="w-100 img-fluid"/>
@@ -412,6 +409,7 @@
       keep up to date and<br/>subscribe to our newsletter
     </div>
   </div>
+  <!-- TODO: make it look better -->
   <div id="mc_embed_signup" class="col-12 col-xl-6 gx-0">
     <form action="https://openfuture.us1.list-manage.com/subscribe/post?u=d7c6d2a743011f3253613888f&amp;id=ca8ac23ac4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
       <div id="mc_embed_signup_scroll">

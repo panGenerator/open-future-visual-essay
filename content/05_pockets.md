@@ -1,6 +1,6 @@
 ---
-title: "Pockets of platform-free online  \n_environments"
-title_xl: "Pockets of  \nplatform-free  \n_online environments"
+title: "Pockets of platform-free  \n_space"
+title_xl: "Pockets of  \n_platform-free space"
 quote: "It is slowly time to admit that a multitude of small victories is not enough in face of the monopolistic power"
 ---
 There is still significant value in open, but only in those content ecosystems that have not yet been dominated by online platforms — the way the mainstream cultural and information landscape has been. These are largely professional and institutional environments.  

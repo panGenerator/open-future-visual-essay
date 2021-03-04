@@ -1,6 +1,6 @@
 ---
-title: "As a movement, we are often stuck in old ways of thinking  \n_about open"
-title_xl: "As a movement,  \nwe are often  \nstuck in old ways  \nof thinking  \n_about open"
+title: "Stuck in old ways of thinking about  \n_open"
+title_xl: "Stuck in old ways of thinking about  \n_open"
 ---
 The deeply ingrained focus on combating existing practices of exclusive control of  information resources has made us blind to the emergence of platform intermediaries, and to the risks that they pose for the networked information ecosystem..  
 

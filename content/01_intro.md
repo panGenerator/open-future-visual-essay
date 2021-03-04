@@ -1,7 +1,6 @@
 ---
 title: "An Open Movement"
-subtitle: "to Leverage  \nthe Promise of  \n_the Internet"
-subsubtitle: "At the beginning of the XXI century, the internet gave birth to the open movement"
+subsubtitle: "At the beginning of the twenty-first century, the internet gave birth to the open movement."
 quote: "commons based  \npeer production"
 quote_author: "Yochai Benkler"
 ---
