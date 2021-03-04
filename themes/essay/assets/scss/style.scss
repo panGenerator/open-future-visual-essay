@@ -140,6 +140,7 @@ h3 {
   margin-top: -25vw;
   margin-bottom: 10vw;
   transform: scale(1.5);
+  -webkit-transform: scale(1.5, 1.5);
 }
 // #modelsTitle{
 //   position: relative;
@@ -158,6 +159,7 @@ h3 {
   margin-top: 30vw;
   margin-bottom: 30vw;
   transform: scale(1.5);
+  -webkit-transform: scale(1.5, 1.5);
   //width: 150vw;
 }
 .invert {
@@ -288,12 +290,14 @@ h3 {
     margin-top: -20em;
     margin-bottom: -5em;
     transform: scale(0.9);
+    -webkit-transform: scale(0.9, 0.9);
   }
   #closedSharing {
     // z-index:1;
      margin-top: -12em;
      //
      transform: scale(0.9);
+     -webkit-transform: scale(0.9, 0.9);
    }
    #lessig {
     margin-top: -9em;
@@ -303,6 +307,7 @@ h3 {
     margin-top: 4em;
     margin-bottom: 4em;
     transform: scale(1.1);
+    -webkit-transform: scale(1.1, 1.1);
     //width: 150vw;
   }
   #euFlagXL{
