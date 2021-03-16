@@ -232,7 +232,7 @@ h3 {
   z-index: 100;
 }
 .credits {
-  font-size: 0.19em;
+  font-size: 0.22em;
   line-height:1.2em;
   font-family: 'ArgestaItalic', 'Helvetica', sans-serif;
   color: #666666;
@@ -258,6 +258,14 @@ h3 {
 }
 
 @include media-breakpoint-up(xl) {
+  .credits {
+    font-size: 0.19em;
+    line-height:1.2em;
+    font-family: 'ArgestaItalic', 'Helvetica', sans-serif;
+    color: #666666;
+    width: 30%;
+    float:right;
+  }
   #header {
     #boxAnim {
       margin-top: -25em;
