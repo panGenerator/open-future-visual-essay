@@ -3,7 +3,9 @@
 <div class="row">
   <header id="header" class="col-12">
     <div class="row">
-      <h1 class="col-10 mx-auto">{{ .Site.Title }}</h1>
+      <h1 class="col-10 mx-auto">{{ .Site.Title }}
+        <div class="credits mt-4">{{ .Site.Params.Credits | markdownify }}</div>
+      </h1>
       <div class="col-12 col-xl-8 align-self-center mx-auto gx-0">
         <lottie-player id="boxAnim" src="/animation/intro_box.json"></lottie-player>
       </div>

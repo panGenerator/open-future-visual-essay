@@ -231,7 +231,14 @@ h3 {
   left: 0;
   z-index: 100;
 }
-
+.credits {
+  font-size: 0.19em;
+  line-height:1.2em;
+  font-family: 'ArgestaItalic', 'Helvetica', sans-serif;
+  color: #666666;
+  width: 30%;
+  float:right;
+}
 @include media-breakpoint-up(md) {
   body {
     font-size: 21px;
