@@ -1,5 +1,6 @@
 ---
-title: "An Open Movement"
+title: "The Paradox _of Open"
+subtitle: "An Open Movement"
 subsubtitle: "At the beginning of the twenty-first century, the internet gave birth to the open movement."
 quote: "commons based  \npeer production"
 quote_author: "Yochai Benkler"
