@@ -18,9 +18,10 @@ body {
   color: $primary;
   overscroll-behavior: none;
 }
-.logo {
+svg#logo {
   position: relative;
   z-index:100;
+  width: 70%;
 }
 .btn {
   font-family: 'Chaney', 'Helvetica', sans-serif;
@@ -257,6 +258,9 @@ h3 {
       top: 0;
       z-index: 1;
     }
+  }
+  svg#logo{
+    width: 90%;
   }
   #yochai {
     margin-top: -200px;
