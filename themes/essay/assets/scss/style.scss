@@ -4,7 +4,7 @@ $primary: #000;
 $secondary: #6D6E70;
 $enable-rounded: false;
 $enable-negative-margins: true;
-$font-family-sans-serif: 'Argesta', 'Helvetica', sans-serif;
+$font-family-sans-serif: 'PT Serif', 'Helvetica', sans-serif;
 
 @import 'aos/dist/aos';
 @import 'animations';
@@ -93,7 +93,8 @@ h3 {
 .quote {
   .content {
     display:block;
-    font-family: 'ArgestaItalic', 'Helvetica', sans-serif;
+    font-family: 'PT Serif', 'Helvetica', sans-serif;
+    font-style: italic;
     font-size: 1.8em;
     line-height: 1em;
   }
@@ -104,7 +105,7 @@ h3 {
 }
 .quote-small {
   .content {
-    font-family: 'Argesta', 'Helvetica', sans-serif;
+    font-family: 'PT Serif', 'Helvetica', sans-serif;
     font-size: calc(min(5vw, 1.4em)); //1.5em;
     line-height: 1em;
   }
@@ -175,7 +176,8 @@ h3 {
 }
 .yellow-box{
   background: $yellow;
-  font-family: 'ArgestaItalic', 'Helvetica', sans-serif;
+  font-family: 'PT Serif', 'Helvetica', sans-serif;
+  font-style: italic;
   font-size: 2em;
   line-height: 1em;
   padding: 3em 2em;
@@ -206,7 +208,8 @@ h3 {
 }
 .newsletter-cta {
   background: #666666;
-  font-family: 'ArgestaItalic', 'Helvetica', sans-serif;
+  font-family: 'PT Serif', 'Helvetica', sans-serif;
+  font-style: italic;
   color: #fff;
   font-size: 1.5em;
   line-height: 1.2em;
@@ -234,7 +237,8 @@ h3 {
 .credits {
   font-size: 0.22em;
   line-height:1.2em;
-  font-family: 'ArgestaItalic', 'Helvetica', sans-serif;
+  font-family: 'PT Serif', 'Helvetica', sans-serif;
+  font-style: italic;
   color: #666666;
   width: 30%;
   float:right;
@@ -261,7 +265,8 @@ h3 {
   .credits {
     font-size: 0.19em;
     line-height:1.2em;
-    font-family: 'ArgestaItalic', 'Helvetica', sans-serif;
+    font-family: 'PT Serif', 'Helvetica', sans-serif;
+    font-style: italic;
     color: #666666;
     width: 30%;
     float:right;
@@ -292,7 +297,8 @@ h3 {
   }
   .yellow-box{
     background: $yellow;
-    font-family: 'ArgestaItalic', 'Helvetica', sans-serif;
+    font-family: 'PT Serif', 'Helvetica', sans-serif;
+    font-style: italic;
     font-size: 2em;
     line-height: 1em;
     padding: 4em 3em;
@@ -336,4 +342,17 @@ h3 {
   .yellow-hr {
     padding: 1em 2.7em;
   }
+}
+.responses {
+
+  // margin-bottom: 150px;
+  //margin-right: 50px;
+  //z-index: 1000;
+  //font-size: 2rem;
+}
+
+.btn.bg-yellow{
+ &:hover {
+    color: #fff;
+ }
 }

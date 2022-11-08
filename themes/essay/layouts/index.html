@@ -29,6 +29,14 @@
   <div class="col-10 col-xl-5 offset-1">
     {{.Summary}}
   </div>
+  <div class="col-10 col-xl-5 offset-1 text-center mt-3 align-self-center" style="z-index: 1000;">
+    <div class="quote w-50 text-sm text-center mx-auto">
+      <span class="content pb-3" style="font-size:1.5rem; line-height:1.2rem;">
+        See what others think about our essay
+      </span>
+    </div>
+    <a hfef="todo" class="btn bg-yellow">Read Responses</a>
+  </div>
   <div class="w-xl-100"></div>
   <div class="col-12 col-md-10 col-xl-5 offset-md-1 order-xl-3 offset-xl-1 align-self-start gx-0">
     <lottie-player id="yochai" src="/animation/yochai1.json"></lottie-player>
@@ -80,7 +88,7 @@
   <div class="col-10 col-xl-5 offset-1 mt-5">
     {{ index $both 1 | markdownify }}
   </div>
-  <div class="quote quote-small col-10 quote mx-auto mt-5 mb-5 text-center">
+  <div class="quote quote-small col-10 mx-auto mt-5 mb-5 text-center">
     <div class="content" data-aos="fade-up">{{ .Params.summary | markdownify }}</div>
   </div>
 </div>
