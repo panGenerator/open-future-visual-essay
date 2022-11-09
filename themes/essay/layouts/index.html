@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{- partial "progress.html" . -}}
-{{ with .Site.GetPage "01_intro" }}
+{{ with .Site.GetPage "home/01_intro" }}
 <div class="row">
   <header id="header" class="col-12">
     <div class="row">
@@ -61,7 +61,7 @@
 </div>
 {{ end }}
 <div class="w-100"></div>
-{{ with .Site.GetPage "02_revolution" }}
+{{ with .Site.GetPage "home/02_revolution" }}
 {{ $both := split .RawContent "<!--more-->" }}
 <div class="row">
   <div class="col-9 d-xl-none align-self-center mx-auto my-5">
@@ -101,7 +101,7 @@
 </div>
 {{ end }}
 
-{{ with .Site.GetPage "03_platforms" }}
+{{ with .Site.GetPage "home/03_platforms" }}
 {{ $both := split .RawContent "<!--more-->" }}
 <div class="row">
   <div class="col-11 col-xl-7 align-self-center mx-auto my-5">
@@ -119,7 +119,7 @@
 </div>
 {{ end }}
 
-{{ with .Site.GetPage "04_models" }}
+{{ with .Site.GetPage "home/04_models" }}
 {{ $both := split .RawContent "<!--more-->" }}
 <div class="row mt-xl-3">
   <div class="col-11 col-xl-8 align-self-center mx-auto my-5">
@@ -162,7 +162,7 @@
 </div>
 {{ end }}
 
-{{ with .Site.GetPage "05_pockets" }}
+{{ with .Site.GetPage "home/05_pockets" }}
 <div class="row">
   <div class="col-11 col-xl-10 align-self-center mx-auto my-5">
     <h3 data-aos="fade-right" class="d-xl-none">{{ .Title | markdownify }}</h3>
@@ -180,7 +180,7 @@
 <div class="row">
   <div class="col-12 col-md-10 offset-md-1 gx-0 d-xl-none"><lottie-player id="platformFree" src="/animation/platform_free.json" loop autoplay data-aos="fade-up"></lottie-player></div>
 </div>
-{{ with .Site.GetPage "06_openness" }}
+{{ with .Site.GetPage "home/06_openness" }}
 {{ $both := split .RawContent "<!--more-->" }}
 <div class="row">
   <div class="col-11 col-xl-8 align-self-center mx-auto mt-1 mb-5">
@@ -196,7 +196,7 @@
 </div>
 {{ end }}
 
-{{ with .Site.GetPage "07_power" }}
+{{ with .Site.GetPage "home/07_power" }}
 {{ $both := split .RawContent "<!--more-->" }}
 <div class="row">
   <div class="col-11 col-xl-6 align-self-center mx-auto my-5">
@@ -214,7 +214,7 @@
 {{ end }}
 <lottie-player id="powerStructures" src="/animation/structures_of_power.json" loop autoplay data-aos="fade-up"></lottie-player>
 
-{{ with .Site.GetPage "08_zeitgeist" }}
+{{ with .Site.GetPage "home/08_zeitgeist" }}
 {{ $both := split .RawContent "<!--more-->" }}
 <div class="row invert py-4 mb-xl-5" data-aos="fade" data-aos-anchor-placement="top-center">
   <div class="col-9 align-self-center mx-auto py-5">
@@ -229,7 +229,7 @@
 </div>
 {{ end }}
 
-{{ with .Site.GetPage "09_limits" }}
+{{ with .Site.GetPage "home/09_limits" }}
 <div class="row">
   <div class="quote col-10 mx-auto mt-5 me-xl-0 offset-xl-1 mt-xl-0 mb-5 text-left col-xl-5 mb-xl-5 pb-xl-5">
     <div class="content" data-aos="fade-down">{{ .Params.quote | markdownify }}</div>
@@ -240,7 +240,7 @@
 </div>
 {{ end }}
 
-{{ with .Site.GetPage "10_paradox" }}
+{{ with .Site.GetPage "home/10_paradox" }}
 {{ $both := split .RawContent "<!--more-->" }}
 <div class="row">
   <div class="col-10 align-self-center mx-auto py-5">
@@ -267,7 +267,7 @@
 </div>
 {{ end }}
 
-{{ with .Site.GetPage "11_movement" }}
+{{ with .Site.GetPage "home/11_movement" }}
 {{ $both := split .RawContent "<!--more-->" }}
 <div class="row">
   <div class="col-11 col-xl-7 align-self-center mx-auto py-5 my-xl-4">
@@ -285,7 +285,7 @@
 {{ end }}
 
 <lottie-player id="newOpen" src="/animation/new_open.json" class="mx-auto" data-aos="fade-up"></lottie-player>
-{{ with .Site.GetPage "12_new" }}
+{{ with .Site.GetPage "home/12_new" }}
 {{ $both := split .RawContent "<!--more-->" }}
 <div class="row justify-content-center">
   <div class="col-8 col-xl-4 align-self-center my-5">
@@ -303,7 +303,7 @@
 {{ end }}
 
 
-{{ with .Site.GetPage "13_understanding" }}
+{{ with .Site.GetPage "home/13_understanding" }}
 {{ $both := split .RawContent "<!--more-->" }}
 <div class="row justify-content-center">
   <div class="col-10 col-xl-6 align-self-center my-5">
@@ -325,7 +325,7 @@
   </div>
 </div>
 
-{{ with .Site.GetPage "14_open" }}
+{{ with .Site.GetPage "home/14_open" }}
 {{ $both := split .RawContent "<!--more-->" }}
 <div class="row">
   <div class="col-10 col-xl-6 align-self-center my-5 mx-auto">
@@ -351,7 +351,7 @@
 {{ end }}
 
 
-{{ with .Site.GetPage "15_where1" }}
+{{ with .Site.GetPage "home/15_where1" }}
 <div class="row justify-content-center">
   <div class="col-10 col-xl-6 align-self-center my-5">
     <h3 class="mx-auto d-xl-none" data-aos="fade-up">{{ .Title | markdownify }}</h3>
@@ -372,7 +372,7 @@
 </div>
 {{ end }}
 
-{{ with .Site.GetPage "16_where2" }}
+{{ with .Site.GetPage "home/16_where2" }}
 <div class="row justify-content-center">
 
   <div class="col-12 col-xl-6 invert box huge-text d-flex justify-content-center">
@@ -389,7 +389,7 @@
 </div>
 {{ end }}
 
-{{ with .Site.GetPage "17_where3" }}
+{{ with .Site.GetPage "home/17_where3" }}
 <div class="row justify-content-center">
 
   <div class="col-12 col-xl-6 bg-gray box huge-text box d-flex justify-content-center">
@@ -405,7 +405,7 @@
 </div>
 {{ end }}
 
-{{ with .Site.GetPage "18_conclusion" }}
+{{ with .Site.GetPage "home/18_conclusion" }}
 <div class="row">
   <div class="col-11 mx-auto big-box py-4" data-aos="fade-down">
     {{ .Content }}
