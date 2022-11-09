@@ -258,7 +258,9 @@ h3 {
 
 .fixedBar {
   width: 100%;
+  font-size: 21px;
 }
+
 @include media-breakpoint-up(sm) {
   .fixedBar {
     max-width: 500px;
