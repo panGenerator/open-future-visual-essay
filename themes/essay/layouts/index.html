@@ -13,6 +13,21 @@
     </div>
   </header>
 
+  <!-- Fixed bar -->
+  <div class="bg-white bottom-0 start-50 translate-middle-x position-fixed d-flex p-4 flex-row align-items-center justify-content-between fixedBar shadow" style="z-index: 1000;">
+
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" style="width:24px; height:24px"
+    onclick="this.parentNode.classList.add('d-none');">
+      <path stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+    <div class="quote text-sm text-end">
+      <span class="content" style="font-size:0.8em; line-height:1em;">
+        See what others think<br/> about our essay
+      </span>
+    </div>
+    <a href="#" class="btn bg-yellow" style="font-size:0.8em;">Read Responses</a>
+  </div>
+
 </div>
 <div class="row justify-content-center">
   <div class="col-11 col-xl-8 align-self-center mx-auto my-5">
@@ -28,14 +43,6 @@
 <div class="row">
   <div class="col-10 col-xl-5 offset-1">
     {{.Summary}}
-  </div>
-  <div class="col-10 col-xl-5 offset-1 text-center mt-3 align-self-center" style="z-index: 1000;">
-    <div class="quote w-50 text-sm text-center mx-auto">
-      <span class="content pb-3" style="font-size:1.5rem; line-height:1.2rem;">
-        See what others think about our essay
-      </span>
-    </div>
-    <a href="#" class="btn bg-yellow">Read Responses</a>
   </div>
   <div class="w-xl-100"></div>
   <div class="col-12 col-md-10 col-xl-5 offset-md-1 order-xl-3 offset-xl-1 align-self-start gx-0">

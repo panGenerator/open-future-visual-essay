@@ -1,10 +1,12 @@
 $font-size-root: 16px;
 $yellow: #FFF100;
+$black: #000;
 $primary: #000;
 $secondary: #6D6E70;
 $enable-rounded: false;
 $enable-negative-margins: true;
 $font-family-sans-serif: 'PT Serif', 'Helvetica', sans-serif;
+$box-shadow: 0 0 1rem rgba($black, .15);
 
 @import 'aos/dist/aos';
 @import 'animations';
@@ -174,6 +176,10 @@ h3 {
 .bg-gray {
   background: #B2B2B2;
 }
+.bg-white {
+  background: #fff;
+}
+
 .yellow-box{
   background: $yellow;
   font-family: 'PT Serif', 'Helvetica', sans-serif;
@@ -243,6 +249,24 @@ h3 {
   width: 30%;
   float:right;
 }
+
+.btn.bg-yellow{
+  &:hover {
+    color: #fff;
+  }
+}
+
+.fixedBar {
+  width: 100%;
+}
+@include media-breakpoint-up(sm) {
+  .fixedBar {
+    max-width: 500px;
+    font-size: 21px;
+    margin-bottom: 40px;
+  }
+}
+
 @include media-breakpoint-up(md) {
   body {
     font-size: 21px;
@@ -259,6 +283,8 @@ h3 {
     margin-top: -35vw;
     margin-bottom: -35vw;
   }
+
+
 }
 
 @include media-breakpoint-up(xl) {
@@ -342,17 +368,4 @@ h3 {
   .yellow-hr {
     padding: 1em 2.7em;
   }
-}
-.responses {
-
-  // margin-bottom: 150px;
-  //margin-right: 50px;
-  //z-index: 1000;
-  //font-size: 2rem;
-}
-
-.btn.bg-yellow{
- &:hover {
-    color: #fff;
- }
 }
