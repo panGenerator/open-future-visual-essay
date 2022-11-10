@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="462.2" height="421.38" viewBox="0 0 462.2 421.38">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: .48;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22, .cls-23, .cls-24, .cls-25, .cls-26, .cls-27, .cls-28, .cls-29, .cls-30, .cls-31, .cls-32, .cls-33, .cls-34, .cls-35, .cls-36, .cls-37, .cls-38, .cls-39, .cls-40, .cls-41, .cls-42, .cls-43, .cls-44, .cls-45, .cls-46, .cls-47, .cls-48, .cls-49, .cls-50, .cls-51, .cls-52, .cls-53, .cls-54, .cls-55, .cls-56, .cls-57, .cls-58, .cls-59, .cls-60, .cls-61, .cls-62, .cls-63, .cls-64, .cls-65, .cls-66, .cls-67, .cls-68, .cls-69, .cls-70, .cls-71, .cls-72, .cls-73, .cls-74, .cls-75, .cls-76, .cls-77, .cls-78, .cls-79, .cls-80, .cls-81, .cls-82, .cls-83, .cls-84, .cls-85, .cls-86, .cls-87, .cls-88, .cls-89, .cls-90, .cls-91, .cls-92, .cls-93, .cls-94, .cls-95, .cls-96, .cls-97, .cls-98, .cls-99, .cls-100, .cls-101, .cls-102 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: .19px;
+      }
+
+      .cls-2 {
+        opacity: .07;
+      }
+
+      .cls-3 {
+        opacity: .16;
+      }
+
+      .cls-4 {
+        opacity: .45;
+      }
+
+      .cls-5 {
+        opacity: .69;
+      }
+
+      .cls-6 {
+        opacity: .13;
+      }
+
+      .cls-7 {
+        opacity: .39;
+      }
+
+      .cls-8 {
+        opacity: .41;
+      }
+
+      .cls-9 {
+        opacity: .46;
+      }
+
+      .cls-103 {
+        fill: #333;
+      }
+
+      .cls-104 {
+        fill: #1a1a1a;
+      }
+
+      .cls-10 {
+        opacity: .37;
+      }
+
+      .cls-11 {
+        opacity: .56;
+      }
+
+      .cls-12 {
+        opacity: .38;
+      }
+
+      .cls-13 {
+        opacity: .67;
+      }
+
+      .cls-14 {
+        opacity: .22;
+      }
+
+      .cls-15 {
+        opacity: .33;
+      }
+
+      .cls-16 {
+        opacity: .65;
+      }
+
+      .cls-17 {
+        opacity: .3;
+      }
+
+      .cls-18 {
+        opacity: .15;
+      }
+
+      .cls-19 {
+        opacity: .45;
+      }
+
+      .cls-20 {
+        opacity: .44;
+      }
+
+      .cls-21 {
+        opacity: .04;
+      }
+
+      .cls-22 {
+        opacity: .07;
+      }
+
+      .cls-23 {
+        opacity: .5;
+      }
+
+      .cls-24 {
+        opacity: .39;
+      }
+
+      .cls-25 {
+        opacity: .11;
+      }
+
+      .cls-26 {
+        opacity: .74;
+      }
+
+      .cls-27 {
+        opacity: .61;
+      }
+
+      .cls-28 {
+        opacity: 0;
+      }
+
+      .cls-29 {
+        opacity: .09;
+      }
+
+      .cls-30 {
+        opacity: .08;
+      }
+
+      .cls-31 {
+        opacity: .06;
+      }
+
+      .cls-32 {
+        opacity: .55;
+      }
+
+      .cls-33 {
+        opacity: .59;
+      }
+
+      .cls-34 {
+        opacity: .2;
+      }
+
+      .cls-35 {
+        opacity: .4;
+      }
+
+      .cls-36 {
+        opacity: .53;
+      }
+
+      .cls-37 {
+        opacity: .73;
+      }
+
+      .cls-38 {
+        opacity: .52;
+      }
+
+      .cls-39 {
+        opacity: .71;
+      }
+
+      .cls-40 {
+        opacity: .02;
+      }
+
+      .cls-41 {
+        opacity: .34;
+      }
+
+      .cls-42 {
+        opacity: .75;
+      }
+
+      .cls-43 {
+        opacity: .13;
+      }
+
+      .cls-44 {
+        opacity: .68;
+      }
+
+      .cls-45 {
+        opacity: .29;
+      }
+
+      .cls-46 {
+        opacity: .43;
+      }
+
+      .cls-47 {
+        opacity: .62;
+      }
+
+      .cls-48 {
+        opacity: .24;
+      }
+
+      .cls-49 {
+        opacity: .17;
+      }
+
+      .cls-50 {
+        opacity: .27;
+      }
+
+      .cls-51 {
+        opacity: .14;
+      }
+
+      .cls-52 {
+        opacity: .59;
+      }
+
+      .cls-53 {
+        opacity: .49;
+      }
+
+      .cls-54 {
+        opacity: .19;
+      }
+
+      .cls-55 {
+        opacity: .36;
+      }
+
+      .cls-56 {
+        opacity: .68;
+      }
+
+      .cls-57 {
+        opacity: .12;
+      }
+
+      .cls-58 {
+        opacity: .64;
+      }
+
+      .cls-59 {
+        opacity: .31;
+      }
+
+      .cls-60 {
+        opacity: .1;
+      }
+
+      .cls-61 {
+        opacity: .25;
+      }
+
+      .cls-62 {
+        opacity: .71;
+      }
+
+      .cls-63 {
+        opacity: .28;
+      }
+
+      .cls-64 {
+        opacity: .3;
+      }
+
+      .cls-65 {
+        opacity: .23;
+      }
+
+      .cls-66 {
+        opacity: .74;
+      }
+
+      .cls-67 {
+        opacity: .1;
+      }
+
+      .cls-68 {
+        opacity: .01;
+      }
+
+      .cls-69 {
+        opacity: .6;
+      }
+
+      .cls-70 {
+        opacity: 0;
+      }
+
+      .cls-71 {
+        opacity: .62;
+      }
+
+      .cls-72 {
+        opacity: .04;
+      }
+
+      .cls-73 {
+        opacity: .53;
+      }
+
+      .cls-74 {
+        opacity: .22;
+      }
+
+      .cls-75 {
+        opacity: .05;
+      }
+
+      .cls-76 {
+        opacity: .03;
+      }
+
+      .cls-77 {
+        opacity: .66;
+      }
+
+      .cls-78 {
+        opacity: .48;
+      }
+
+      .cls-79 {
+        opacity: .42;
+      }
+
+      .cls-80 {
+        opacity: .5;
+      }
+
+      .cls-81 {
+        opacity: .72;
+      }
+
+      .cls-82 {
+        opacity: .36;
+      }
+
+      .cls-83 {
+        opacity: .7;
+      }
+
+      .cls-84 {
+        opacity: .42;
+      }
+
+      .cls-85 {
+        opacity: .63;
+      }
+
+      .cls-86 {
+        opacity: .33;
+      }
+
+      .cls-87 {
+        opacity: .25;
+      }
+
+      .cls-88 {
+        opacity: .65;
+      }
+
+      .cls-89 {
+        opacity: .54;
+      }
+
+      .cls-90 {
+        opacity: .27;
+      }
+
+      .cls-91 {
+        opacity: .47;
+      }
+
+      .cls-92 {
+        opacity: .35;
+      }
+
+      .cls-93 {
+        opacity: .19;
+      }
+
+      .cls-94 {
+        opacity: .51;
+      }
+
+      .cls-95 {
+        opacity: .56;
+      }
+
+      .cls-96 {
+        opacity: .26;
+      }
+
+      .cls-97 {
+        opacity: .58;
+      }
+
+      .cls-98 {
+        opacity: .57;
+      }
+
+      .cls-99 {
+        opacity: .16;
+      }
+
+      .cls-100 {
+        opacity: .18;
+      }
+
+      .cls-101 {
+        opacity: .32;
+      }
+
+      .cls-102 {
+        opacity: .21;
+      }
+    </style>
+  </defs>
+  <g id="Layer_3" data-name="Layer 3">
+    <g>
+      <polygon class="cls-103" points="462.15 12.68 461.37 287.76 231.44 421.38 232.22 146.3 462.15 12.68"/>
+      <polygon class="cls-104" points="232.22 146.3 231.44 421.38 0 287.76 .78 12.68 232.22 146.3"/>
+      <g>
+        <polyline class="cls-70" points="22.46 .08 232.22 121.19 440.46 .16"/>
+        <polyline class="cls-28" points="22.25 .21 232.22 121.43 440.68 .29"/>
+        <polyline class="cls-68" points="22.03 .33 232.22 121.68 440.89 .41"/>
+        <polyline class="cls-40" points="21.82 .46 232.22 121.93 441.11 .54"/>
+        <polyline class="cls-76" points="21.6 .58 232.22 122.18 441.32 .66"/>
+        <polyline class="cls-72" points="21.39 .71 232.22 122.43 441.54 .78"/>
+        <polyline class="cls-21" points="21.17 .83 232.22 122.68 441.75 .91"/>
+        <polyline class="cls-75" points="20.96 .96 232.22 122.93 441.97 1.03"/>
+        <polyline class="cls-31" points="20.74 1.08 232.22 123.17 442.18 1.16"/>
+        <polyline class="cls-2" points="20.53 1.21 232.22 123.42 442.4 1.28"/>
+        <polyline class="cls-22" points="20.32 1.33 232.22 123.67 442.61 1.4"/>
+        <polyline class="cls-30" points="20.1 1.46 232.22 123.92 442.83 1.53"/>
+        <polyline class="cls-29" points="19.89 1.58 232.22 124.17 443.04 1.65"/>
+        <polyline class="cls-67" points="19.67 1.71 232.22 124.42 443.25 1.78"/>
+        <polyline class="cls-60" points="19.46 1.83 232.22 124.67 443.47 1.9"/>
+        <polyline class="cls-25" points="19.24 1.96 232.22 124.92 443.68 2.02"/>
+        <polyline class="cls-57" points="19.03 2.08 232.22 125.16 443.9 2.15"/>
+        <polyline class="cls-6" points="18.81 2.21 232.22 125.41 444.11 2.27"/>
+        <polyline class="cls-43" points="18.6 2.33 232.22 125.66 444.33 2.4"/>
+        <polyline class="cls-51" points="18.38 2.45 232.22 125.91 444.54 2.52"/>
+        <polyline class="cls-18" points="18.17 2.58 232.22 126.16 444.76 2.64"/>
+        <polyline class="cls-3" points="17.95 2.7 232.22 126.41 444.97 2.77"/>
+        <polyline class="cls-99" points="17.74 2.83 232.22 126.66 445.19 2.89"/>
+        <polyline class="cls-49" points="17.52 2.95 232.22 126.91 445.4 3.02"/>
+        <polyline class="cls-100" points="17.31 3.08 232.22 127.15 445.62 3.14"/>
+        <polyline class="cls-93" points="17.1 3.2 232.22 127.4 445.83 3.26"/>
+        <polyline class="cls-54" points="16.88 3.33 232.22 127.65 446.05 3.39"/>
+        <polyline class="cls-34" points="16.67 3.45 232.22 127.9 446.26 3.51"/>
+        <polyline class="cls-102" points="16.45 3.58 232.22 128.15 446.47 3.63"/>
+        <polyline class="cls-74" points="16.24 3.7 232.22 128.4 446.69 3.76"/>
+        <polyline class="cls-14" points="16.02 3.83 232.22 128.65 446.9 3.88"/>
+        <polyline class="cls-65" points="15.81 3.95 232.22 128.9 447.12 4.01"/>
+        <polyline class="cls-48" points="15.59 4.08 232.22 129.14 447.33 4.13"/>
+        <polyline class="cls-61" points="15.38 4.2 232.22 129.39 447.55 4.25"/>
+        <polyline class="cls-87" points="15.16 4.33 232.22 129.64 447.76 4.38"/>
+        <polyline class="cls-96" points="14.95 4.45 232.22 129.89 447.98 4.5"/>
+        <polyline class="cls-50" points="14.73 4.58 232.22 130.14 448.19 4.63"/>
+        <polyline class="cls-90" points="14.52 4.7 232.22 130.39 448.41 4.75"/>
+        <polyline class="cls-63" points="14.3 4.83 232.22 130.64 448.62 4.87"/>
+        <polyline class="cls-45" points="14.09 4.95 232.22 130.88 448.84 5"/>
+        <polyline class="cls-17" points="13.88 5.07 232.22 131.13 449.05 5.12"/>
+        <polyline class="cls-64" points="13.66 5.2 232.22 131.38 449.27 5.25"/>
+        <polyline class="cls-59" points="13.45 5.32 232.22 131.63 449.48 5.37"/>
+        <polyline class="cls-101" points="13.23 5.45 232.22 131.88 449.7 5.49"/>
+        <polyline class="cls-15" points="13.02 5.57 232.22 132.13 449.91 5.62"/>
+        <polyline class="cls-86" points="12.8 5.7 232.22 132.38 450.12 5.74"/>
+        <polyline class="cls-41" points="12.59 5.82 232.22 132.63 450.34 5.87"/>
+        <polyline class="cls-92" points="12.37 5.95 232.22 132.87 450.55 5.99"/>
+        <polyline class="cls-55" points="12.16 6.07 232.22 133.12 450.77 6.11"/>
+        <polyline class="cls-82" points="11.94 6.2 232.22 133.37 450.98 6.24"/>
+        <polyline class="cls-10" points="11.73 6.32 232.22 133.62 451.2 6.36"/>
+        <polyline class="cls-12" points="11.51 6.45 232.22 133.87 451.41 6.49"/>
+        <polyline class="cls-24" points="11.3 6.57 232.22 134.12 451.63 6.61"/>
+        <polyline class="cls-7" points="11.08 6.7 232.22 134.37 451.84 6.73"/>
+        <polyline class="cls-35" points="10.87 6.82 232.22 134.62 452.06 6.86"/>
+        <polyline class="cls-8" points="10.65 6.95 232.22 134.86 452.27 6.98"/>
+        <polyline class="cls-84" points="10.44 7.07 232.22 135.11 452.49 7.11"/>
+        <polyline class="cls-79" points="10.23 7.2 232.22 135.36 452.7 7.23"/>
+        <polyline class="cls-46" points="10.01 7.32 232.22 135.61 452.92 7.35"/>
+        <polyline class="cls-20" points="9.8 7.44 232.22 135.86 453.13 7.48"/>
+        <polyline class="cls-4" points="9.58 7.57 232.22 136.11 453.34 7.6"/>
+        <polyline class="cls-19" points="9.37 7.69 232.22 136.36 453.56 7.72"/>
+        <polyline class="cls-9" points="9.15 7.82 232.22 136.6 453.77 7.85"/>
+        <polyline class="cls-91" points="8.94 7.94 232.22 136.85 453.99 7.97"/>
+        <polyline class="cls-78" points="8.72 8.07 232.22 137.1 454.2 8.1"/>
+        <polyline class="cls-1" points="8.51 8.19 232.22 137.35 454.42 8.22"/>
+        <polyline class="cls-53" points="8.29 8.32 232.22 137.6 454.63 8.34"/>
+        <polyline class="cls-80" points="8.08 8.44 232.22 137.85 454.85 8.47"/>
+        <polyline class="cls-23" points="7.86 8.57 232.22 138.1 455.06 8.59"/>
+        <polyline class="cls-94" points="7.65 8.69 232.22 138.35 455.28 8.72"/>
+        <polyline class="cls-38" points="7.43 8.82 232.22 138.59 455.49 8.84"/>
+        <polyline class="cls-73" points="7.22 8.94 232.22 138.84 455.71 8.96"/>
+        <polyline class="cls-36" points="7.01 9.07 232.22 139.09 455.92 9.09"/>
+        <polyline class="cls-89" points="6.79 9.19 232.22 139.34 456.14 9.21"/>
+        <polyline class="cls-32" points="6.58 9.32 232.22 139.59 456.35 9.34"/>
+        <polyline class="cls-11" points="6.36 9.44 232.22 139.84 456.56 9.46"/>
+        <polyline class="cls-95" points="6.15 9.57 232.22 140.09 456.78 9.58"/>
+        <polyline class="cls-98" points="5.93 9.69 232.22 140.34 456.99 9.71"/>
+        <polyline class="cls-97" points="5.72 9.82 232.22 140.58 457.21 9.83"/>
+        <polyline class="cls-33" points="5.5 9.94 232.22 140.83 457.42 9.96"/>
+        <polyline class="cls-52" points="5.29 10.06 232.22 141.08 457.64 10.08"/>
+        <polyline class="cls-69" points="5.07 10.19 232.22 141.33 457.85 10.2"/>
+        <polyline class="cls-27" points="4.86 10.31 232.22 141.58 458.07 10.33"/>
+        <polyline class="cls-47" points="4.64 10.44 232.22 141.83 458.28 10.45"/>
+        <polyline class="cls-71" points="4.43 10.56 232.22 142.08 458.5 10.58"/>
+        <polyline class="cls-85" points="4.21 10.69 232.22 142.32 458.71 10.7"/>
+        <polyline class="cls-58" points="4 10.81 232.22 142.57 458.93 10.82"/>
+        <polyline class="cls-16" points="3.79 10.94 232.22 142.82 459.14 10.95"/>
+        <polyline class="cls-88" points="3.57 11.06 232.22 143.07 459.36 11.07"/>
+        <polyline class="cls-77" points="3.36 11.19 232.22 143.32 459.57 11.2"/>
+        <polyline class="cls-13" points="3.14 11.31 232.22 143.57 459.78 11.32"/>
+        <polyline class="cls-56" points="2.93 11.44 232.22 143.82 460 11.44"/>
+        <polyline class="cls-44" points="2.71 11.56 232.22 144.07 460.21 11.57"/>
+        <polyline class="cls-5" points="2.5 11.69 232.22 144.31 460.43 11.69"/>
+        <polyline class="cls-83" points="2.28 11.81 232.22 144.56 460.64 11.82"/>
+        <polyline class="cls-39" points="2.07 11.94 232.22 144.81 460.86 11.94"/>
+        <polyline class="cls-62" points="1.85 12.06 232.22 145.06 461.07 12.06"/>
+        <polyline class="cls-81" points="1.64 12.19 232.22 145.31 461.29 12.19"/>
+        <polyline class="cls-37" points="1.42 12.31 232.22 145.56 461.5 12.31"/>
+        <polyline class="cls-66" points="1.21 12.44 232.22 145.81 461.72 12.43"/>
+        <polyline class="cls-26" points=".99 12.56 232.22 146.06 461.93 12.56"/>
+        <polyline class="cls-42" points=".78 12.68 232.22 146.3 462.15 12.68"/>
+      </g>
+    </g>
+  </g>
+</svg>
