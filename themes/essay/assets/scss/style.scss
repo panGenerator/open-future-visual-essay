@@ -37,11 +37,30 @@ svg#logo {
 .text-justify {
   text-align: justify;
 }
+.w-30 {
+  width: 30%;
+}
+.w-40 {
+  width: 40%;
+}
+.w-60 {
+  width: 60%;
+}
+.w-65 {
+  width: 65%;
+}
+
 .w-70 {
   width: 70%;
 }
 .w-80 {
   width: 80%;
+}
+.top-25 {
+  top: 25%!important;
+}
+.top-10 {
+  top: 10%!important;
 }
 .text-yellow {
   color: $yellow;
@@ -76,6 +95,7 @@ h3 {
   background: #fff;
   max-width:1200px;
   overflow-x: hidden;
+  min-height:100vh;
 }
 
 #header {
@@ -178,6 +198,10 @@ h3 {
 }
 .bg-white {
   background: #fff;
+}
+
+.-bottom{
+  bottom: -200px;
 }
 
 .yellow-box{
@@ -369,5 +393,115 @@ h3 {
   }
   .yellow-hr {
     padding: 1em 2.7em;
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+  .main {
+    min-height: -webkit-fill-available;
+  }
+}
+.responses {
+  max-width: map-get($grid-breakpoints, sm);
+  h1#title {
+    line-height: 0.9em;
+    font-size: calc(min(10vw, 4rem));
+  }
+  .subtitle {
+    color: #b3b3b3;
+    display:block;
+    font-family: 'PT Serif', 'Helvetica', sans-serif;
+    font-style: italic;
+    font-size: calc(min(9vw, 3rem));
+    line-height: 1rem;
+    text-align: right;
+  }
+  .intro {
+    color:#666666;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    font-family: 'PT Sans', 'Helvetica', sans-serif;
+  }
+  .view {
+    font-family: 'Chaney', 'Helvetica', sans-serif;
+    font-size: 0.8rem;
+
+    img {
+      margin-bottom: 0.15em;
+    }
+  }
+  .logo {
+    width: 40%;
+  }
+  .author {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    font-family: 'PT Serif', 'Helvetica', sans-serif;
+    color: #666666;
+    font-style: italic;
+  }
+  .title {
+    font-size: 0.9rem;
+    line-height: 1rem;
+    font-family: 'Chaney', 'Helvetica', sans-serif;
+    color: #000;
+  }
+  #list {
+    max-width: map-get($grid-breakpoints, sm);
+    top: 0;
+    transform: translateY(0);
+  }
+  #covers { //holster
+
+
+    height:100%;
+    background: red;
+    width: 100%;
+    width: 500px;
+    height: 500px;
+    z-index:1000;
+
+    .container {
+      display: flex;
+      overflow: auto;
+      flex: none;
+      flex-flow: column nowrap;
+      scroll-snap-type: y mandatory;
+
+      div {
+        text-align: center;
+        scroll-snap-align: center;
+        flex: none;
+        width: 256px;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .responses {
+    .logo {
+      width: auto;
+    }
+    .intro {
+      font-size: 0.9rem;
+      line-height: 1.25rem;
+    }
+    .view {
+      font-size: 0.9rem;
+    }
+    .author {
+      font-size: 1rem;
+      line-height: 1rem;
+    }
+    .title {
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+    }
+    #list {
+      top: 50%;
+      //transform: translateY(-50%);
+    }
   }
 }
