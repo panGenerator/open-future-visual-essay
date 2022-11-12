@@ -4,7 +4,7 @@
   "description": "",
   "main": "",
   "scripts": {
-    "start": "LOCAL_IP=${LOCAL_IP:-`hostname -I | awk '{print $1}'`}; hugo server --bind=\"$LOCAL_IP\"  --baseURL=\"$LOCAL_IP\""
+    "start": "LOCAL_IP=${LOCAL_IP:-`ipconfig getifaddr en0`}; hugo server --bind=\"$LOCAL_IP\"  --baseURL=\"$LOCAL_IP\""
   },
   "author": "Krzysztof Golinski <kgolinski@pangenerator.com>",
   "license": "ISC",

@@ -3,8 +3,6 @@ import AOS from 'aos'
 
 document.addEventListener("DOMContentLoaded",function(){
 
-  console.log('🤡')
-
   document.addEventListener("scroll", () => {
       let y = document.documentElement["scrollTop"] || document.body["scrollTop"];
       let height = (document.documentElement["scrollHeight"] || document.body["scrollHeight"]) - document.documentElement.clientHeight;

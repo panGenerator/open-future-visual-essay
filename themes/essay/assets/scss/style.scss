@@ -401,6 +401,7 @@ h3 {
     min-height: -webkit-fill-available;
   }
 }
+
 .responses {
   max-width: map-get($grid-breakpoints, sm);
   h1#title {
@@ -433,6 +434,12 @@ h3 {
   .logo {
     width: 40%;
   }
+}
+
+#list {
+  max-width: map-get($grid-breakpoints, sm);
+  top: 0;
+  transform: translateY(0);
   .author {
     font-size: 0.8rem;
     line-height: 1rem;
@@ -446,37 +453,27 @@ h3 {
     font-family: 'Chaney', 'Helvetica', sans-serif;
     color: #000;
   }
-  #list {
-    max-width: map-get($grid-breakpoints, sm);
-    top: 0;
-    transform: translateY(0);
-  }
-  #covers { //holster
+}
 
+#covers {
+  //background-color: red;
+  // border: blue;
+  width: 100%;
+  padding-top: 80vh;
+  padding-bottom: 40vh;
+  height: fit-content;
+  max-width: map-get($grid-breakpoints, sm);
+  pointer-events: none;
 
-    height:100%;
-    background: red;
-    width: 100%;
-    width: 500px;
-    height: 500px;
-    z-index:1000;
-
-    .container {
-      display: flex;
-      overflow: auto;
-      flex: none;
-      flex-flow: column nowrap;
-      scroll-snap-type: y mandatory;
-
-      div {
-        text-align: center;
-        scroll-snap-align: center;
-        flex: none;
-        width: 256px;
-        height: 100%;
+  div.cover {
+      width: 100%;
+      height: 400px;
+      //background: pink;
+      //border: cyan 1px solid;
+      a {
+        pointer-events: auto;
       }
     }
-  }
 }
 
 @include media-breakpoint-up(sm) {
@@ -491,6 +488,12 @@ h3 {
     .view {
       font-size: 0.9rem;
     }
+
+
+  }
+  #list {
+    top: 50%;
+    //transform: translateY(-50%);
     .author {
       font-size: 1rem;
       line-height: 1rem;
@@ -498,10 +501,6 @@ h3 {
     .title {
       font-size: 1.2rem;
       line-height: 1.2rem;
-    }
-    #list {
-      top: 50%;
-      //transform: translateY(-50%);
     }
   }
 }
