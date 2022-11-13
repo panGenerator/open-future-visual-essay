@@ -503,9 +503,7 @@ h3 {
       line-height: 1.2rem;
     }
   }
-  #resBG {
-    height:370px;
-  }
+
 }
 #cubeFront {
   bottom: -145px;
@@ -515,12 +513,13 @@ h3 {
   width: 312px;
   bottom: 40px;
 }
-#resBG {
+
+#arrow-up {
   z-index:105;
   position: fixed;
-  top:50%;
+  height:250px;
   left:50%;
-  // bottom: 20px;
+  bottom: 0px;
   transform: translateX(-50%);
 }
 
@@ -534,8 +533,13 @@ h3 {
     width: 460px;
     bottom: 40px;
   }
-  #resBG {
-
+  #arrow-up {
+    z-index:105;
+    position: fixed;
+    height:250px;
+    left:50%;
+    bottom: 20px;
+    transform: translateX(-50%);
   }
 
 }
