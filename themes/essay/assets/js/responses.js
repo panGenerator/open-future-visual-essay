@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let wHeight = window.innerHeight
   let center = wHeight * 0.45
   let height = covers[0].getBoundingClientRect().height
-  let maxImgHeight = covers[0].getBoundingClientRect().height*0.8
+  let maxImgHeight = clamp( covers[0].getBoundingClientRect().height*0.8, 0, 600 )
   let minImgHeight = covers[0].getBoundingClientRect().height/3
 
   //console.log('height:' + window.innerHeight)
