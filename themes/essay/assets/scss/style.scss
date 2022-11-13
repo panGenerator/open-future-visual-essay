@@ -516,9 +516,14 @@ h3 {
   bottom: 40px;
 }
 #resBG {
-  height:450px;
+  //height:450px;
   position: absolute;
-  bottom:-50px;
+  scale: 75%;
+  //top: 0px;
+  bottom: 20px;
+  left: 0px;
+  z-index: 99999;
+  //bottom: -120px;
 }
 
 @include media-breakpoint-up(sm) {
@@ -532,9 +537,13 @@ h3 {
     bottom: 40px;
   }
   #resBG {
-    height:450px;
+    //height:450px;
+    scale: 75%;
     position: absolute;
-    bottom:40px;
+    bottom: 20px;
+    //top: 0px;
+    left: 100px;
+    z-index: 99999;
   }
 
 }
