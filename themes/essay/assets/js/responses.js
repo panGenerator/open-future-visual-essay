@@ -2,6 +2,8 @@ import { map, clamp } from '@pangenerator/utils'
 
 document.addEventListener("DOMContentLoaded", function () {
 
+  console.log( "test" )
+
   let container = document.getElementById('covers')
   let covers = document.querySelectorAll('.cover')
   // console.log(covers)
@@ -10,10 +12,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // console.log(mtop, mbottom)
   let margins = mtop + mbottom
   let wHeight = window.innerHeight
-  let center = wHeight / 2
+  let center = wHeight * 0.45
   let height = covers[0].getBoundingClientRect().height
-  let maxImgHeight = covers[0].getBoundingClientRect().height*0.5
-  let minImgHeight = covers[0].getBoundingClientRect().height/4
+  let maxImgHeight = covers[0].getBoundingClientRect().height*0.8
+  let minImgHeight = covers[0].getBoundingClientRect().height/3
 
   //console.log('height:' + window.innerHeight)
   //console.log(center)
@@ -40,7 +42,8 @@ document.addEventListener("DOMContentLoaded", function () {
     covers.forEach(cover => {
       let top = cover.getBoundingClientRect().top
       let pos = top + height / 2
-      cover.style.opacity = clamp(map(pos, 0, center, 0, 1), 0, 1)
+      let opacityCenterCorrection = 0.8
+      cover.style.opacity = clamp(map(pos, 0, center * opacityCenterCorrection, 0, 1), 0, 1)
       let image = cover.querySelector('img')
       image.height = clamp(map(pos, wHeight, center, minImgHeight,maxImgHeight), minImgHeight, maxImgHeight)
     })
