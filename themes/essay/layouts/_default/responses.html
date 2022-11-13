@@ -1,41 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  {{- partial "head.html" . -}}
-  <body>
-    <div class="main container-fluid container-sm responses p-0 position-fixed top-0 start-50 translate-middle-x d-flex align-items-end justify-content-center overflow-hidden" style="z-index:1">
-      
-      <svg id="resBG" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="58.45" height="35.55" viewBox="0 0 58.45 35.55">
-          <style type="text/css">
-            @keyframes pulse {
-              from {opacity: 1.0; transform:translateY(-20px);}
-              to {opacity: 0.1; transform: translateY(0px);}
-            }
-            .cls-1 {
-              fill: none;
-              stroke: rgb(70, 70, 70);
-              stroke-miterlimit: 10;
-              stroke-width: 8.94px;
-              animation-name: pulse;
-              animation-duration: 1s;
-              animation-direction: alternate;
-              animation-iteration-count: infinite;
-            }
-          </style>
-        <g id="Layer_3" data-name="Layer 3">
-          <polyline class="cls-1" points="3.16 32.39 29.23 6.32 55.29 32.39"/>
-        </g>
-      </svg>
-  
-   </div>
-    <main class=" container-fluid container-sm responses p-0 position-fixed top-0 start-50 translate-middle-x" style="z-index:10">
-      <div class="d-flex align-items-center justify-content-between py-2 px-2 py-sm-4 px-sm-5">
-        <img src="/images/logo.svg" class="logo" alt="logo" />
-        <a href="/" class="btn bg-yellow" style="font-size:0.7em;">Read our Essay</a>
-      </div>
+{{- partial "head.html" . -}}
+
+<body>
+  <div
+    class="main container-fluid container-sm responses p-0 position-fixed top-0 start-50 translate-middle-x d-flex align-items-end justify-content-center overflow-hidden"
+    style="z-index:1"></div>
+  <main class=" container-fluid container-sm responses p-0 position-fixed top-0 start-50 translate-middle-x"
+    style="z-index:10">
+    <div class="d-flex align-items-center justify-content-between py-2 px-2 py-sm-4 px-sm-5">
+      <img src="/images/logo.svg" class="logo" alt="logo" />
+      <a href="/" class="btn bg-yellow" style="font-size:0.7em;">Read our Essay</a>
+    </div>
 
     <div class="mx-auto text-center">
       <h1 class="mx-auto d-inline-flex flex-column text-start" id="title">
-        <span class="mx-3">Paradox<br/>_of Open</span>
+        <span class="mx-3">Paradox<br />_of Open</span>
         <div class="subtitle mt-2">responses</div>
       </h1>
     </div>
@@ -44,40 +24,76 @@
       {{ .Content }}
     </div>
     <div class="w-80 mx-auto view text-end d-flex align-items-center justify-content-end" role="button"
-    onclick="document.getElementById('list').classList.remove('d-none')"> View all responses <img src="/images/hamburger.svg" class="ms-2"/>
+      onclick="document.getElementById('list').classList.remove('d-none')"> View all responses <img
+        src="/images/hamburger.svg" class="ms-2" />
     </div>
 
-    </main>
+  </main>
 
-    <div class="d-none position-fixed w-100 bg-white p-3 shadow m-0" id="list" style="z-index:102;">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+  <div class="d-none position-fixed w-100 bg-white p-3 shadow m-0" id="list" style="z-index:105;">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
       style="width:24px; height:24px" class="float-end"
       onclick="document.getElementById('list').classList.add('d-none')" role="button">
       <path stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-      </svg>
-      <div class="w-100">&nbsp;</div>
-      {{ range $.Param "responses"}}
-        <div class="d-flex flex-row mb-4 justify-content-start">
-          <div class="w-30 author text-end me-4">{{ .author }}</div>
-          <div class="title w-60"><a href="{{ .link }}" class="text-decoration-none">{{ .title | markdownify }}</a></div>
-        </div>
-      {{ end }}
+    </svg>
+    <div class="w-100">&nbsp;</div>
+    {{ range $.Param "responses"}}
+    <div class="d-flex flex-row mb-4 justify-content-start">
+      <div class="w-30 author text-end me-4">{{ .author }}</div>
+      <div class="title w-60"><a href="{{ .link }}" class="text-decoration-none">{{ .title | markdownify }}</a></div>
     </div>
-    <div id="covers" class="position-absolute top-0 bottom-0 start-50 translate-middle-x text-center mx-auto" style="z-index:100">
-        {{ range $.Param "responses"}}
-          <div class="cover mx-auto d-flex align-items-center justify-content-center">
-            <a href="{{.link}}">
-              <img src="/images/covers/{{.cover}}" class="shadow" height="400" />
-            </a>
-          </div>
-        {{ end }}
+    {{ end }}
+  </div>
+
+  <svg id="resBG" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="58.45" height="35.55"
+    viewBox="0 0 58.45 35.55">
+    <style type="text/css">
+      @keyframes pulse {
+        from {
+          opacity: 1.0;
+          transform: translateY(-20px);
+        }
+
+        to {
+          opacity: 0.1;
+          transform: translateY(0px);
+        }
+      }
+
+      .cls-1 {
+        fill: none;
+        stroke: rgb(70, 70, 70);
+        stroke-miterlimit: 10;
+        stroke-width: 8.94px;
+        animation-name: pulse;
+        animation-duration: 1s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+      }
+    </style>
+    <g id="Layer_3" data-name="Layer 3">
+      <polyline class="cls-1" points="3.16 32.39 29.23 6.32 55.29 32.39" />
+    </g>
+  </svg>
+  <div id="covers" class="position-absolute top-0 bottom-0 start-50 translate-middle-x text-center mx-auto"
+    style="z-index:100">
+    {{ range $.Param "responses"}}
+    <div class="cover mx-auto d-flex align-items-center justify-content-center">
+      <a href="{{.link}}">
+        <img src="/images/covers/{{.cover}}" class="shadow" height="400" />
+      </a>
     </div>
+    {{ end }}
+  </div>
 
-    <img id="cubeBack" src="/images/cube-back.svg" class="position-fixed start-50 translate-middle-x" style="z-index:99;"/>
-    <img id="cubeFront" src="/images/cube-front.svg" class="position-fixed start-50 translate-middle-x" style="z-index:101"/>
-    <!-- <img id="resBG" src="/images/resbg.svg" class="position-fixed start-50 translate-middle-x" style="z-index:10;"/> -->
+  <img id="cubeBack" src="/images/cube-back.svg" class="position-fixed start-50 translate-middle-x"
+    style="z-index:99;" />
+  <img id="cubeFront" src="/images/cube-front.svg" class="position-fixed start-50 translate-middle-x"
+    style="z-index:101" />
+  <!-- <img id="resBG" src="/images/resbg.svg" class="position-fixed start-50 translate-middle-x" style="z-index:10;"/> -->
 
-    {{- $responses := resources.Get "/js/responses.js" | js.Build (dict "minify" true "target" "es2015") | fingerprint -}}
-    <script src="{{ $responses.Permalink }}"></script>
-  </body>
+  {{- $responses := resources.Get "/js/responses.js" | js.Build (dict "minify" true "target" "es2015") | fingerprint -}}
+  <script src="{{ $responses.Permalink }}"></script>
+</body>
+
 </html>
