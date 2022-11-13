@@ -305,8 +305,6 @@ h3 {
     margin-top: -35vw;
     margin-bottom: -35vw;
   }
-
-
 }
 
 @include media-breakpoint-up(xl) {
@@ -510,13 +508,33 @@ h3 {
   }
 }
 #cubeFront {
-  bottom: -18.7vh;
-  width: 40vh;
+  bottom: -145px;
+  width: 312px;
 }
 #cubeBack{
-  width: 40vh;
-  bottom: 5vh;
+  width: 312px;
+  bottom: 40px;
 }
 #resBG {
   height:450px;
+  position: absolute;
+  bottom:-50px;
+}
+
+@include media-breakpoint-up(sm) {
+
+  #cubeFront {
+    bottom: -233px;
+    width: 460px;
+  }
+  #cubeBack{
+    width: 460px;
+    bottom: 40px;
+  }
+  #resBG {
+    height:450px;
+    position: absolute;
+    bottom:40px;
+  }
+
 }
