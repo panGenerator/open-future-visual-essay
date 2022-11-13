@@ -23,8 +23,8 @@
     onclick="document.getElementById('list').classList.remove('d-none')"> View all responses <img src="/images/hamburger.svg" class="ms-2"/>
     </div>
 
-
     </main>
+
     <div class="d-none position-fixed w-100 bg-white p-3 shadow m-0" id="list" style="z-index:102;">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
       style="width:24px; height:24px" class="float-end"
@@ -41,16 +41,16 @@
     </div>
     <div id="covers" class="position-absolute top-0 bottom-0 start-50 translate-middle-x text-center mx-auto" style="z-index:100">
         {{ range $.Param "responses"}}
-          <div class="cover mx-auto d-flex align-items-center justify-content-center"> <!-- stała wielkość -->
+          <div class="cover mx-auto d-flex align-items-center justify-content-center">
             <a href="{{.link}}">
-              <img src="/images/covers/{{.cover}}" class="shadow" height="400" /> <!-- skalowane w zaleznosci od pozycji na Y -->
+              <img src="/images/covers/{{.cover}}" class="shadow" height="400" />
             </a>
           </div>
         {{ end }}
     </div>
 
-    <img src="/images/cube-back.svg" class="position-fixed start-50 translate-middle-x" style="z-index:99; bottom: 75px"/>
-    <img src="/images/cube-front.svg" class="position-fixed start-50 translate-middle-x -bottom" style="z-index:101"/>
+    <img id="cubeBack" src="/images/cube-back.svg" class="position-fixed start-50 translate-middle-x" style="z-index:99;"/>
+    <img id="cubeFront" src="/images/cube-front.svg" class="position-fixed start-50 translate-middle-x" style="z-index:101"/>
 
     {{- $responses := resources.Get "/js/responses.js" | js.Build (dict "minify" true "target" "es2015") | fingerprint -}}
     <script src="{{ $responses.Permalink }}"></script>
