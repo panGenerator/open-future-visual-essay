@@ -35,4 +35,4 @@ responses:
       cover: 8-derek_slater@2x.png
       link:
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus, ante vitae lobortis bibendum, lorem justo dapibus odio, sit amet rutrum dui odio id eros. Etiam vel feugiat quam. Curabitur pretium dictum quam eu congue.
+Lorem ipsum dolor sit amet, <a href="http://paradox.openfuture.eu/">Paradox of Open eassay</a>. Suspendisse dapibus, ante vitae lobortis bibendum, lorem justo dapibus odio, sit amet rutrum dui odio id eros. Etiam vel feugiat quam. Curabitur pretium dictum quam eu congue.
