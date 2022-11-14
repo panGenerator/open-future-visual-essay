@@ -2,7 +2,7 @@ import { map, clamp } from '@pangenerator/utils'
 
 document.addEventListener("DOMContentLoaded", function () {
 
-  console.log( "test" )
+  // console.log( "test" )
 
   let container = document.getElementById('covers')
   let covers = document.querySelectorAll('.cover')
