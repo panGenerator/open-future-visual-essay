@@ -449,6 +449,9 @@ h3 {
   max-width: map-get($grid-breakpoints, sm);
   top: 0;
   transform: translateY(0);
+  a:hover {
+    opacity: 0.6;
+  }
   .author {
     font-size: 0.8rem;
     line-height: 1rem;

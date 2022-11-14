@@ -30,21 +30,6 @@
 
   </main>
 
-  <div class="d-none position-fixed w-100 bg-white p-3 shadow m-0" id="list" style="z-index:105;">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-      style="width:24px; height:24px" class="float-end"
-      onclick="document.getElementById('list').classList.add('d-none')" role="button">
-      <path stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-    </svg>
-    <div class="w-100">&nbsp;</div>
-    {{ range $.Param "responses"}}
-    <div class="d-flex flex-row mb-4 justify-content-start">
-      <div class="w-30 author text-end me-4">{{ .author }}</div>
-      <div class="title w-60"><a href="{{ .link }}" class="text-decoration-none">{{ .title | markdownify }}</a></div>
-    </div>
-    {{ end }}
-  </div>
-
   <svg id="arrow-up" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="58.45" height="35.55"
     viewBox="0 0 58.45 35.55">
     <style type="text/css">
@@ -75,6 +60,22 @@
       <polyline class="cls-1" points="3.16 32.39 29.23 6.32 55.29 32.39" />
     </g>
   </svg>
+
+  <div class="d-none position-fixed w-100 bg-white p-3 shadow m-0" id="list" style="z-index:105;">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+      style="width:24px; height:24px" class="float-end"
+      onclick="document.getElementById('list').classList.add('d-none')" role="button">
+      <path stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+    <div class="w-100">&nbsp;</div>
+    {{ range $.Param "responses"}}
+    <div class="d-flex flex-row mb-4 justify-content-start">
+      <div class="w-30 author text-end me-4">{{ .author }}</div>
+      <div class="title w-60"><a href="{{ .link }}" class="text-decoration-none">{{ .title | markdownify }}</a></div>
+    </div>
+    {{ end }}
+  </div>
+
   <div id="covers" class="position-absolute top-0 bottom-0 start-50 translate-middle-x text-center mx-auto"
     style="z-index:100">
     {{ range $.Param "responses"}}
