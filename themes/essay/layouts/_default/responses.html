@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-{{- partial "head.html" . -}}
+  <meta charset="utf-8">
+  <title>{{ .Site.Title }} - Responses</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {{ $options := (dict "targetPath" "css/style.css" "outputStyle" "compressed" "includePaths" (slice "node_modules")) }}
+  {{ $style := resources.Get "scss/style.scss" | toCSS $options | minify  }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
 
 <body>
   <div
@@ -9,7 +18,7 @@
   <main class=" container-fluid container-sm responses p-0 position-fixed top-0 start-50 translate-middle-x"
     style="z-index:10">
     <div class="d-flex align-items-center justify-content-between py-2 px-2 py-sm-4 px-sm-5">
-      <img src="/images/logo.svg" class="logo" alt="logo" />
+      <a href="http://openfuture.eu"><img src="/images/logo.svg" class="logo" alt="logo" /></a>
       <a href="/" class="btn bg-yellow" style="font-size:0.7em;">Read our Essay</a>
     </div>
 
