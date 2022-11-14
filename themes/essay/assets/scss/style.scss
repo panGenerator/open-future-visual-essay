@@ -398,6 +398,18 @@ h3 {
 
 .responses {
   max-width: map-get($grid-breakpoints, sm);
+
+  a {
+    border-bottom-width: 1px;
+    border-color: rgba(82,82,91,1);
+    background-color: rgba(244,244,245,1);
+    font-style: normal;
+    text-decoration: none;
+    &:hover {
+      background-color: rgba(252,240,0,1);
+    }
+  }
+
   h1#title {
     line-height: 0.9em;
     font-size: calc(min(10vw, 4rem));
