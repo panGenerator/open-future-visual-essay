@@ -392,7 +392,7 @@ h3 {
 
 @supports (-webkit-touch-callout: none) {
   .main {
-    min-height: -webkit-fill-available;
+    min-height: -webkit-fill-available !important;
   }
 }
 
