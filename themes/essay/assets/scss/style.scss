@@ -391,24 +391,13 @@ h3 {
 }
 
 @supports (-webkit-touch-callout: none) {
-  .main {
+  .min-h-screen {
     min-height: -webkit-fill-available !important;
   }
 }
 
 .responses {
   max-width: map-get($grid-breakpoints, sm);
-
-  a {
-    border-bottom-width: 1px;
-    border-color: rgba(82,82,91,1);
-    background-color: rgba(244,244,245,1);
-    font-style: normal;
-    text-decoration: none;
-    &:hover {
-      background-color: rgba(252,240,0,1);
-    }
-  }
 
   h1#title {
     line-height: 0.9em;
@@ -428,6 +417,16 @@ h3 {
     font-size: 0.8rem;
     line-height: 1rem;
     font-family: 'PT Sans', 'Helvetica', sans-serif;
+    a {
+      border-bottom-width: 1px;
+      border-color: rgba(82,82,91,1);
+      background-color: rgba(244,244,245,1);
+      font-style: normal;
+      text-decoration: none;
+      &:hover {
+        background-color: rgba(252,240,0,1);
+      }
+    }
   }
   .view {
     font-family: 'Chaney', 'Helvetica', sans-serif;
