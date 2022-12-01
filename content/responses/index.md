@@ -19,7 +19,7 @@ responses:
       cover: 4-balazs_bodo@2x.png
       link: https://openfuture.eu/responses/beyond-the-fetish-of-open
     - title: "Creative<br/>communities"
-      author: Jeni Tenisson
+      author: Jeni Tennison
       cover: 5-jeni_tennison@2x.png
       link: https://openfuture.eu/responses/creative-communities
     - title: How openness becomes<br/> exclusionary
