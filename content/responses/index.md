@@ -35,4 +35,4 @@ responses:
       cover: 8-derek_slater@2x.png
       link: https://openfuture.eu/responses/the-evolving-shape-of-the-copyright-wars
 ---
-The <a href="http://paradox.openfuture.eu/">Paradox of Open</a> is at the heart of our work. We asked leaders and experts from the broad open movement what the Paradox means and how to address the challenges it poses. Their responses will be published here.
+The <a href="http://paradox.openfuture.eu/">Paradox of Open</a> is at the heart of our work. We asked leaders and experts from the broad open movement what the Paradox means and how to address the challenges it poses. Their responses are published here.
