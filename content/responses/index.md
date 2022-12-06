@@ -26,7 +26,7 @@ responses:
       author: Leonhard Dobusch
       cover: 6-leonhard_dobush@2x.png
       link: https://openfuture.eu/responses/how-openness-becomes-exclusionary
-    - title: Public memory challenges<br/>in the public digital space
+    - title: Public memory and the<br/>digital black hole
       author: Carolina Botero
       cover: 7-carolina_botero@2x.png
       link: https://openfuture.eu/responses/public-memory-challenges-in-the-public-digital-space
