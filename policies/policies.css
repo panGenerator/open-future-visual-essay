@@ -1,0 +1,38 @@
+@import '@fontsource/pt-serif';
+@import '@fontsource/pt-serif';
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Chaney';
+  src: url('../themes/essay/static/fonts/chaney-regular.woff2') format('woff2'),
+    url('../themes/essay/static/fonts/chaney-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.prose {
+  p {
+    @apply mb-7;
+  }
+
+  a {
+    @apply text-gray-500 underline;
+  }
+
+
+}
+
+h3 {
+  @apply font-chaney text-4xl relative;
+}
+
+h3:before {
+  content: '_';
+  top: -0.65rem;
+  left: -1.8rem;
+  @apply font-chaney text-4xl absolute;
+}

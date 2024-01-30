@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_export_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 360 242">
+  <defs>
+    <clipPath id="clippath">
+      <rect x=".42" y=".44" width="359.6" height="241.56" fill="none" stroke-width="0"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect x=".42" y=".44" width="359.6" height="229.93" fill="none" stroke-width="0"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <rect x="178.84" y="126.08" width="162.02" height="64.77" fill="none" stroke-width="0"/>
+    </clipPath>
+    <clipPath id="clippath-3">
+      <polygon points="216.23 126.08 178.84 147.67 178.84 190.84 228.7 190.85 340.86 126.08 340.86 126.08 216.23 126.08" fill="none" stroke-width="0"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="1651.51" y1="422.87" x2="1652.31" y2="422.87" gradientTransform="translate(-330714.36 84884.33) scale(200.36 -200.36)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c4c4c4"/>
+      <stop offset=".05" stop-color="#cbcbcb"/>
+      <stop offset=".25" stop-color="#e2e2e2"/>
+      <stop offset=".46" stop-color="#f2f2f2"/>
+      <stop offset=".69" stop-color="#fbfbfb"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <clipPath id="clippath-4">
+      <polygon points="178.84 148.07 178.72 190.85 216.17 169.08 216.29 126.3 178.84 148.07" fill="none" stroke-width="0"/>
+    </clipPath>
+    <clipPath id="clippath-5">
+      <rect x=".42" y=".44" width="359.6" height="229.93" fill="none" stroke-width="0"/>
+    </clipPath>
+    <clipPath id="clippath-6">
+      <rect x=".42" y=".44" width="359.6" height="241.56" fill="none" stroke-width="0"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#clippath)">
+    <g clip-path="url(#clippath-1)">
+      <g opacity=".36">
+        <g clip-path="url(#clippath-2)">
+          <g clip-path="url(#clippath-3)">
+            <rect x="178.84" y="126.08" width="162.02" height="64.77" fill="url(#linear-gradient)" stroke-width="0"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <line x1="300.67" y1="126.52" x2="356.47" y2="126.52" fill="none" stroke="#000" stroke-dasharray="0 0 17.42 4.35" stroke-miterlimit="10" stroke-width=".5"/>
+    <line x1="232.75" y1="126.52" x2="289.02" y2="126.52" fill="none" stroke="#000" stroke-dasharray="0 0 17.42 4.35" stroke-miterlimit="10" stroke-width=".5"/>
+    <line x1="48.67" y1="126.52" x2="127.23" y2="126.52" fill="none" stroke="#000" stroke-dasharray="0 0 17.42 4.35" stroke-miterlimit="10" stroke-width=".5"/>
+    <line x1="2.98" y1="126.52" x2="42.98" y2="126.52" fill="none" stroke="#000" stroke-dasharray="0 0 17.42 4.35" stroke-miterlimit="10" stroke-width=".5"/>
+    <polygon points="216.29 126.3 178.84 148.07 141.14 126.3 178.6 104.54 216.29 126.3" fill="#fbef00" stroke-width="0"/>
+    <path d="M158.05,126.3l20.6-11.97,20.73,11.97-20.6,11.97-20.73-11.97ZM141.14,126.3l37.7,21.76,37.45-21.76-37.7-21.76-37.45,21.76Z" fill="#fbef00" stroke-width="0"/>
+    <polygon points="158.05 126.3 178.78 138.27 178.65 114.33 158.05 126.3" stroke-width="0"/>
+    <polygon points="178.78 138.27 199.38 126.3 178.65 114.33 178.78 138.27" fill="#2b2b2b" stroke-width="0"/>
+    <polygon points="216.29 126.3 216.17 169.08 178.72 190.85 178.84 148.07 216.29 126.3" fill="#fbef00" stroke-width="0"/>
+    <g clip-path="url(#clippath-4)">
+      <path d="M197.54,145.71c6.22-3.61,11.25-.79,11.23,6.32-.02,7.1-5.08,15.8-11.3,19.41-6.22,3.62-11.25.78-11.23-6.32.02-7.11,5.08-15.8,11.3-19.41M178.67,190.93l37.55-21.82.12-42.89-37.55,21.82-.12,42.89" fill="#ddcd00" stroke-width="0"/>
+      <path d="M203.54,144.2c.12.7.19,1.45.19,2.26-.02,7.1-5.08,15.8-11.3,19.41-2.21,1.28-4.26,1.75-5.99,1.51.96,5.41,5.53,7.26,11.04,4.06,6.22-3.61,11.28-12.31,11.3-19.41.01-4.59-2.08-7.39-5.23-7.83" fill="#2b2b2b" stroke-width="0"/>
+      <path d="M192.42,165.87c6.22-3.61,11.28-12.31,11.3-19.41,0-.81-.06-1.56-.19-2.26-1.73-.24-3.79.23-5.99,1.51-6.22,3.62-11.28,12.31-11.3,19.41,0,.81.06,1.56.19,2.26,1.73.24,3.79-.23,5.99-1.51" stroke-width="0"/>
+    </g>
+    <polygon points="178.84 148.07 178.72 190.85 141.02 169.08 141.14 126.3 178.84 148.07" fill="#efdd00" stroke-width="0"/>
+    <polygon points="159.9 171.68 163.53 166.58 156.18 147.59 148.96 143.43 159.9 171.68" fill="#2b2b2b" stroke-width="0"/>
+    <polygon points="163.53 166.58 170.96 156.13 156.18 147.59 163.53 166.58" stroke-width="0"/>
+    <g clip-path="url(#clippath-5)">
+      <path d="M212.15,149.06c-2.06-1.2-4.9-1.03-8.05.79-6.25,3.61-11.29,12.35-11.27,19.52,0,3.56,1.27,6.07,3.3,7.25l10.61,6.17c-2.03-1.18-3.29-3.69-3.3-7.25-.02-7.18,5.03-15.92,11.27-19.52,3.14-1.81,5.99-1.98,8.05-.79l-10.61-6.17Z" fill="#fbef00" stroke-width="0"/>
+      <path d="M214.72,156.01c6.24-3.6,11.32-.71,11.34,6.47.02,7.18-5.03,15.92-11.27,19.52-6.25,3.61-11.32.71-11.34-6.46-.02-7.18,5.02-15.92,11.27-19.52" fill="#ddcd00" stroke-width="0"/>
+      <path d="M241.45,178.4c-2.06-1.2-4.9-1.03-8.05.79-6.25,3.61-11.29,12.35-11.27,19.52,0,3.56,1.27,6.07,3.3,7.25l10.61,6.17c-2.03-1.18-3.29-3.69-3.3-7.25-.02-7.18,5.03-15.92,11.27-19.52,3.14-1.81,5.99-1.98,8.05-.79l-10.61-6.17Z" fill="#d8d8d8" stroke-width="0"/>
+      <path d="M244.02,185.36c6.24-3.6,11.32-.71,11.34,6.47.02,7.18-5.03,15.92-11.27,19.52-6.25,3.61-11.32.71-11.34-6.46-.02-7.18,5.02-15.92,11.27-19.52" fill="#bbb" stroke-width="0"/>
+      <path d="M282.87,150.48c-2.06-1.2-4.9-1.03-8.05.79-6.25,3.61-11.29,12.35-11.27,19.52,0,3.56,1.27,6.07,3.3,7.25l10.61,6.17c-2.03-1.18-3.29-3.69-3.3-7.25-.02-7.18,5.03-15.92,11.27-19.52,3.14-1.81,5.99-1.98,8.05-.79l-10.61-6.17Z" fill="#2b2b2b" stroke-width="0"/>
+      <path d="M285.44,157.43c6.24-3.6,11.32-.71,11.34,6.47.02,7.18-5.03,15.92-11.27,19.52-6.25,3.61-11.32.71-11.34-6.46-.02-7.18,5.02-15.92,11.27-19.52" fill="#0e0e0e" stroke-width="0"/>
+    </g>
+    <polygon points="117.72 157.56 139.73 170.26 128.66 185.8 117.72 157.56" fill="#efdd00" stroke-width="0"/>
+    <polygon points="117.72 157.56 138.95 145.22 160.95 157.93 139.73 170.26 117.72 157.56" fill="#fbef00" stroke-width="0"/>
+    <polygon points="139.73 170.26 160.95 157.93 149.88 173.47 128.66 185.8 139.73 170.26" fill="#ddcd00" stroke-width="0"/>
+    <polygon points="85.79 192.44 107.79 205.15 96.73 220.69 85.79 192.44" fill="#cacaca" stroke-width="0"/>
+    <polygon points="85.79 192.44 107.01 180.11 129.02 192.81 107.79 205.15 85.79 192.44" fill="#d8d8d8" stroke-width="0"/>
+    <polygon points="107.79 205.15 129.02 192.81 117.95 208.36 96.73 220.69 107.79 205.15" fill="#bbb" stroke-width="0"/>
+    <polygon points="60.12 155.25 82.13 167.95 71.06 183.49 60.12 155.25" fill="#1d1d1d" stroke-width="0"/>
+    <polygon points="60.12 155.25 81.35 142.91 103.35 155.62 82.13 167.95 60.12 155.25" fill="#2b2b2b" stroke-width="0"/>
+    <polygon points="82.13 167.95 103.35 155.62 92.29 171.16 71.06 183.49 82.13 167.95" fill="#0e0e0e" stroke-width="0"/>
+    <polygon points="199.64 90 179.05 101.97 158.31 90 178.91 78.03 199.64 90" fill="#fbef00" stroke-width="0"/>
+    <polygon points="199.64 90 199.57 114.55 178.98 126.52 179.05 101.97 199.64 90" fill="#ddcd00" stroke-width="0"/>
+    <polygon points="179.05 101.97 178.98 126.52 158.24 114.55 158.31 90 179.05 101.97" fill="#efdd00" stroke-width="0"/>
+    <polygon points="151.11 55.28 130.51 67.25 109.78 55.28 130.38 43.31 151.11 55.28" fill="#d8d8d8" stroke-width="0"/>
+    <polygon points="151.11 55.28 151.04 79.83 130.44 91.8 130.51 67.25 151.11 55.28" fill="#bbb" stroke-width="0"/>
+    <polygon points="130.51 67.25 130.44 91.8 109.71 79.83 109.78 55.28 130.51 67.25" fill="#cacaca" stroke-width="0"/>
+    <polygon points="242.38 41.72 221.78 53.69 201.05 41.72 221.65 29.75 242.38 41.72" fill="#2b2b2b" stroke-width="0"/>
+    <polygon points="242.38 41.72 242.31 66.26 221.71 78.23 221.78 53.69 242.38 41.72" fill="#0e0e0e" stroke-width="0"/>
+    <polygon points="221.78 53.69 221.72 78.23 200.98 66.26 201.05 41.72 221.78 53.69" fill="#1d1d1d" stroke-width="0"/>
+    <line x1="233.86" y1="53.31" x2="253.11" y2="64.43" fill="none" stroke="#b3b3b3" stroke-dasharray="0 0 17.42 4.35" stroke-miterlimit="10" stroke-width=".5"/>
+    <line x1="230.68" y1="68.12" x2="249.51" y2="78.8" fill="none" stroke="#b3b3b3" stroke-dasharray="0 0 17.42 4.35" stroke-miterlimit="10" stroke-width=".5"/>
+    <line x1="120.11" y1="58.52" x2="120.11" y2="7.41" fill="none" stroke="#b3b3b3" stroke-dasharray="0 0 17.42 4.35" stroke-miterlimit="10" stroke-width=".5"/>
+    <line x1="135.01" y1="51.62" x2="135.01" y2="27.7" fill="none" stroke="#b3b3b3" stroke-dasharray="0 0 17.42 4.35" stroke-miterlimit="10" stroke-width=".5"/>
+    <line x1="83.84" y1="160.8" x2="56.23" y2="176.74" fill="none" stroke="#b3b3b3" stroke-dasharray="0 0 17.42 4.35" stroke-miterlimit="10" stroke-width=".5"/>
+    <line x1="60.12" y1="155.25" x2="37.82" y2="167.95" fill="none" stroke="#b3b3b3" stroke-dasharray="0 0 17.42 4.35" stroke-miterlimit="10" stroke-width=".5"/>
+    <line x1="244.06" y1="194.06" x2="273.06" y2="211.02" fill="none" stroke="#b3b3b3" stroke-dasharray="0 0 17.42 4.35" stroke-miterlimit="10" stroke-width=".5"/>
+    <line x1="236.25" y1="210.69" x2="265.32" y2="227.81" fill="none" stroke="#b3b3b3" stroke-dasharray="0 0 17.42 4.35" stroke-miterlimit="10" stroke-width=".5"/>
+    <line x1="279.26" y1="155.56" x2="298.79" y2="144.28" fill="none" stroke="#b3b3b3" stroke-dasharray="0 0 17.42 4.35" stroke-miterlimit="10" stroke-width=".5"/>
+    <g clip-path="url(#clippath-6)">
+      <path d="M130.72,12.72c14.77-6.26,31.01-9.72,48.06-9.72,65.31,0,118.76,50.81,122.97,115.06" fill="none" stroke="#b3b3b3" stroke-dasharray="0 0 17.42 4.35" stroke-miterlimit="10" stroke-width=".5"/>
+      <path d="M55.67,120.7c1.75-39.6,22.19-74.35,52.71-95.63" fill="none" stroke="#b3b3b3" stroke-dasharray="0 0 17.42 4.35" stroke-miterlimit="10" stroke-width=".5"/>
+    </g>
+    <line x1="112.87" y1="195.08" x2="131.28" y2="205.71" fill="none" stroke="#b3b3b3" stroke-dasharray="0 0 17.42 4.35" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+</svg>
