@@ -1,202 +1,418 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./policies.css" />
+    <title>Policies for the Digital Commons</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./policies.css">
-  <title>Policies for the Digital Commons</title>
-</head>
-
-<body class="bg-gray-50">
-    <div class="grid grid-cols-12 max-w-screen-lg mx-auto bg-white items-center px-7">
-      <div class="col-span-12 grid grid-cols-12 mt-6 mb-9 items-center">
-        <img src="/images/logo.svg" class="col-span-4" alt="logo" onclick="location='http://openfuture.eu'"
-          role="button">
-        <a href="/"
-          class="text-[9px] bg-yellow col-span-4 col-start-9 flex items-center justify-center font-chaney whitespace-nowrap h-5">Get
-          PDF version</a>
+  <body class="bg-gray-50">
+    <div
+      class="mx-auto grid max-w-screen-lg grid-cols-12 items-center bg-white px-7 md:px-20"
+      x-data="{show:false}">
+      <div class="col-span-12 mb-9 mt-6 grid grid-cols-12 items-center">
+        <a href="http://openfuture.eu" class="col-span-4"
+          ><img src="/images/logo.svg" alt="Open Future Logo" class="w-full"
+        /></a>
+        <a
+          href="/"
+          class="col-span-4 col-start-9 flex h-5 items-center justify-center whitespace-nowrap bg-yellow font-chaney text-[9px] sm:h-10 sm:text-sm md:col-span-3 md:col-start-10 lg:h-11 lg:text-lg"
+          >Get PDF version</a
+        >
       </div>
 
-      <h2 class="col-span-12 font-chaney text-lg">the paradox of open:</h2>
-      <h1 class="col-span-12 font-chaney text-5xl mt-4">Policies for the Digital Commons</h1>
-    </div>
+      <h2 class="col-span-12 font-chaney text-lg md:col-span-10 md:col-start-2">
+        the paradox of open:
+      </h2>
+      <h1
+        class="col-span-12 mt-3 font-chaney text-5xl md:col-span-10 md:col-start-2">
+        Policies for <br class="hidden lg:block" />the Digital Commons
+      </h1>
 
-    <div class="bg-white w-full pt-10 pb-14"><img src="./images/pdc-mob.svg" class="col-span-12"
-        alt="Policies for the Digital Commons"></div>
-    <div class="grid grid-cols-12 max-w-screen-lg mx-auto bg-white items-center px-7">
+      <div
+        class="col-span-12 -mx-7 pb-14 pt-10 lg:col-span-4 lg:col-start-2 lg:mx-0 lg:mt-12">
+        <img
+          src="./images/pdc-mob.svg"
+          class="lg:hidden"
+          alt="Policies for the Digital Commons" />
+        <img
+          src="./images/pdc-desktop.svg"
+          class="hidden lg:block"
+          alt="Policies for the Digital Commons" />
+      </div>
+      <div
+        class="prose col-span-12 font-serif text-lg italic text-semiblack lg:col-span-5 lg:col-start-7 lg:mt-20">
+        <p>
+          In the run-up to the European elections in the summer of 2024, we
+          offer seven proposals for policy interventions in support of the
+          Digital Commons. Building on the foundations laid by the regulation of
+          commercial platforms over the past five years, the policies presented
+          below aim to strengthen different forms of Digital Commons as building
+          blocks of the European Digital Public Space.
+        </p>
+      </div>
+      <div
+        x-show="show"
+        x-collapse
+        class="prose col-span-12 font-serif text-lg italic text-semiblack lg:col-span-8 lg:col-start-2 lg:!block lg:!h-auto">
+        <p>
+          The development of Digital Commons is one of the greatest achievements
+          of the digital transformation of the last 25 years. New forms of
+          collaboration and sharing enabled by the internet have given rise to
+          digital resources that are created and managed by communities that
+          share them openly according to established rules, the open source
+          software industry, open-access research in the European Research Area,
+          Wikipedia, and open government data being prime examples.
+        </p>
+        <p>
+          Over the same period of time, Europe faced the challenge of the
+          growing power of commercial platforms that dominate the internet
+          today.
+        </p>
+        <p>
+          The initial vision of an open, non-commercial internet has been
+          replaced by a digital domain divided into closed communication
+          networks controlled by commercial actors. The original, interoperable
+          internet still functions as a basic communication layer. Yet
+          commercial networks built on top of it made users dependent on their
+          proprietary systems and solutions. The story of their growth is also a
+          story of extracting value from publicly available information and data
+          produced by users.
+        </p>
 
-      <div class="prose text-lg col-span-12 italic font-serif text-semiblack" x-data="{show:false}">
-        <p>In the run-up to the European elections in the summer of 2024, we offer seven proposals for policy
-          interventions in support of the Digital Commons. Building on the foundations laid by the regulation of
-          commercial platforms over the past five years, the policies presented below aim to strengthen different forms
-          of Digital Commons as building blocks of the European Digital Public Space.</p>
+        <div class="font-sans text-base not-italic text-black">
+          <p>
+            Large AI models developed by commercial entities that are trained by
+            scraping the publicly available internet and benefit from resources
+            such as Wikipedia are the latest iteration of the enclosure of the
+            Digital Commons. This is
+            <a href="#">the Paradox of Open</a>: while openness offers the
+            strongest counterbalance to the corporate enclosure of information
+            and culture, it is also vulnerable to exploitation and can even
+            serve as an enabler of the concentration of power.
+          </p>
+          <p>
+            Over the last five years, the European Commission has redefined its
+            approach to the Digital Single Market by introducing policies that
+            focus on safeguarding fundamental rights and European values.
+            Symptomatically, the flagship initiatives of the Commission&rsquo;s
+            current digital policy package — the Digital Services Act and the
+            Digital Markets Act — regulate dominant platforms to protect
+            fundamental rights, create a safer digital space, and increase
+            competition in digital markets. These regulations address the above
+            paradox by reducing forms of exploitation, making commercial
+            platforms more accountable for the systemic risks they create, and
+            forcing at least a limited opening up of their services and
+            resources.
+          </p>
+          <p>
+            In parallel, the policies and regulations that give life to
+            Europe&rsquo;s new data strategy are based on a vision of data
+            governance that balances the protection of rights with the flow and
+            reuse of data. New regulatory mechanisms create new opportunities
+            for data sharing, and Europe hopes to create open and interoperable
+            data spaces.
+          </p>
+          <p>
+            In other words, these policies create an opportunity to build an
+            internet that is not only a commercial marketplace but also
+            <a href="#">a Digital Public Space</a>. This ambition has been
+            recognized in the European Union&rsquo;s Declaration on Digital
+            Rights and Principles for the Digital Decade, which includes
+            participation in the digital public sphere as one of its key
+            principles. This is an important declaration that paves the way for
+            new policies to ensure that digital technologies enable a just and
+            democratic society. Where fundamental freedoms and rights are
+            protected, strong public institutions work in the public interest,
+            and where people have a say in how services they depend on work.
+          </p>
+          <p>
+            We believe that in the coming years, Europe will have the
+            opportunity to shape such a digital society. Building on the
+            foundations set by this Commission&rsquo;s regulation of commercial
+            platforms, the next digital policy package needs to focus on
+            strengthening different forms of Digital Commons and protecting them
+            from exploitation.
+          </p>
+        </div>
+      </div>
+      <div class="col-span-12">
+        <div
+          class="mx-auto mb-12 mt-7 flex h-9 max-w-xs cursor-pointer items-center justify-center bg-yellow font-chaney not-italic lg:hidden"
+          @click="show=!show"
+          x-text="show?'close introduction':'continue reading...'">
+          continue reading...
+        </div>
+      </div>
 
+      <!-- A Digital Knowledge Act for Europe -->
+      <div
+        class="lg:grid-row-1 col-span-12 -mx-7 lg:col-span-4 lg:col-start-2 lg:mx-0 lg:flex lg:min-h-[700px] lg:flex-col">
+        <div class="grid grid-cols-12 px-7 lg:grid-cols-4 lg:px-0">
+          <h3 class="col-span-11 col-start-2 lg:col-span-4">
+            A Digital Knowledge Act for Europe
+          </h3>
+        </div>
+        <img
+          src="./images/knowledge-mob.svg"
+          class="-mt-12 lg:hidden"
+          alt="A Digital Knowledge Act for Europe" />
+        <div class="-mt-12 hidden flex-1 lg:block">
+          <img
+            src="./images/knowledge-desktop.svg"
+            class=""
+            alt="A Digital Knowledge Act for Europe" />
+        </div>
 
-        <div x-show="show" x-collapse>
-          <p>The development of Digital Commons is one of the greatest achievements of the digital transformation of the
-            last 25 years. New forms of collaboration and sharing enabled by the internet have given rise to digital
-            resources that are created and managed by communities that share them openly according to established rules,
-            the open source software industry, open-access research in the European Research Area, Wikipedia, and open
-            government data being prime examples.</p>
-          <p>Over the same period of time, Europe faced the challenge of the growing power of commercial platforms that
-            dominate the internet today.</p>
-          <p>The initial vision of an open, non-commercial internet has been replaced by a digital domain divided into
-            closed communication networks controlled by commercial actors. The original, interoperable internet still
-            functions as a basic communication layer. Yet commercial networks built on top of it made users dependent on
-            their proprietary systems and solutions. The story of their growth is also a story of extracting value from
-            publicly available information and data produced by users.</p>
+        <div
+          class="mb-6 mt-9 px-7 font-serif text-lg italic text-semiblack lg:px-0">
+          Empowering knowledge institutions in the digital environment.
+        </div>
+        <a
+          href="#"
+          class="mx-7 mb-16 flex h-9 max-w-40 items-center justify-center bg-black font-chaney text-white lg:mx-0"
+          >Read More</a
+        >
+      </div>
 
-          <div class="text-base not-italic text-black font-sans">
-            <p>Large AI models developed by commercial entities that are trained by scraping the publicly available
-              internet and benefit from resources such as Wikipedia are the latest iteration of the enclosure of the
-              Digital Commons. This is <a href="#">the Paradox of Open</a>: while openness offers the strongest
-              counterbalance to the corporate enclosure of information and culture, it is also vulnerable to
-              exploitation and can even serve as an enabler of the concentration of power.</p>
-            <p>Over the last five years, the European Commission has redefined its approach to the Digital Single Market
-              by introducing policies that focus on safeguarding fundamental rights and European values.
-              Symptomatically, the flagship initiatives of the Commission&rsquo;s current digital policy package — the
-              Digital Services Act and the Digital Markets Act — regulate dominant platforms to protect fundamental
-              rights, create a safer digital space, and increase competition in digital markets. These regulations
-              address the above paradox by reducing forms of exploitation, making commercial platforms more accountable
-              for the systemic risks they create, and forcing at least a limited opening up of their services and
-              resources.</p>
-            <p>In parallel, the policies and regulations that give life to Europe&rsquo;s new data strategy are based on
-              a vision of data governance that balances the protection of rights with the flow and reuse of data. New
-              regulatory mechanisms create new opportunities for data sharing, and Europe hopes to create open and
-              interoperable data spaces.</p>
-            <p>In other words, these policies create an opportunity to build an internet that is not only a commercial
-              marketplace but also <a href="#">a Digital Public Space</a>. This ambition has been recognized in the
-              European Union&rsquo;s Declaration on Digital Rights and Principles for the Digital Decade, which includes
-              participation in the digital public sphere as one of its key principles. This is an important declaration
-              that paves the way for new policies to ensure that digital technologies enable a just and democratic
-              society. Where fundamental freedoms and rights are protected, strong public institutions work in the
-              public interest, and where people have a say in how services they depend on work.</p>
-            <p>We believe that in the coming years, Europe will have the opportunity to shape such a digital society.
-              Building on the foundations set by this Commission&rsquo;s regulation of commercial platforms, the next
-              digital policy package needs to focus on strengthening different forms of Digital Commons and protecting
-              them from exploitation.</p>
-          </div>
+      <!-- A Copyright Infrastructure for the Digital Age -->
+
+      <div
+        class="lg:grid-row-1 col-span-12 -mx-7 lg:col-span-4 lg:col-start-7 lg:mx-0 lg:flex lg:min-h-[700px] lg:flex-col">
+        <div class="grid grid-cols-12 px-7 lg:grid-cols-4 lg:px-0">
+          <h3 class="col-span-11 col-start-2 lg:col-span-4">
+            A Copyright Infrastruc-ture for the Digital Age
+          </h3>
+        </div>
+        <img
+          src="./images/copyright-mob.svg"
+          class="lg:hidden"
+          alt="A Copyright Infrastructure for the Digital Age" />
+        <div class="-mt-12 hidden flex-1 lg:block">
+          <img
+            src="./images/copyright-desktop.svg"
+            class=""
+            alt="A Copyright Infrastructure for the Digital Age" />
         </div>
         <div
-          class="max-w-xs bg-yellow mx-auto flex items-center h-9 justify-center font-chaney not-italic cursor-pointer mt-7 mb-12"
-          @click="show=!show" x-text="show?'close introduction':'continue reading...'">guzik</div>
-      </div>
-
-
-      <div class="col-span-12 -mx-7">
-        <div class="grid grid-cols-12 px-7">
-          <h3 class="col-start-2 col-span-11">A Digital Knowledge Act for Europe</h3>
+          class="mb-6 mt-9 px-7 font-serif text-lg italic text-semiblack lg:px-0">
+          Ensuring more equitable access to training data and compute.
         </div>
-        <img src="./images/knowledge-mob.svg" class="-mt-12" alt="A Digital Knowledge Act for Europe">
-        <div class="mt-9 mb-6 px-7 text-semiblack italic font-serif text-lg">Empowering knowledge institutions in the
-          digital environment.</div>
-        <a href="#"
-          class="mb-16 mx-7 bg-black text-white flex items-center justify-center max-w-40 font-chaney h-9">Read More</a>
+        <a
+          href="#"
+          class="mx-7 mb-16 flex h-9 max-w-40 items-center justify-center bg-black font-chaney text-white lg:mx-0"
+          >Read More</a
+        >
       </div>
 
-
-
-      <div class="col-span-12 -mx-7">
-        <div class="grid grid-cols-12 px-7">
-          <h3 class="col-start-2 col-span-11">A Copyright Infrastruc-ture for the Digital Age</h3>
-        </div>
-        <img src="./images/copyright-mob.svg" class="" alt="A Copyright Infrastructure for the Digital Age">
-        <div class="mt-9 mb-6 px-7 text-semiblack italic font-serif text-lg">Ensuring more equitable access to
-          training data and compute. </div>
-        <a href="#"
-          class="mb-16 mx-7 bg-black text-white flex items-center justify-center max-w-40 font-chaney h-9">Read More</a>
-      </div>
-
-
-
-      <div class="col-span-12 -mx-7">
-        <div class="grid grid-cols-12 px-7">
-          <h3 class="col-start-2 col-span-11">A public option for AI develop-ment</h3>
-        </div>
-        <img src="./images/ai-mob.svg" class="" alt="A public option for AI development">
-        <div class="mt-9 mb-6 px-7 text-semiblack italic font-serif text-lg">Building standards for making
-          copyright information discoverable.</div>
-        <a href="#"
-          class="mb-16 mx-7 bg-black text-white flex items-center justify-center max-w-40 font-chaney h-9">Read More</a>
-      </div>
-
-
-      <div class="col-span-12 -mx-7">
-        <div class="grid grid-cols-12 px-7">
-          <h3 class="col-start-2 col-span-11">A european public dig-ital infra-structure fund</h3>
-        </div>
-        <img src="./images/infrastructure-mob.svg" class="" alt="A european public digital infrastructure fund">
-        <div class="mt-9 mb-6 px-7 text-semiblack italic font-serif text-lg">Investing into the foundations
-          of Europe&rsquo;s Digital Public Space.</div>
-        <a href="#"
-          class="mb-16 mx-7 bg-black text-white flex items-center justify-center max-w-40 font-chaney h-9">Read More</a>
-      </div>
-
-      <div class="col-span-12 -mx-7">
-        <div class="grid grid-cols-12 px-7">
-          <h3 class="col-start-2 col-span-11">A public, interopera-ble social media space</h3>
-        </div>
-        <img src="./images/interoperability-mob.svg" class="mt-4" alt="A public, interoperable social media space">
-        <div class="mt-9 mb-6 px-7 text-semiblack italic font-serif text-lg">Reducing the dependency on
-          commercial social media platforms.</div>
-        <a href="#"
-          class="mb-16 mx-7 bg-black text-white flex items-center justify-center max-w-40 font-chaney h-9">Read More</a>
-      </div>
-
-
-      <div class="col-span-12 -mx-7">
-        <div class="grid grid-cols-12 px-7">
-          <h3 class="col-start-2 col-span-11">A compre-hensive ict energy sus-tainability policy</h3>
-        </div>
-        <img src="./images/energy-mob.svg" class="-mt-10" alt="A comprehensive ict energy sustainability policy">
-        <div class="mt-9 mb-6 px-7 text-semiblack italic font-serif text-lg">Ensuring a greener and more sustainable digital landscape for Europe.</div>
-        <a href="#"
-          class="mb-16 mx-7 bg-black text-white flex items-center justify-center max-w-40 font-chaney h-9">Read More</a>
-      </div>
-
-      <div class="col-span-12 -mx-7">
-        <div class="grid grid-cols-12 px-7">
-          <h3 class="col-start-2 col-span-11">A public in-frastruc-ture for open ac-cess</h3>
-        </div>
-        <img src="./images/access-mob.svg" class="" alt="A public infrastructure for open access">
-        <div class="mt-9 mb-6 px-7 text-semiblack italic font-serif text-lg">Advancing equitable access to
-          scholarly communications. </div>
-        <a href="#"
-          class="mb-16 mx-7 bg-black text-white flex items-center justify-center max-w-40 font-chaney h-9">Read More</a>
-      </div>
-
-  </div>
-  <!-- newsletter -->
-  <div class="pt-7 bg-white">
-    <div class="grid grid-cols-12 max-w-screen-lg mx-auto py-6 bg-gray-300 items-center">
+      <!-- A public option for AI development -->
       <div
-        class="col-span-10 col-start-2 lg:col-start-2 lg:col-span-4 text-xl font-chaney lg:text-right leading-6 mb-7 lg:mb-0">
-        keep up to date<br />
-        and subscribe<br />
-        to our newsletter</div>
-      <div class="col-span-10 col-start-2 lg:col-span-5 lg:col-start-7">
-        <form
-          action="https://openfuture.us1.list-manage.com/subscribe/post?u=d7c6d2a743011f3253613888f&amp;id=ca8ac23ac4"
-          method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
-          <div class="grid grid-cols-2 gap-1 mb-6 lg:mb-3">
-            <input type="email" name="EMAIL" placeholder="your email.." class="col-span-2 px-2 py-3 rounded-none"
-              id="mce-EMAIL" />
-            <input type="text" name="NAME" placeholder="name (optional)"
-              class="col-span-2 lg:col-span-1 px-2 py-3 rounded-none" id="mce-NAME" />
-            <input type="text" name="ORGANIZATION" placeholder="organisation (optional)"
-              class="col-span-2 lg:col-span-1 px-2 py-3 rounded-none" id="mce-ORGANIZATION" />
-          </div>
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-              name="b_d7c6d2a743011f3253613888f_ca8ac23ac4" tabindex="-1" value=""></div>
-          <a href="#" class="font-chaney bg-black text-white text-xs px-7 py-2 mt-2 mb-2 mr-2"
-            onclick="this.closest('form').submit();return false;">Subscribe</a>
-        </form>
+        class="lg:grid-row-1 col-span-12 -mx-7 lg:col-span-4 lg:col-start-2 lg:mx-0 lg:flex lg:min-h-[700px] lg:flex-col">
+        <div class="grid grid-cols-12 px-7 lg:grid-cols-4 lg:px-0">
+          <h3 class="col-span-11 col-start-2 lg:col-span-4">
+            A public option for AI develop-ment
+          </h3>
+        </div>
+        <img
+          src="./images/ai-mob.svg"
+          class="lg:hidden"
+          alt="A public option for AI development" />
+
+        <div class="hidden flex-1 lg:block">
+          <img
+            src="./images/ai-desktop.svg"
+            class=""
+            alt="A public option for AI development" />
+        </div>
+        <div
+          class="mb-6 mt-9 px-7 font-serif text-lg italic text-semiblack lg:px-0">
+          Building standards for making copyright information discoverable.
+        </div>
+        <a
+          href="#"
+          class="mx-7 mb-16 flex h-9 max-w-40 items-center justify-center bg-black font-chaney text-white lg:mx-0"
+          >Read More</a
+        >
+      </div>
+
+      <!-- A european public digital infrastructure fund -->
+
+      <div
+        class="lg:grid-row-1 col-span-12 -mx-7 lg:col-span-4 lg:col-start-7 lg:mx-0 lg:flex lg:min-h-[700px] lg:flex-col">
+        <div class="grid grid-cols-12 px-7 lg:grid-cols-4 lg:px-0">
+          <h3 class="col-span-11 col-start-2 lg:col-span-4">
+            A european public dig-ital infra-structure fund
+          </h3>
+        </div>
+        <img
+          src="./images/infrastructure-mob.svg"
+          class="lg:hidden"
+          alt="A european public digital infrastructure fund" />
+
+        <div class="hidden flex-1 lg:block">
+          <img
+            src="./images/infrastructure-desktop.svg"
+            class=""
+            alt="A european public digital infrastructure fund" />
+        </div>
+        <div
+          class="mb-6 mt-9 px-7 font-serif text-lg italic text-semiblack lg:px-0">
+          Investing into the foundations of Europe&rsquo;s Digital Public Space.
+        </div>
+        <a
+          href="#"
+          class="mx-7 mb-16 flex h-9 max-w-40 items-center justify-center bg-black font-chaney text-white lg:mx-0"
+          >Read More</a
+        >
+      </div>
+
+      <!-- A public, interoperable social media space -->
+
+      <div
+        class="lg:grid-row-1 col-span-12 -mx-7 lg:col-span-4 lg:col-start-2 lg:mx-0 lg:flex lg:min-h-[600px] lg:flex-col">
+        <div class="grid grid-cols-12 px-7 lg:grid-cols-4 lg:px-0">
+          <h3 class="col-span-11 col-start-2 lg:col-span-4">
+            A public, interopera-ble social media space
+          </h3>
+        </div>
+        <img
+          src="./images/interoperability-mob.svg"
+          class="mt-4 lg:hidden"
+          alt="A public, interoperable social media space" />
+
+        <div class="mt-4 hidden flex-1 lg:block">
+          <img
+            src="./images/interoperability-desktop.svg"
+            class=""
+            alt="A public, interoperable social media space" />
+        </div>
+        <div
+          class="mb-6 mt-9 px-7 font-serif text-lg italic text-semiblack lg:px-0">
+          Reducing the dependency on commercial social media platforms.
+        </div>
+        <a
+          href="#"
+          class="mx-7 mb-16 flex h-9 max-w-40 items-center justify-center bg-black font-chaney text-white lg:mx-0"
+          >Read More</a
+        >
+      </div>
+
+      <!-- A comprehensive ict energy sustainability policy -->
+
+      <div
+        class="lg:grid-row-1 col-span-12 -mx-7 lg:col-span-4 lg:col-start-7 lg:mx-0 lg:flex lg:min-h-[600px] lg:flex-col">
+        <div class="grid grid-cols-12 px-7 lg:grid-cols-4 lg:px-0">
+          <h3 class="col-span-11 col-start-2 lg:col-span-4">
+            A compre-hensive ict energy sus-tainability policy
+          </h3>
+        </div>
+        <img
+          src="./images/energy-mob.svg"
+          class="-mt-10 lg:hidden"
+          alt="A comprehensive ict energy sustainability policy" />
+
+        <div class="-mt-10 hidden flex-1 lg:block">
+          <img
+            src="./images/energy-desktop.svg"
+            class="-mt-10 hidden lg:block"
+            alt="A comprehensive ict energy sustainability policy" />
+        </div>
+        <div
+          class="mb-6 mt-9 px-7 font-serif text-lg italic text-semiblack lg:px-0">
+          Ensuring a greener and more sustainable digital landscape for Europe.
+        </div>
+        <a
+          href="#"
+          class="mx-7 mb-16 flex h-9 max-w-40 items-center justify-center bg-black font-chaney text-white lg:mx-0"
+          >Read More</a
+        >
+      </div>
+
+      <!--  A public infrastructure for open access -->
+
+      <div
+        class="lg:grid-row-1 col-span-12 -mx-7 lg:col-span-4 lg:col-start-2 lg:mx-0 lg:flex lg:min-h-[700px] lg:flex-col">
+        <div class="grid grid-cols-12 px-7 lg:grid-cols-4 lg:px-0">
+          <h3 class="col-span-11 col-start-2 lg:col-span-4">
+            A public in-frastruc-ture for open ac-cess
+          </h3>
+        </div>
+        <img
+          src="./images/access-mob.svg"
+          class="lg:hidden"
+          alt="A public infrastructure for open access" />
+
+        <img
+          src="./images/access-desktop.svg"
+          class="hidden lg:block"
+          alt="A public infrastructure for open access" />
+        <div
+          class="mb-6 mt-9 px-7 font-serif text-lg italic text-semiblack lg:px-0">
+          Advancing equitable access to scholarly communications.
+        </div>
+        <a
+          href="#"
+          class="mx-7 mb-16 flex h-9 max-w-40 items-center justify-center bg-black font-chaney text-white lg:mx-0"
+          >Read More</a
+        >
       </div>
     </div>
-  </div>
-  </div>
-  <script type="module" src="./main.js"></script>
-</body>
 
+    <!-- newsletter -->
+
+    <div class="bg-white pt-7">
+      <div
+        class="mx-auto grid max-w-screen-lg grid-cols-12 items-center bg-gray-300 py-6">
+        <div
+          class="col-span-10 col-start-2 mb-7 font-chaney text-xl leading-6 lg:col-span-4 lg:col-start-2 lg:mb-0 lg:text-right">
+          keep up to date<br />
+          and subscribe<br />
+          to our newsletter
+        </div>
+        <div class="col-span-10 col-start-2 lg:col-span-5 lg:col-start-7">
+          <form
+            action="https://openfuture.us1.list-manage.com/subscribe/post?u=d7c6d2a743011f3253613888f&amp;id=ca8ac23ac4"
+            method="POST"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form">
+            <div class="mb-6 grid grid-cols-2 gap-1 lg:mb-3">
+              <input
+                type="email"
+                name="EMAIL"
+                placeholder="your email.."
+                class="col-span-2 rounded-none px-2 py-3"
+                id="mce-EMAIL" />
+              <input
+                type="text"
+                name="NAME"
+                placeholder="name (optional)"
+                class="col-span-2 rounded-none px-2 py-3 lg:col-span-1"
+                id="mce-NAME" />
+              <input
+                type="text"
+                name="ORGANIZATION"
+                placeholder="organisation (optional)"
+                class="col-span-2 rounded-none px-2 py-3 lg:col-span-1"
+                id="mce-ORGANIZATION" />
+            </div>
+            <div style="position: absolute; left: -5000px" aria-hidden="true">
+              <input
+                type="text"
+                name="b_d7c6d2a743011f3253613888f_ca8ac23ac4"
+                tabindex="-1"
+                value="" />
+            </div>
+            <a
+              href="#"
+              class="mb-2 mr-2 mt-2 bg-black px-7 py-2 font-chaney text-xs text-white"
+              onclick="this.closest('form').submit();return false;"
+              >Subscribe</a
+            >
+          </form>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
 </html>
