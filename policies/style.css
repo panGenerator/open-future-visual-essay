@@ -1,7 +1,6 @@
 @import '@fontsource/pt-serif';
 @import '@fontsource/pt-serif';
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,17 +21,15 @@
   a {
     @apply text-gray-500 underline;
   }
-
-
 }
 
 h3 {
-  @apply font-chaney text-4xl relative;
+  @apply font-chaney text-4xl relative leading-8 sm:text-6xl sm:leading-[3rem] lg:leading-8 lg:text-4xl;
 }
 
 h3:before {
   content: '_';
-  top: -0.65rem;
-  left: -1.8rem;
-  @apply font-chaney text-4xl absolute;
+  /* top: -0.65rem;
+  left: -1.8rem; */
+  @apply font-chaney text-4xl absolute sm:text-6xl lg:text-4xl -top-[0.85rem] -left-[1.8rem] sm:-top-[1.3rem] sm:-left-[3rem] lg:-top-[0.85rem] lg:-left-[1.8rem];
 }
