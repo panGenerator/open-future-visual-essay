@@ -19,7 +19,11 @@
   }
 
   a {
-    @apply text-gray-500 underline;
+    @apply no-underline bg-gray-100 not-italic border-b border-gray-600;
+
+    &:hover {
+      @apply bg-yellow;
+    }
   }
 }
 
