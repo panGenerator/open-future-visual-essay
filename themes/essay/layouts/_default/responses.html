@@ -1,122 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <meta charset="utf-8">
-  <title>{{ .Site.Title }} - Responses</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  {{ $options := (dict "targetPath" "css/style.css" "outputStyle" "compressed" "includePaths" (slice "node_modules")) }}
-  {{ $style := resources.Get "scss/style.scss" | toCSS $options | minify  }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}">
-<body>
-  <div
-    class="main container-fluid container-sm responses p-0 position-fixed top-0 start-50 translate-middle-x d-flex align-items-end justify-content-center overflow-hidden min-h-screen"
-    style="z-index:1"></div>
-  <main class=" container-fluid container-sm responses p-0 position-fixed top-0 start-50 translate-middle-x"
-    style="z-index:10">
-    <div class="d-flex align-items-center justify-content-between py-2 px-2 py-sm-4 px-sm-5">
-      <img src="/images/logo.svg" class="logo" alt="logo" onclick="location='http://openfuture.eu'" role="button" />
-      <a href="/" class="btn bg-yellow" style="font-size:0.7em;">Read our Essay</a>
-    </div>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ .Site.Title }} - Responses</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{ $options := (dict "targetPath" "css/style.css" "outputStyle" "compressed"
+    "includePaths" (slice "node_modules")) }} {{ $style := resources.Get
+    "scss/style.scss" | toCSS $options | minify }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" />
+  </head>
+  <body>
+    <div
+      class="main container-fluid container-sm responses position-fixed start-50 translate-middle-x d-flex align-items-end justify-content-center top-0 min-h-screen overflow-hidden p-0"
+      style="z-index: 1"></div>
+    <main
+      class="container-fluid container-sm responses position-fixed start-50 translate-middle-x top-0 p-0"
+      style="z-index: 10">
+      <div
+        class="d-flex align-items-center justify-content-between py-sm-4 px-sm-5 px-2 py-2">
+        <img
+          src="/images/logo.svg"
+          class="logo"
+          alt="logo"
+          onclick="location='http://openfuture.eu'"
+          role="button" />
+        <a href="/" class="btn bg-yellow" style="font-size: 0.7em"
+          >Read our Essay</a
+        >
+      </div>
 
-    <div class="mx-auto text-center">
-      <h1 class="mx-auto d-inline-flex flex-column text-start" id="title">
-        <span class="mx-3">Paradox<br />_of Open</span>
-        <div class="subtitle mt-2">responses</div>
-      </h1>
-    </div>
-    <div class="w-100"></div>
-    <div class="w-80 mx-auto mt-4 intro">
-      {{ .Content }}
-    </div>
-    <div class="w-80 mx-auto view text-end d-flex align-items-center justify-content-end" role="button"
-      onclick="document.getElementById('list').classList.remove('d-none')"> View all responses <img
-        src="/images/hamburger.svg" class="ms-2" />
-    </div>
+      <div class="mx-auto text-center">
+        <h1 class="d-inline-flex flex-column mx-auto text-start" id="title">
+          <span class="mx-3">Paradox<br />_of Open</span>
+          <div class="subtitle mt-2">responses</div>
+        </h1>
+      </div>
+      <div class="w-100"></div>
+      <div class="intro mx-auto mt-4 w-80">{{ .Content }}</div>
+      <div
+        class="view d-flex align-items-center justify-content-end mx-auto w-80 text-end"
+        role="button"
+        onclick="document.getElementById('list').classList.remove('d-none')">
+        View all responses <img src="/images/hamburger.svg" class="ms-2" />
+      </div>
+    </main>
 
-  </main>
+    <svg
+      id="arrow-up"
+      data-name="Layer 2"
+      xmlns="http://www.w3.org/2000/svg"
+      width="58.45"
+      height="35.55"
+      viewBox="0 0 58.45 35.55">
+      <style type="text/css">
+        @keyframes pulse {
+          from {
+            opacity: 1;
+            transform: translateY(-20px);
+          }
 
-  <svg id="arrow-up" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="58.45" height="35.55"
-    viewBox="0 0 58.45 35.55">
-    <style type="text/css">
-      @keyframes pulse {
-        from {
-          opacity: 1.0;
-          transform: translateY(-20px);
+          to {
+            opacity: 0.1;
+            transform: translateY(0px);
+          }
         }
 
-        to {
-          opacity: 0.1;
-          transform: translateY(0px);
+        .cls-1 {
+          fill: none;
+          stroke: rgb(70, 70, 70);
+          stroke-miterlimit: 10;
+          stroke-width: 8.94px;
+          animation-name: pulse;
+          animation-duration: 1s;
+          animation-direction: alternate;
+          animation-iteration-count: infinite;
         }
-      }
-
-      .cls-1 {
-        fill: none;
-        stroke: rgb(70, 70, 70);
-        stroke-miterlimit: 10;
-        stroke-width: 8.94px;
-        animation-name: pulse;
-        animation-duration: 1s;
-        animation-direction: alternate;
-        animation-iteration-count: infinite;
-      }
-    </style>
-    <g id="Layer_3" data-name="Layer 3">
-      <polyline class="cls-1" points="3.16 32.39 29.23 6.32 55.29 32.39" />
-    </g>
-  </svg>
-
-  <div class="d-none position-fixed w-100 bg-white p-3 shadow m-0" id="list" style="z-index:105;">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-      style="width:24px; height:24px" class="float-end"
-      onclick="document.getElementById('list').classList.add('d-none')" role="button">
-      <path stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </style>
+      <g id="Layer_3" data-name="Layer 3">
+        <polyline class="cls-1" points="3.16 32.39 29.23 6.32 55.29 32.39" />
+      </g>
     </svg>
-    <div class="w-100">&nbsp;</div>
-    {{ range $.Param "responses"}}
-    <div class="d-flex flex-row mb-4 justify-content-start">
-      <div class="w-30 author text-end me-4">{{ .author }}</div>
-      <div class="title w-60"><a href="{{ .link }}" class="text-decoration-none">{{ .title | markdownify }}</a></div>
+
+    <div
+      class="d-none position-fixed w-100 m-0 bg-white p-3 shadow"
+      id="list"
+      style="z-index: 105">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        style="width: 24px; height: 24px"
+        class="float-end"
+        onclick="document.getElementById('list').classList.add('d-none')"
+        role="button">
+        <path stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+      <div class="w-100">&nbsp;</div>
+      {{ range $.Param "responses"}}
+      <div class="d-flex justify-content-start mb-4 flex-row">
+        <div class="w-30 author me-4 text-end">{{ .author }}</div>
+        <div class="title w-60">
+          <a href="{{ .link }}" class="text-decoration-none"
+            >{{ .title | markdownify }}</a
+          >
+        </div>
+      </div>
+      {{ end }}
     </div>
-    {{ end }}
-  </div>
 
-  <div id="covers" class="position-absolute top-0 bottom-0 start-50 translate-middle-x text-center mx-auto"
-    style="z-index:100">
-    {{ range $.Param "responses"}}
-    <div class="cover mx-auto d-flex align-items-center justify-content-center">
-      <a href="{{.link}}">
-        <img src="/images/covers/{{.cover}}" class="shadow" height="400" />
-      </a>
+    <div
+      id="covers"
+      class="position-absolute start-50 translate-middle-x bottom-0 top-0 mx-auto text-center"
+      style="z-index: 100">
+      {{ range $.Param "responses"}}
+      <div
+        class="cover d-flex align-items-center justify-content-center mx-auto">
+        <a href="{{.link}}">
+          <img src="/images/covers/{{.cover}}" class="shadow" height="400" />
+        </a>
+      </div>
+      {{ end }}
     </div>
-    {{ end }}
-  </div>
 
-  <img id="cubeBack" src="/images/cube-back.svg" class="position-fixed start-50 translate-middle-x"
-    style="z-index:99;" />
-  <img id="cubeFront" src="/images/cube-front.svg" class="position-fixed start-50 translate-middle-x"
-    style="z-index:101" />
-  <!-- <img id="resBG" src="/images/resbg.svg" class="position-fixed start-50 translate-middle-x" style="z-index:10;"/> -->
+    <img
+      id="cubeBack"
+      src="/images/cube-back.svg"
+      class="position-fixed start-50 translate-middle-x"
+      style="z-index: 99" />
+    <img
+      id="cubeFront"
+      src="/images/cube-front.svg"
+      class="position-fixed start-50 translate-middle-x"
+      style="z-index: 101" />
+    <!-- <img id="resBG" src="/images/resbg.svg" class="position-fixed start-50 translate-middle-x" style="z-index:10;"/> -->
 
-  {{- $responses := resources.Get "/js/responses.js" | js.Build (dict "minify" true "target" "es2015") | fingerprint -}}
-  <script src="{{ $responses.Permalink }}"></script>
-<!-- Matomo -->
-<script type="text/javascript">
-  var _paq = window._paq = window._paq || [];
-  _paq.push(["setCookieDomain", "*.openfuture.eu"]);
-  _paq.push(["setDomains", ["*.openfuture.eu"]]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  _paq.push(['alwaysUseSendBeacon']);
-  _paq.push(['setTrackerUrl', "\/\/openfuture.eu\/wp-content\/plugins\/matomo\/app\/matomo.php"]);
-  _paq.push(['setSiteId', '1']);
-  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-  g.type='text/javascript'; g.async=true; g.src="\/\/openfuture.eu\/wp-content\/uploads\/matomo\/matomo.js"; s.parentNode.insertBefore(g,s);
-  </script>
-  <!-- End Matomo Code -->
-</body>
-
+    {{- $responses := resources.Get "/js/responses.js" | js.Build (dict "minify"
+    true "target" "es2015") | fingerprint -}}
+    <script src="{{ $responses.Permalink }}"></script>
+    <!-- Matomo -->
+    <script type="text/javascript">
+      var _paq = (window._paq = window._paq || [])
+      _paq.push(['setCookieDomain', '*.openfuture.eu'])
+      _paq.push(['setDomains', ['*.openfuture.eu']])
+      _paq.push(['trackPageView'])
+      _paq.push(['enableLinkTracking'])
+      _paq.push(['alwaysUseSendBeacon'])
+      _paq.push([
+        'setTrackerUrl',
+        '\/\/openfuture.eu\/wp-content\/plugins\/matomo\/app\/matomo.php',
+      ])
+      _paq.push(['setSiteId', '1'])
+      var d = document,
+        g = d.createElement('script'),
+        s = d.getElementsByTagName('script')[0]
+      g.type = 'text/javascript'
+      g.async = true
+      g.src = '\/\/openfuture.eu\/wp-content\/uploads\/matomo\/matomo.js'
+      s.parentNode.insertBefore(g, s)
+    </script>
+    <!-- End Matomo Code -->
+  </body>
 </html>
